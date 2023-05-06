@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="white"
+        android:text="<"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="My Profile"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounded_imageview"
+        android:src="@drawable/myprofile_avatar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Nguyễn Văn A"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/btn2"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="320dp"
+        android:background="@color/material_dynamic_neutral_variant90" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:drawableLeft="@drawable/myprofile_icon_bell"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Notifications"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:drawableLeft="@drawable/myprofile_icon_cart"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="My Orders"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:drawableLeft="@drawable/myprofile_icon_home"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="My Address"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:drawableLeft="@drawable/myprofile_icon_creditcard"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Payment Method"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:drawableLeft="@drawable/myprofile_icon_lock"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Change Password"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="540dp"
+        android:background="@color/material_dynamic_neutral_variant90" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:drawableLeft="@drawable/myprofile_icon_questionmark"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Help & Support"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:drawableLeft="@drawable/myprofile_icon_logout"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Logout"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>

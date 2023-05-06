@@ -1,0 +1,214 @@
+[
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_myprofile_icon_home.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/myprofile_icon_home.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/layout_activity_order_complete.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/layout/activity_order_complete.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_editprofile_icon_downarrow.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/editprofile_icon_downarrow.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ob03_image_main.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ob03_image_main.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_btn3.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/btn3.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_editprofile_icon_calendar.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/editprofile_icon_calendar.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ordercomplete_image_main.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ordercomplete_image_main.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/layout_activity_edit_profile.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_editprofile_icon_mall.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/editprofile_icon_mall.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_myprofile_icon_cart.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/myprofile_icon_cart.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/layout_activity_onboarding01.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/layout/activity_onboarding01.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ob01_load.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ob01_load.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_myprofile_icon_bell.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/myprofile_icon_bell.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ob02_load.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ob02_load.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_btn2.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/btn2.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ob02_image_main.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ob02_image_main.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_myprofile_icon_logout.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/myprofile_icon_logout.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_myprofile_avatar.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/myprofile_avatar.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_myprofile_icon_questionmark.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/myprofile_icon_questionmark.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ob01_image_main.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ob01_image_main.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_editprofile_icon_vietnam.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/editprofile_icon_vietnam.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ob03_load.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ob03_load.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/layout_activity_profile.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/xml_backup_rules.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/layout_activity_onboarding02.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/layout/activity_onboarding02.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_editprofile_icon_camera.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/editprofile_icon_camera.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ob00_logo.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ob00_logo.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_btn1.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/btn1.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/layout_activity_onboarding03.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/layout/activity_onboarding03.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/layout_activity_internet_connection_error.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/layout/activity_internet_connection_error.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_nointernet_image_main.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/nointernet_image_main.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_myprofile_icon_creditcard.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/myprofile_icon_creditcard.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_rounded_imageview.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/rounded_imageview.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_ob00_image_main.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/ob00_image_main.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/layout_activity_onboarding00.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/layout/activity_onboarding00.xml"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.foodorderingapp-main-31:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_myprofile_icon_lock.png.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/myprofile_icon_lock.png"
+    },
+    {
+        "merged": "com.example.foodorderingapp-merged_res-29:/drawable_edit_profile.xml.flat",
+        "source": "com.example.foodorderingapp-main-31:/drawable/edit_profile.xml"
+    }
+]
