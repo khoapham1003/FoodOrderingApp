@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationActivity">
+    <EditText
+        android:id="@+id/verification_code"
+        android:layout_width="400dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/edittext_background"
+        android:gravity="center_vertical"
+        android:hint="    Enter your verification code"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:text="The OTP code was sent to your phone. \n\t\t\t\t\t\t\tPlease enter the code:"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="Verification Code"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVerify_VC"
+        android:layout_width="200dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#FF897D"
+        android:gravity="center"
+        android:text="Verify Now"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSend_FP"
+        android:layout_width="120dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="630dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="Resend"
+        android:textColor="#FF897D"
+        android:textSize="16dp" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/back_arrow" />
+</RelativeLayout>

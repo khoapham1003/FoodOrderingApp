@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/myprofile_backarrow"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Edit Profile"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounded_imageview"
+        android:src="@drawable/myprofile_avatar" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="167dp"
+        android:background="@drawable/editprofile_icon_camera" />
+
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/edit_profile"
+        android:hint="Nguyễn Văn A"
+        android:inputType="textPersonName"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/edit_profile"
+        android:drawableRight="@drawable/editprofile_icon_calendar"
+        android:hint="12/27/2000"
+        android:inputType="date"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/edit_profile"
+        android:drawableRight="@drawable/editprofile_icon_mall"
+        android:hint="abvccc@gmail.com"
+        android:inputType="textEmailAddress"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/edit_profile"
+        android:drawableRight="@drawable/editprofile_icon_downarrow"
+        android:hint="Male"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/edit_profile"
+        android:drawableLeft="@drawable/editprofile_icon_vietnam"
+        android:drawablePadding="10dp"
+        android:hint="+84 914222333"
+        android:inputType="textPhonetic"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/edit_profile"
+        android:hint="Việt Nam"
+        android:padding="15dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="640dp"
+        android:background="@drawable/btn2"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</RelativeLayout>

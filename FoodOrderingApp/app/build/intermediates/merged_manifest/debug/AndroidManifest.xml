@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodorderingapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="33" />
+
+    <permission
+        android:name="com.example.foodorderingapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.foodorderingapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.FoodOrderingApp" >
+        <activity
+            android:name="com.example.foodorderingapp.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.CheckOutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.VerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.FilledProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.Forgot_PasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.Change_ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.MyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.OrderCompleteActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.InternetConnectionErrorActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.Onboarding03Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.Onboarding02Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.Onboarding01Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.foodorderingapp.Onboarding00Activity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.example.foodorderingapp.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+
+</manifest>
