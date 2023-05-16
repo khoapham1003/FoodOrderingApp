@@ -20,8 +20,8 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
         app:srcCompat="@drawable/profile" />
 
     <EditText
@@ -42,11 +42,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="290dp"
         android:background="@drawable/edittext_background"
+        android:ems="10"
         android:gravity="center_vertical"
         android:hint="    Date of Birth"
-        android:textSize="16dp"
-        android:ems="10"
-        android:inputType="date" />
+        android:inputType="date"
+        android:textSize="16dp" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -65,11 +65,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="360dp"
         android:background="@drawable/edittext_background"
+        android:ems="10"
         android:gravity="center_vertical"
         android:hint="    Email"
-        android:textSize="16dp"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textSize="16dp" />
 
 
     <EditText
@@ -90,11 +90,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="500dp"
         android:background="@drawable/edittext_background"
+        android:ems="10"
         android:gravity="center_vertical"
         android:hint="    Phone"
-        android:textSize="16dp"
-        android:ems="10"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:textSize="16dp" />
 
     <EditText
         android:id="@+id/address_CProfile"
@@ -111,8 +111,8 @@
         android:id="@+id/btnContinue_CProfile"
         android:layout_width="400dp"
         android:layout_height="54dp"
-        android:layout_marginTop="680dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="680dp"
         android:background="@drawable/button_background"
         android:backgroundTint="#FF897D"
         android:gravity="center"
@@ -124,7 +124,7 @@
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
         app:srcCompat="@drawable/back_arrow" />
 </RelativeLayout>

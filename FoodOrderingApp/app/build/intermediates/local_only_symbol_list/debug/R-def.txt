@@ -92,6 +92,10 @@ id btnSend_FP
 id btnSignIn
 id btnSignUp
 id btnVerify_VC
+id btn_nextTo01
+id btn_nextTo02
+id btn_nextTo03
+id btn_nextToSign
 id button
 id button2
 id constraintLayout
@@ -252,6 +256,13 @@ layout viewholder_cart
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string default_web_client_id
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
+string project_id
 style Theme.FoodOrderingApp
 xml backup_rules
 xml data_extraction_rules
