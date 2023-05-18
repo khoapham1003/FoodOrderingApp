@@ -3034,10 +3034,14 @@ int id btnSend_FP 0x7f08006e
 int id btnSignIn 0x7f08006f
 int id btnSignUp 0x7f080070
 int id btnVerify_VC 0x7f080071
+int id btn_addDB 0x7f08028c
 int id btn_nextTo01 0x7f080072
 int id btn_nextTo02 0x7f080073
 int id btn_nextTo03 0x7f080074
 int id btn_nextToSign 0x7f080075
+int id btn_readDB 0x7f08028d
+int id btn_removeDB 0x7f08028e
+int id btn_saveDB 0x7f08028f
 int id button 0x7f080076
 int id button2 0x7f080077
 int id buttonPanel 0x7f080078

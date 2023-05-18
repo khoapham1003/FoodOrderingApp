@@ -92,10 +92,14 @@ id btnSend_FP
 id btnSignIn
 id btnSignUp
 id btnVerify_VC
+id btn_addDB
 id btn_nextTo01
 id btn_nextTo02
 id btn_nextTo03
 id btn_nextToSign
+id btn_readDB
+id btn_removeDB
+id btn_saveDB
 id button
 id button2
 id constraintLayout
