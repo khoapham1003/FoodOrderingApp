@@ -22,7 +22,9 @@
         android:layout_marginTop="180dp"
         android:src="@drawable/ob00_image_main" />
 
+
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_nextTo01"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
@@ -32,4 +34,31 @@
         android:textColor="@color/black"
         android:textSize="30dp" />
 
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_readDB"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="read" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_saveDB"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_readDB"
+        android:text="save" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_addDB"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_saveDB"
+        android:text="add" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_removeDB"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_addDB"
+        android:text="remove" />
 </RelativeLayout>

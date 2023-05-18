@@ -21,9 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Hungry!"
-        android:textStyle="bold"
-        android:textSize="25dp"
         android:textColor="#201A18"
+        android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
