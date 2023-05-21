@@ -29,10 +29,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="40dp"
                     android:text="Hi, James"
                     android:textColor="#000000"
-                    android:textSize="20dp"
+                    android:textSize="30dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -112,332 +112,134 @@
                     tools:textStyle="bold" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                tools:layout_editor_absoluteY="206dp">
-
+                android:layout_height="400dp"
+                android:layout_margin="30dp">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_background"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    >
 
-                    <LinearLayout
-                        android:id="@+id/linearLayout1"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/category_background"
-                        android:backgroundTint="#EF8767"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/pizza" />
 
-                        <ImageView
-                            android:id="@+id/imageView1"
-                            android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            app:srcCompat="@drawable/pizza" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SuShi"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
 
-                        <TextView
-                            android:id="@+id/textView21"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pizza"
-                            android:textAlignment="center" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="13 Dishes"
+                        android:textColor="@color/white"
 
-                        <TextView
-                            android:id="@+id/textView31"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="13 Dishes"
-                            android:textAlignment="center" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/category_background"
-                        android:backgroundTint="#EF8767"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <ImageView
-                            android:id="@+id/imageView12"
-                            android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            app:srcCompat="@drawable/pizza" />
-
-                        <TextView
-                            android:id="@+id/textView23"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pizza"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView34"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="13 Dishes"
-                            android:textAlignment="center" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/category_background"
-                        android:backgroundTint="#EF8767"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <ImageView
-                            android:id="@+id/imageView41"
-                            android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            app:srcCompat="@drawable/pizza" />
-
-                        <TextView
-                            android:id="@+id/textView24"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pizza"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView321"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="13 Dishes"
-                            android:textAlignment="center" />
-                    </LinearLayout>
+                        android:textAlignment="center" />
                 </LinearLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                tools:layout_editor_absoluteY="206dp">
-
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_background"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:id="@+id/linearLayout2"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/category_background"
-                        android:backgroundTint="#EF8767"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/pizza" />
 
-                        <ImageView
-                            android:id="@+id/imageView32"
-                            android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            app:srcCompat="@drawable/pizza" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SuShi"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
 
-                        <TextView
-                            android:id="@+id/textView2412"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pizza"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView312"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="13 Dishes"
-                            android:textAlignment="center" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/category_background"
-                        android:backgroundTint="#EF8767"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <ImageView
-                            android:id="@+id/imageView3112"
-                            android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            app:srcCompat="@drawable/pizza" />
-
-                        <TextView
-                            android:id="@+id/textView212"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pizza"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView331"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="13 Dishes"
-                            android:textAlignment="center" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/category_background"
-                        android:backgroundTint="#EF8767"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <ImageView
-                            android:id="@+id/imageView3131"
-                            android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            app:srcCompat="@drawable/pizza" />
-
-                        <TextView
-                            android:id="@+id/textView241766"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pizza"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView313"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="13 Dishes"
-                            android:textAlignment="center" />
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="13 Dishes"
+                        android:textColor="@color/white"
+                        android:textAlignment="center" />
                 </LinearLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                tools:layout_editor_absoluteY="206dp">
-
-
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/border_background"
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    >
 
-                    <LinearLayout
-                        android:id="@+id/linearLayout412"
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/category_background"
-                        android:backgroundTint="#EF8767"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/pizza" />
 
-                        <ImageView
-                            android:id="@+id/imageView123"
-                            android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            app:srcCompat="@drawable/pizza" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SuShi"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
 
-                        <TextView
-                            android:id="@+id/textView231"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pizza"
-                            android:textAlignment="center" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="13 Dishes"
+                        android:textColor="@color/white"
 
-                        <TextView
-                            android:id="@+id/textView398"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="13 Dishes"
-                            android:textAlignment="center" />
-                    </LinearLayout>
+                        android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border_background"
+                    android:backgroundTint="@android:color/holo_orange_dark"
 
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/category_background"
-                        android:backgroundTint="#EF8767"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                    >
 
-                        <ImageView
-                            android:id="@+id/imageView767"
-                            android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            app:srcCompat="@drawable/pizza" />
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/pizza" />
 
-                        <TextView
-                            android:id="@+id/textView256"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pizza"
-                            android:textAlignment="center" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SuShi"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textAlignment="center" />
 
-                        <TextView
-                            android:id="@+id/textView384"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="13 Dishes"
-                            android:textAlignment="center" />
-                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="13 Dishes"
+                        android:textColor="@color/white"
 
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/category_background"
-                        android:backgroundTint="#EF8767"
-                        android:orientation="vertical"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <ImageView
-                            android:id="@+id/imageView85"
-                            android:layout_width="match_parent"
-                            android:layout_height="65dp"
-                            app:srcCompat="@drawable/pizza" />
-
-                        <TextView
-                            android:id="@+id/textView275"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pizza"
-                            android:textAlignment="center" />
-
-                        <TextView
-                            android:id="@+id/textView345"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="13 Dishes"
-                            android:textAlignment="center" />
-                    </LinearLayout>
+                        android:textAlignment="center" />
                 </LinearLayout>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+
         </LinearLayout>
     </ScrollView>
     <!-- bottom-navigation    -->

@@ -39,6 +39,7 @@ public class Onboarding00Activity extends AppCompatActivity {
 
         Customer customer1 = new Customer(1003, "Pham Minh C", "Male", "14/05/2003", "vana@gmail.com",
                 "0909123409", "Viet Nam", "minhkhoa21521003", "21521003", "motcailinknaodo");
+
         btn_next_to_01 = (Button) findViewById(R.id.btn_nextTo01);
 
 
