@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.foodorderingapp.classes.Customer;
+import com.example.foodorderingapp.classes.Food;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
@@ -23,7 +24,7 @@ public class Onboarding00Activity extends AppCompatActivity {
     Button btn_next_to_01;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-    CollectionReference colrefCustomer = db.collection("Customer");
+    CollectionReference colrefCustomer = db.collection("Food");
     Button btn_save_db;
 
 
@@ -36,9 +37,9 @@ public class Onboarding00Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_onboarding00);
-
-        Customer customer1 = new Customer(1003, "Pham Minh C", "Male", "14/05/2003", "vana@gmail.com",
-                "0909123409", "Viet Nam", "minhkhoa21521003", "21521003", "motcailinknaodo");
+        Food food1 = new Food(2001, "Sushi", 25, 523, 4.2, 20, 190, "8 rolls", "15-20 min", "Short-gain white ricees", "motcailinknaodo");
+//       Customer customer1 = new Customer(1003, "Pham Nguyen Minh Khoa", "Male", "14/05/2003", "vana@gmail.com",
+//                "0909123409", "Viet Nam", "minhkhoa21521003", "21521003", "motcailinknaodo");
         btn_next_to_01 = (Button) findViewById(R.id.btn_nextTo01);
 
 
@@ -74,9 +75,10 @@ public class Onboarding00Activity extends AppCompatActivity {
         btn_save_db.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addCustomerToFireStore(customer1);
+                addFoodtoFireStore(food1);
             }
 
+            //Thêm khách hàng
             private void addCustomerToFireStore(Customer cus) {
 
                 colrefCustomer.add(cus).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
@@ -91,7 +93,24 @@ public class Onboarding00Activity extends AppCompatActivity {
                     }
                 });
             }
+
+            ///
+            ///Thêm món ăn
+            private void addFoodtoFireStore(Food food) {
+                colrefCustomer.add(food).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        Toast.makeText(getApplicationContext(), "Food Added", Toast.LENGTH_SHORT).show();
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(getApplicationContext(), "Fail to add Food", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
         });
+
 
         btn_next_to_01.setOnClickListener(new View.OnClickListener() {
             @Override
