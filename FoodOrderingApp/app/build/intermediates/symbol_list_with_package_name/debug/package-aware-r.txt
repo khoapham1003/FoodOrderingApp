@@ -3038,6 +3038,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnBack
 id btnCart
+id btnCheckOut
 id btnContinue_CProfile
 id btnSend_FP
 id btnSignIn
@@ -3051,7 +3052,6 @@ id btn_nextToSign
 id btn_readDB
 id btn_removeDB
 id btn_saveDB
-id button
 id button2
 id buttonPanel
 id cache_measures
@@ -3089,6 +3089,7 @@ id content
 id contentPanel
 id contiguous
 id continuousVelocity
+id cookTime
 id coordinator
 id cos
 id counterclockwise
@@ -3106,6 +3107,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id des
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3203,7 +3205,6 @@ id imageView01
 id imageView02
 id imageView03
 id imageView2
-id imageView22
 id imageView3
 id imageView4
 id imageView5
@@ -3220,6 +3221,7 @@ id imageViewCashIcon
 id imageViewFood
 id imageViewMapBtn
 id imageViewStar
+id imgSrc
 id immediateStop
 id included
 id indeterminate
@@ -3230,6 +3232,7 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id kcal
 id labeled
 id layout
 id left
@@ -3352,6 +3355,7 @@ id pizza
 id position
 id postLayout
 id pressed
+id price
 id progress_circular
 id progress_horizontal
 id radio
@@ -3365,6 +3369,8 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvCount
+id rvStart
 id salad
 id save_non_transition_alpha
 id save_overlay_view
@@ -3462,16 +3468,12 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
-id textKcal
-id textRolls
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textTimes
 id textTop
 id textView
 id textView10
-id textView11
 id textView12
 id textView13
 id textView14
@@ -3487,7 +3489,6 @@ id textView6
 id textView7
 id textView8
 id textView9
-id textView923
 id textViewAddress
 id textViewChangeBtn
 id textViewCheckOut
@@ -3535,6 +3536,7 @@ id transition_transform
 id triangle
 id unchecked
 id uniform
+id unit
 id unlabeled
 id up
 id useLogo

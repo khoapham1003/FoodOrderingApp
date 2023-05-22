@@ -3037,6 +3037,7 @@ int id browser_actions_menu_items 0x7f08006b
 int id browser_actions_menu_view 0x7f08006c
 int id btnBack 0x7f08027a
 int id btnCart 0x7f08027b
+int id btnCheckOut 0x7f08027c
 int id btnContinue_CProfile 0x7f08006d
 int id btnSend_FP 0x7f08006e
 int id btnSignIn 0x7f08006f
@@ -3050,7 +3051,6 @@ int id btn_nextToSign 0x7f080076
 int id btn_readDB 0x7f080077
 int id btn_removeDB 0x7f080078
 int id btn_saveDB 0x7f080079
-int id button 0x7f08007a
 int id button2 0x7f08007b
 int id buttonPanel 0x7f08007c
 int id cache_measures 0x7f08007d
@@ -3088,6 +3088,7 @@ int id content 0x7f08009c
 int id contentPanel 0x7f08009d
 int id contiguous 0x7f08009e
 int id continuousVelocity 0x7f08009f
+int id cookTime 0x7f08027d
 int id coordinator 0x7f0800a0
 int id cos 0x7f0800a1
 int id counterclockwise 0x7f0800a2
@@ -3105,6 +3106,7 @@ int id decor_content_parent 0x7f0800ad
 int id default_activity_button 0x7f0800ae
 int id deltaRelative 0x7f0800af
 int id dependency_ordering 0x7f0800b0
+int id des 0x7f08027e
 int id design_bottom_sheet 0x7f0800b1
 int id design_menu_item_action_area 0x7f0800b2
 int id design_menu_item_action_area_stub 0x7f0800b3
@@ -3202,7 +3204,6 @@ int id imageView01 0x7f08010e
 int id imageView02 0x7f08010f
 int id imageView03 0x7f080110
 int id imageView2 0x7f080111
-int id imageView22 0x7f080112
 int id imageView3 0x7f080113
 int id imageView4 0x7f080114
 int id imageView5 0x7f080115
@@ -3219,6 +3220,7 @@ int id imageViewCashIcon 0x7f08011f
 int id imageViewFood 0x7f080120
 int id imageViewMapBtn 0x7f080121
 int id imageViewStar 0x7f080122
+int id imgSrc 0x7f08027f
 int id immediateStop 0x7f080125
 int id included 0x7f080126
 int id indeterminate 0x7f080127
@@ -3229,6 +3231,7 @@ int id italic 0x7f08012b
 int id item_touch_helper_previous_elevation 0x7f08012c
 int id jumpToEnd 0x7f08012d
 int id jumpToStart 0x7f08012e
+int id kcal 0x7f080280
 int id labeled 0x7f08012f
 int id layout 0x7f080130
 int id left 0x7f080131
@@ -3351,6 +3354,7 @@ int id pizza 0x7f0801a5
 int id position 0x7f0801a6
 int id postLayout 0x7f0801a7
 int id pressed 0x7f0801a8
+int id price 0x7f080281
 int id progress_circular 0x7f0801a9
 int id progress_horizontal 0x7f0801aa
 int id radio 0x7f0801ab
@@ -3364,6 +3368,8 @@ int id right_icon 0x7f0801b2
 int id right_side 0x7f0801b3
 int id rounded 0x7f0801b4
 int id row_index_key 0x7f0801b5
+int id rvCount 0x7f080282
+int id rvStart 0x7f080283
 int id salad 0x7f0801b6
 int id save_non_transition_alpha 0x7f0801b7
 int id save_overlay_view 0x7f0801b8
@@ -3461,16 +3467,12 @@ int id tag_window_insets_animation_callback 0x7f080213
 int id text 0x7f080214
 int id text2 0x7f080215
 int id textEnd 0x7f080216
-int id textKcal 0x7f080217
-int id textRolls 0x7f080218
 int id textSpacerNoButtons 0x7f080219
 int id textSpacerNoTitle 0x7f08021a
 int id textStart 0x7f08021b
-int id textTimes 0x7f08021c
 int id textTop 0x7f08021d
 int id textView 0x7f08021e
 int id textView10 0x7f08021f
-int id textView11 0x7f080220
 int id textView12 0x7f080221
 int id textView13 0x7f080222
 int id textView14 0x7f080223
@@ -3486,7 +3488,6 @@ int id textView6 0x7f08022c
 int id textView7 0x7f08022d
 int id textView8 0x7f08022e
 int id textView9 0x7f08022f
-int id textView923 0x7f080278
 int id textViewAddress 0x7f080230
 int id textViewChangeBtn 0x7f080231
 int id textViewCheckOut 0x7f080232
@@ -3534,6 +3535,7 @@ int id transition_transform 0x7f08025a
 int id triangle 0x7f08025b
 int id unchecked 0x7f08025c
 int id uniform 0x7f08025d
+int id unit 0x7f080284
 int id unlabeled 0x7f08025e
 int id up 0x7f08025f
 int id useLogo 0x7f080260
