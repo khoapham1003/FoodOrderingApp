@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodOrderingApp"
         tools:targetApi="31">
+        <activity android:name="com.example.foodorderingapp.listViewFoodActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="false" />

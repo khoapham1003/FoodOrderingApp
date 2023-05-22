@@ -32,6 +32,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.FoodOrderingApp" >
+        <activity android:name="com.example.foodorderingapp.listViewFoodActivity" />
         <activity
             android:name="com.example.foodorderingapp.MainActivity"
             android:exported="false" />
