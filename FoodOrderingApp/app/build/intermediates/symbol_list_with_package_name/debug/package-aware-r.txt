@@ -2917,6 +2917,7 @@ drawable remove
 drawable rounded_imageview
 drawable search
 drawable search_edit_background
+drawable selection_band_overlay
 drawable shopping_cart
 drawable sign_in
 drawable spagetti
@@ -3057,6 +3058,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id card_item
 id carryVelocity
 id center
 id centerCrop
@@ -3222,12 +3224,14 @@ id imageViewFood
 id imageViewMapBtn
 id imageViewStar
 id imgSrc
+id img_item
 id immediateStop
 id included
 id indeterminate
 id info
 id invisible
 id inward
+id is_pooling_container_tag
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
@@ -3313,6 +3317,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_item
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3351,7 +3356,7 @@ id peekHeight
 id percent
 id phone_CProfile
 id pin
-id pizza
+id pooling_container_listener_holder_tag
 id position
 id postLayout
 id pressed
@@ -3362,6 +3367,7 @@ id radio
 id radioButtonPayByCash
 id ratio
 id rectangles
+id recyc_item
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3371,7 +3377,6 @@ id rounded
 id row_index_key
 id rvCount
 id rvStart
-id salad
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3427,7 +3432,6 @@ id snap
 id snapMargins
 id south
 id spacer
-id spaghetti
 id special_effects_controller_view_tag
 id spline
 id split_action_bar
@@ -3450,7 +3454,6 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
-id sushi
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3705,6 +3708,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout empty_cart
+layout item_food
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

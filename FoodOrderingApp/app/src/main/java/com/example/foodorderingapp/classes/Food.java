@@ -1,9 +1,11 @@
 package com.example.foodorderingapp.classes;
 
-public class Food {
+import java.io.Serializable;
+
+public class Food implements Serializable {
 
     private int amount;
-    private String cooktime;
+    private int cooktime;
     private String description;
     private int id ;
     private String imgsrc;
@@ -18,15 +20,16 @@ public class Food {
         return amount;
     }
 
+
     public void setAmount(int amount) {
         this.amount = amount;
     }
 
-    public String getCooktime() {
+    public int getCooktime() {
         return cooktime;
     }
 
-    public void setCooktime(String cooktime) {
+    public void setCooktime(int cooktime) {
         this.cooktime = cooktime;
     }
 
@@ -102,7 +105,7 @@ public class Food {
         this.svstart = svstart;
     }
 
-    public Food(int amount, String cooktime, String description, int id, String imgsrc, int kcal, String name, String unit, int price, int rvcount, int svstart) {
+    public Food(int amount, int cooktime, String description, int id, String imgsrc, int kcal, String name, String unit, int price, int rvcount, int svstart) {
         this.amount = amount;
         this.cooktime = cooktime;
         this.description = description;
@@ -114,5 +117,8 @@ public class Food {
         this.price = price;
         this.rvcount = rvcount;
         this.svstart = svstart;
+    }
+    public Food() {
+
     }
 }

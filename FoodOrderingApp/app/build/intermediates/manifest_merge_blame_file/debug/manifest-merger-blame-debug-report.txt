@@ -11,8 +11,8 @@
 9-->C:\Users\84982\AndroidStudioProjects\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\84982\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:25:5-67
-11-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\84982\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:25:22-64
+11-->C:\Users\84982\AndroidStudioProjects\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\84982\AndroidStudioProjects\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\84982\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
 12-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\84982\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:26:22-76

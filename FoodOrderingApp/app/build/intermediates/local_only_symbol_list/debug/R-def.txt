@@ -110,6 +110,7 @@ id btn_readDB
 id btn_removeDB
 id btn_saveDB
 id button2
+id card_item
 id constraintLayout
 id constraintLayout2
 id constraintLayout3
@@ -158,6 +159,7 @@ id imageViewFood
 id imageViewMapBtn
 id imageViewStar
 id imgSrc
+id img_item
 id kcal
 id linearLayout
 id linearLayout01
@@ -168,18 +170,16 @@ id linearLayout3
 id linearLayout4
 id linearLayout5
 id linearLayout6
+id name_item
 id passWord_SU
 id phone_CProfile
-id pizza
 id price
 id radioButtonPayByCash
+id recyc_item
 id rvCount
 id rvStart
-id salad
 id scrollView2
 id scrollView3
-id spaghetti
-id sushi
 id textView
 id textView10
 id textView12
@@ -239,6 +239,7 @@ layout activity_sign_in
 layout activity_sign_up
 layout activity_verification
 layout empty_cart
+layout item_food
 layout product_page
 layout search_page
 layout viewholder_cart
