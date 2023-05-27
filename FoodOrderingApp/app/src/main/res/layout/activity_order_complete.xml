@@ -43,6 +43,7 @@
         android:textSize="15dp" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_backToHome"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginStart="50dp"
@@ -54,6 +55,7 @@
         android:textStyle="bold" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_orderAgain"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginStart="230dp"

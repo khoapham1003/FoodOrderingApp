@@ -3043,6 +3043,7 @@ id btn_nextToSign
 id btn_readDB
 id btn_removeDB
 id btn_saveDB
+id btn_tryAgain
 id button
 id button2
 id buttonPanel
@@ -3327,6 +3328,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id no_internet_layout
 id none
 id normal
 id north
@@ -3550,6 +3552,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txv_Skip
 id unchecked
 id uniform
 id unlabeled
@@ -3690,7 +3693,6 @@ layout activity_check_out
 layout activity_edit_profile
 layout activity_filled_profile
 layout activity_forgot_password
-layout activity_internet_connection_error
 layout activity_main
 layout activity_my_profile
 layout activity_onboarding00
@@ -3771,6 +3773,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout no_internet_layout
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

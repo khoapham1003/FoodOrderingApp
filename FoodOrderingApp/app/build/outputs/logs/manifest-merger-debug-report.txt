@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-74:12
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-80:12
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\ABC\.gradle\caches\transforms-3\488519bf88b141369e1f2b3fffc88e8e\transformed\material-1.8.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ABC\.gradle\caches\transforms-3\3229d8dbfb0c633e276edfd3e6294908\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\ABC\.gradle\caches\transforms-3\bc14915fedc1798a01b1f6b5d446b360\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -72,27 +72,69 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\ABC\.gradle\caches\transforms-
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\ABC\.gradle\caches\transforms-3\eb81fb53378604cc0225f33f394c7ec0\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\ABC\.gradle\caches\transforms-3\c8f6b63a1e8db641b8cc227c41b4fdf2\transformed\grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\ABC\.gradle\caches\transforms-3\303c89b29b1f94f8856e637193912e8d\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-74:12
+INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-80:12
+INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-80:12
 	package
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:4:5-15
 		INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
 		INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-74:12
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-80:12
 		INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-74:12
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:1-80:12
 		INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ABC\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ABC\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\ABC\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\ABC\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:13:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\ABC\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\ABC\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\60fc5af9c6bec31197474596151299aa\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\60fc5af9c6bec31197474596151299aa\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\ABC\.gradle\caches\transforms-3\86bfdd0be5ec23ee634b5f4ab8e795bd\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\ABC\.gradle\caches\transforms-3\86bfdd0be5ec23ee634b5f4ab8e795bd\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\bfa2e2d96a6d3099de6767a5c3aab112\transformed\play-services-measurement-impl-21.2.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\bfa2e2d96a6d3099de6767a5c3aab112\transformed\play-services-measurement-impl-21.2.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\05907ff5b8e5a671fa0c76daadd10be5\transformed\play-services-measurement-sdk-api-21.2.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\05907ff5b8e5a671fa0c76daadd10be5\transformed\play-services-measurement-sdk-api-21.2.2\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ABC\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ABC\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\ABC\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\ABC\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:12:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\ABC\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\ABC\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\60fc5af9c6bec31197474596151299aa\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\60fc5af9c6bec31197474596151299aa\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\ABC\.gradle\caches\transforms-3\86bfdd0be5ec23ee634b5f4ab8e795bd\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\ABC\.gradle\caches\transforms-3\86bfdd0be5ec23ee634b5f4ab8e795bd\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\bfa2e2d96a6d3099de6767a5c3aab112\transformed\play-services-measurement-impl-21.2.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\bfa2e2d96a6d3099de6767a5c3aab112\transformed\play-services-measurement-impl-21.2.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\05907ff5b8e5a671fa0c76daadd10be5\transformed\play-services-measurement-sdk-api-21.2.2\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\05907ff5b8e5a671fa0c76daadd10be5\transformed\play-services-measurement-sdk-api-21.2.2\AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\ABC\.gradle\caches\transforms-3\c8f6b63a1e8db641b8cc227c41b4fdf2\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\ABC\.gradle\caches\transforms-3\c8f6b63a1e8db641b8cc227c41b4fdf2\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:7:22-76
 application
-ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:6:5-72:19
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:9:5-78:19
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\ABC\.gradle\caches\transforms-3\488519bf88b141369e1f2b3fffc88e8e\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\ABC\.gradle\caches\transforms-3\488519bf88b141369e1f2b3fffc88e8e\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ABC\.gradle\caches\transforms-3\3229d8dbfb0c633e276edfd3e6294908\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -148,133 +190,139 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\AB
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\ABC\.gradle\caches\transforms-3\43a64de5a16f642f933aa2c844c81289\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:14:9-41
 	android:fullBackupContent
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:12:9-54
 	tools:targetApi
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:17:9-29
 	android:icon
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:13:9-53
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:16:9-53
 	android:dataExtractionRules
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:8:9-65
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:11:9-65
+receiver#com.example.foodorderingapp.ConnectionReceiver
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:18:9-23:20
+	android:exported
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:19:13-36
+	android:name
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:18:19-53
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:20:13-22:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:21:17-78
+	android:name
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:21:25-76
 activity#com.example.foodorderingapp.MainActivity
-ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:15:9-17:40
-	android:exported
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:17:13-37
-	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:16:13-41
-activity#com.example.foodorderingapp.CheckOutActivity
-ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:18:9-20:40
-	android:exported
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:20:13-37
-	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:19:13-45
-activity#com.example.foodorderingapp.CartActivity
-ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:21:9-23:40
-	android:exported
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:23:13-37
-	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:22:13-41
-activity#com.example.foodorderingapp.VerificationActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:25:13-49
-activity#com.example.foodorderingapp.SignUpActivity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:25:13-41
+activity#com.example.foodorderingapp.CheckOutActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:28:13-43
-activity#com.example.foodorderingapp.SignInActivity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:28:13-45
+activity#com.example.foodorderingapp.CartActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:31:13-43
-activity#com.example.foodorderingapp.FilledProfileActivity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:31:13-41
+activity#com.example.foodorderingapp.VerificationActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:34:13-50
-activity#com.example.foodorderingapp.Forgot_PasswordActivity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:34:13-49
+activity#com.example.foodorderingapp.SignUpActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:36:9-38:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:37:13-52
-activity#com.example.foodorderingapp.Change_ProfileActivity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:37:13-43
+activity#com.example.foodorderingapp.SignInActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:39:9-41:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:40:13-51
-activity#com.example.foodorderingapp.MyProfileActivity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:40:13-43
+activity#com.example.foodorderingapp.FilledProfileActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:42:9-44:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:43:13-46
-activity#com.example.foodorderingapp.OrderCompleteActivity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:43:13-50
+activity#com.example.foodorderingapp.Forgot_PasswordActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:45:9-47:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:46:13-50
-activity#com.example.foodorderingapp.InternetConnectionErrorActivity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:46:13-52
+activity#com.example.foodorderingapp.Change_ProfileActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:48:9-50:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:49:13-60
-activity#com.example.foodorderingapp.EditProfileActivity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:49:13-51
+activity#com.example.foodorderingapp.MyProfileActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:51:9-53:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:53:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:52:13-48
-activity#com.example.foodorderingapp.Onboarding03Activity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:52:13-46
+activity#com.example.foodorderingapp.OrderCompleteActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:54:9-56:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:56:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:55:13-49
-activity#com.example.foodorderingapp.Onboarding02Activity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:55:13-50
+activity#com.example.foodorderingapp.EditProfileActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:57:9-59:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:59:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:58:13-49
-activity#com.example.foodorderingapp.Onboarding01Activity
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:58:13-48
+activity#com.example.foodorderingapp.Onboarding03Activity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:60:9-62:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:62:13-37
 	android:name
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:61:13-49
-activity#com.example.foodorderingapp.Onboarding00Activity
-ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:63:9-71:20
+activity#com.example.foodorderingapp.Onboarding02Activity
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:63:9-65:40
 	android:exported
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:65:13-36
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:65:13-37
 	android:name
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:64:13-49
+activity#com.example.foodorderingapp.Onboarding01Activity
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:66:9-68:40
+	android:exported
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:68:13-37
+	android:name
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:67:13-49
+activity#com.example.foodorderingapp.Onboarding00Activity
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:69:9-77:20
+	android:exported
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:71:13-36
+	android:name
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:70:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:66:13-70:29
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:72:13-76:29
 action#android.intent.action.MAIN
-ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:67:17-69
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:73:17-69
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:67:25-66
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:73:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:69:17-77
+ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:75:17-77
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:69:27-74
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:75:27-74
 uses-sdk
 INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
@@ -427,44 +475,6 @@ INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\mai
 		INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
 		INJECTED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ABC\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\ABC\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:13:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\ABC\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:13:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\ABC\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\ABC\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:10:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\60fc5af9c6bec31197474596151299aa\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\60fc5af9c6bec31197474596151299aa\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\ABC\.gradle\caches\transforms-3\86bfdd0be5ec23ee634b5f4ab8e795bd\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\ABC\.gradle\caches\transforms-3\86bfdd0be5ec23ee634b5f4ab8e795bd\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\bfa2e2d96a6d3099de6767a5c3aab112\transformed\play-services-measurement-impl-21.2.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\bfa2e2d96a6d3099de6767a5c3aab112\transformed\play-services-measurement-impl-21.2.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\05907ff5b8e5a671fa0c76daadd10be5\transformed\play-services-measurement-sdk-api-21.2.2\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\05907ff5b8e5a671fa0c76daadd10be5\transformed\play-services-measurement-sdk-api-21.2.2\AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ABC\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:25:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ABC\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\ABC\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:12:5-79
-MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\ABC\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:12:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\ABC\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\ABC\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:9:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\60fc5af9c6bec31197474596151299aa\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\60fc5af9c6bec31197474596151299aa\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\ABC\.gradle\caches\transforms-3\86bfdd0be5ec23ee634b5f4ab8e795bd\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\ABC\.gradle\caches\transforms-3\86bfdd0be5ec23ee634b5f4ab8e795bd\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\bfa2e2d96a6d3099de6767a5c3aab112\transformed\play-services-measurement-impl-21.2.2\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\bfa2e2d96a6d3099de6767a5c3aab112\transformed\play-services-measurement-impl-21.2.2\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\05907ff5b8e5a671fa0c76daadd10be5\transformed\play-services-measurement-sdk-api-21.2.2\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.2] C:\Users\ABC\.gradle\caches\transforms-3\05907ff5b8e5a671fa0c76daadd10be5\transformed\play-services-measurement-sdk-api-21.2.2\AndroidManifest.xml:24:5-79
-MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\ABC\.gradle\caches\transforms-3\c8f6b63a1e8db641b8cc227c41b4fdf2\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
-MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\ABC\.gradle\caches\transforms-3\c8f6b63a1e8db641b8cc227c41b4fdf2\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ABC\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:26:22-76
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\ABC\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
 	android:excludeFromRecents
