@@ -11,23 +11,15 @@
         android:layout_width="400dp"
         android:layout_height="54dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="370dp"
         android:background="@drawable/edittext_background"
+        android:paddingLeft="20dp"
         android:ems="10"
         android:gravity="center_vertical"
-        android:hint="    *******"
+        android:imeOptions="actionNext"
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
         android:inputType="textPassword"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/userName_SU"
-        android:layout_width="400dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="320dp"
-        android:background="@drawable/edittext_background"
-        android:gravity="center_vertical"
-        android:hint="    User Name"
         android:textSize="16dp" />
 
     <EditText
@@ -35,10 +27,29 @@
         android:layout_width="400dp"
         android:layout_height="54dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="385dp"
+        android:layout_marginTop="300dp"
         android:background="@drawable/edittext_background"
+        android:paddingLeft="20dp"
         android:gravity="center_vertical"
-        android:hint="    Email"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:hint="Email"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/CFPassWord_SU"
+        android:layout_width="400dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/edittext_background"
+        android:paddingLeft="20dp"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:gravity="center_vertical"
+        android:hint="Confirm Password"
+        app:passwordToggleEnabled="true"
+        android:inputType="textPassword"
         android:textSize="16dp" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -46,7 +57,7 @@
         android:layout_width="400dp"
         android:layout_height="54dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="555dp"
         android:background="@drawable/button_background"
         android:backgroundTint="#FF897D"
         android:gravity="center"
@@ -66,19 +77,19 @@
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="660dp"
+        android:layout_marginLeft="120dp"
         android:text="Already have an account?"
         android:textSize="14dp" />
 
     <TextView
-        android:id="@+id/textview1"
+        android:id="@+id/SignIn_SU"
         android:layout_width="84dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="660dp"
-        android:layout_toEndOf="@+id/textview"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="655dp"
         android:text="Sign In"
         android:textSize="16dp"
+        android:padding="5dp"
         android:textStyle="bold" />
 </RelativeLayout>

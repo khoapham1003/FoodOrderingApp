@@ -4,137 +4,138 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Change_ProfileActivity">
+    tools:context=".FilledProfileActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/myprofile_backarrow"
+        android:textSize="30dp" />
 
     <TextView
-        android:id="@+id/textview3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Fill Your Profile"
+        android:layout_marginTop="20dp"
+        android:text="My Profile"
         android:textSize="25dp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/userName_CProfile"
-        android:layout_width="400dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="220dp"
-        android:background="@drawable/edittext_background"
-        android:gravity="center_vertical"
-        android:text="   Luong Le Duy Tien"
-        android:textSize="16dp" />
+<!--    <ImageView-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:background="@drawable/rounded_imageview"-->
+<!--        android:src="@drawable/myprofile_avatar" />-->
 
-    <EditText
-        android:id="@+id/date_CProfile"
-        android:layout_width="400dp"
-        android:layout_height="54dp"
+    <TextView
+        android:id="@+id/Name_MP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="290dp"
-        android:background="@drawable/edittext_background"
-        android:ems="10"
-        android:gravity="center_vertical"
-        android:inputType="date"
-        android:text="   14/10/2003"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/email_CProfile"
-        android:layout_width="400dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="360dp"
-        android:background="@drawable/edittext_background"
-        android:ems="10"
-        android:gravity="center_vertical"
-        android:inputType="textEmailAddress"
-        android:text="   21520478@gm.uit.edu.vn"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/gender_CProfile"
-        android:layout_width="400dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="430dp"
-        android:background="@drawable/edittext_background"
-        android:gravity="center_vertical"
-        android:text="   Male"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/phone_CProfile"
-        android:layout_width="400dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/edittext_background"
-        android:ems="10"
-        android:gravity="center_vertical"
-        android:inputType="phone"
-        android:text="   0123456789"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/address_CProfile"
-        android:layout_width="400dp"
-        android:layout_height="54dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="570dp"
-        android:background="@drawable/edittext_background"
-        android:gravity="center_vertical"
-        android:text="   VietNam"
-        android:textSize="16dp" />
+        android:layout_marginTop="200dp"
+        android:text="Nguyễn Văn A"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnContinue_CProfile"
-        android:layout_width="400dp"
-        android:layout_height="54dp"
+        android:id="@+id/btnEditProfile_MP1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="680dp"
-        android:background="@drawable/button_background"
-        android:backgroundTint="#FF897D"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/btn2"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:drawableLeft="@drawable/myprofile_icon_bell"
+        android:drawablePadding="10dp"
         android:gravity="center"
-        android:text="Continue"
-        android:textColor="#FFFFFF"
-        android:textSize="16dp" />
+        android:paddingStart="15dp"
+        android:text="Notifications"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView7"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        app:srcCompat="@drawable/profile__1_" />
+        android:layout_marginTop="380dp"
+        android:drawableLeft="@drawable/myprofile_icon_cart"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="My Orders"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView8"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="305dp"
-        android:layout_marginEnd="19dp"
-        app:srcCompat="@drawable/calendar" />
+        android:layout_marginTop="420dp"
+        android:drawableLeft="@drawable/myprofile_icon_home"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="My Address"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView9"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="362dp"
-        app:srcCompat="@drawable/mail_icon" />
+        android:layout_marginTop="460dp"
+        android:drawableLeft="@drawable/myprofile_icon_creditcard"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Payment Method"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView5"
+    <TextView
+        android:id="@+id/btnChangePassword_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        app:srcCompat="@drawable/back_arrow" />
+        android:layout_marginTop="500dp"
+        android:drawableLeft="@drawable/myprofile_icon_lock"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Change Password"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
+        android:drawableLeft="@drawable/myprofile_icon_questionmark"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Help and Support"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnLogOut_MP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:drawableLeft="@drawable/myprofile_icon_logout"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:text="Logout"
+        android:textSize="18dp"
+        android:textStyle="bold" />
 </RelativeLayout>
