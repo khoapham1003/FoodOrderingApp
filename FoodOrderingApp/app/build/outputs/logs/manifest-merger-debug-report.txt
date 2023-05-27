@@ -15,6 +15,7 @@ MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0] C:\Users\84982\
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\84982\.gradle\caches\transforms-3\df0de34a50359f5b25390e4067994d9d\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.3.0] C:\Users\84982\.gradle\caches\transforms-3\ddfa05f8972749553301029d4019528b\transformed\recyclerview-1.3.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\84982\.gradle\caches\transforms-3\4e8c60a4fc21ab43b90958c81694363f\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\84982\.gradle\caches\transforms-3\61e4e4f44756b54e286d90cc9c968a18\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\84982\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:17:1-37:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\84982\.gradle\caches\transforms-3\d2e970bfb867656e68c0dcb6674ba202\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-installations:17.1.3] C:\Users\84982\.gradle\caches\transforms-3\71315b3e959089292df44b4ecfe8a0d2\transformed\firebase-installations-17.1.3\AndroidManifest.xml:2:1-23:12
@@ -125,6 +126,8 @@ MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\84982\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:22.0.0] C:\Users\84982\.gradle\caches\transforms-3\5cdd53b6af5c85b15385714b4f6929af\transformed\firebase-auth-22.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\84982\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.6.0] C:\Users\84982\.gradle\caches\transforms-3\232012c715100dc0d494dea1297e50bf\transformed\firebase-firestore-24.6.0\AndroidManifest.xml:15:5-23:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\84982\.gradle\caches\transforms-3\61e4e4f44756b54e286d90cc9c968a18\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\84982\.gradle\caches\transforms-3\61e4e4f44756b54e286d90cc9c968a18\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\84982\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\84982\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\84982\.gradle\caches\transforms-3\d2e970bfb867656e68c0dcb6674ba202\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
@@ -327,6 +330,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.3.0] C:\Users\84982\.gradle\ca
 MERGED from [androidx.recyclerview:recyclerview:1.3.0] C:\Users\84982\.gradle\caches\transforms-3\ddfa05f8972749553301029d4019528b\transformed\recyclerview-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\84982\.gradle\caches\transforms-3\4e8c60a4fc21ab43b90958c81694363f\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\84982\.gradle\caches\transforms-3\4e8c60a4fc21ab43b90958c81694363f\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\84982\.gradle\caches\transforms-3\61e4e4f44756b54e286d90cc9c968a18\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\84982\.gradle\caches\transforms-3\61e4e4f44756b54e286d90cc9c968a18\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\84982\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\84982\.gradle\caches\transforms-3\eddef2299fbbc7646c31038c978e575a\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\84982\.gradle\caches\transforms-3\d2e970bfb867656e68c0dcb6674ba202\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44

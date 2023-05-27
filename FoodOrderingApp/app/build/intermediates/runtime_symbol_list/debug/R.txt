@@ -277,6 +277,10 @@ int attr circularflow_defaultAngle 0x7f0300c8
 int attr circularflow_defaultRadius 0x7f0300c9
 int attr circularflow_radiusInDP 0x7f0300ca
 int attr circularflow_viewCenter 0x7f0300cb
+int attr civ_border_color 0x7f0304b0
+int attr civ_border_overlay 0x7f0304b1
+int attr civ_border_width 0x7f0304b2
+int attr civ_circle_background_color 0x7f0304b3
 int attr clearsTag 0x7f0300cc
 int attr clickAction 0x7f0300cd
 int attr clockFaceBackgroundColor 0x7f0300ce
@@ -2780,6 +2784,7 @@ int drawable editprofile_icon_mall 0x7f0700ad
 int drawable editprofile_icon_vietnam 0x7f0700ae
 int drawable edittext_background 0x7f0700af
 int drawable ellipse_901 0x7f0700b0
+int drawable fire 0x7f070144
 int drawable frame_13935 0x7f0700b1
 int drawable google_logo 0x7f0700b2
 int drawable googleg_disabled_color_18 0x7f0700b3
@@ -2913,6 +2918,7 @@ int drawable product_page_background 0x7f070132
 int drawable profile 0x7f070133
 int drawable profile__1_ 0x7f070134
 int drawable remove 0x7f070135
+int drawable restaurant 0x7f070145
 int drawable rounded_imageview 0x7f070136
 int drawable search 0x7f070137
 int drawable search_edit_background 0x7f070138
@@ -2924,6 +2930,7 @@ int drawable start_icon 0x7f07013d
 int drawable sushi01 0x7f07013e
 int drawable test_level_drawable 0x7f07013f
 int drawable thinadd 0x7f070140
+int drawable time 0x7f070146
 int drawable tooltip_frame_dark 0x7f070141
 int drawable tooltip_frame_light 0x7f070142
 int drawable tru_icon 0x7f070143
@@ -3536,6 +3543,7 @@ int id transition_position 0x7f080259
 int id transition_scene_layoutid_cache 0x7f08025a
 int id transition_transform 0x7f08025b
 int id triangle 0x7f08025c
+int id tv_search 0x7f080281
 int id unchecked 0x7f08025d
 int id uniform 0x7f08025e
 int id unit 0x7f08025f
@@ -5468,6 +5476,11 @@ int styleable ChipGroup_chipSpacingVertical 3
 int styleable ChipGroup_selectionRequired 4
 int styleable ChipGroup_singleLine 5
 int styleable ChipGroup_singleSelection 6
+int[] styleable CircleImageView { 0x7f0304b0, 0x7f0304b1, 0x7f0304b2, 0x7f0304b3 }
+int styleable CircleImageView_civ_border_color 0
+int styleable CircleImageView_civ_border_overlay 1
+int styleable CircleImageView_civ_border_width 2
+int styleable CircleImageView_civ_circle_background_color 3
 int[] styleable CircularProgressIndicator { 0x7f030218, 0x7f03021a, 0x7f03021b }
 int styleable CircularProgressIndicator_indicatorDirectionCircular 0
 int styleable CircularProgressIndicator_indicatorInset 1

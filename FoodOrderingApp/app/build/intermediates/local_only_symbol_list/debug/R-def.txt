@@ -31,6 +31,7 @@ drawable editprofile_icon_mall
 drawable editprofile_icon_vietnam
 drawable edittext_background
 drawable ellipse_901
+drawable fire
 drawable frame_13935
 drawable google_logo
 drawable heart_bottom
@@ -79,6 +80,7 @@ drawable product_page_background
 drawable profile
 drawable profile__1_
 drawable remove
+drawable restaurant
 drawable rounded_imageview
 drawable search
 drawable search_edit_background
@@ -88,6 +90,7 @@ drawable spagetti
 drawable start_icon
 drawable sushi01
 drawable thinadd
+drawable time
 drawable tru_icon
 id PassWord_SI
 id UserName_SI
@@ -217,6 +220,7 @@ id textview1
 id textview2
 id textview3
 id titleFood
+id tv_search
 id unit
 id userName_CProfile
 id userName_SU

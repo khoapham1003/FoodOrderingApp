@@ -278,6 +278,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -2781,6 +2785,7 @@ drawable editprofile_icon_mall
 drawable editprofile_icon_vietnam
 drawable edittext_background
 drawable ellipse_901
+drawable fire
 drawable frame_13935
 drawable google_logo
 drawable googleg_disabled_color_18
@@ -2914,6 +2919,7 @@ drawable product_page_background
 drawable profile
 drawable profile__1_
 drawable remove
+drawable restaurant
 drawable rounded_imageview
 drawable search
 drawable search_edit_background
@@ -2925,6 +2931,7 @@ drawable start_icon
 drawable sushi01
 drawable test_level_drawable
 drawable thinadd
+drawable time
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable tru_icon
@@ -3537,6 +3544,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_search
 id unchecked
 id uniform
 id unit
@@ -5086,6 +5094,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

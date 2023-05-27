@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -23,6 +24,7 @@ import java.io.InputStream;
 import java.io.Serializable;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHoder>{
@@ -33,6 +35,22 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHoder>
     public FoodAdapter(Context mContext,List<Food> mListFood){
         this.mContext=mContext;
         this.mListFood=mListFood;
+    }
+    public void setFilterList(String text){
+        List<Food> filterList = new ArrayList<>();
+
+        for (Food item : mListFood){
+            if(item.getName().toLowerCase().contains(text.toLowerCase())){
+                filterList.add(item);
+            }
+        }
+        if(filterList.isEmpty()){
+            this.mListFood = mListFood;
+        }else{
+            this.mListFood = filterList;
+        }
+//        this.mListFood = filterList;
+        notifyDataSetChanged();
     }
 
     @NonNull

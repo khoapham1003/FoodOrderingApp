@@ -35,10 +35,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class listViewFoodActivity extends AppCompatActivity {
 
     TextView titleGetFood, rvStart, rvCount, kcal, unit, cookTime, description, price;
-    ImageView imageSrc;
+    CircleImageView imageSrc;
     ImageButton btnBack;
     @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +65,7 @@ public class listViewFoodActivity extends AppCompatActivity {
         cookTime = (TextView) findViewById(R.id.cookTime);
         description = (TextView) findViewById(R.id.des);
         price = (TextView) findViewById(R.id.price);
-        imageSrc = (ImageView) findViewById(R.id.imgSrc);
+        imageSrc = (CircleImageView) findViewById(R.id.imgSrc);
 
 //        Intent receiverTitle = getIntent();
 //        String receiverValue = receiverTitle.getStringExtra("KEY_SENDER");
