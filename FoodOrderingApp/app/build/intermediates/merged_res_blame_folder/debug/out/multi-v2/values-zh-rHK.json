@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.foodorderingapp-mergeDebugResources-35:/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "com.example.foodorderingapp-mergeDebugResources-36:/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "C:\\Users\\84982\\.gradle\\caches\\transforms-3\\2fb13fbd4f2364aafa4d08df45006df2\\transformed\\play-services-base-18.0.1\\res\\values-zh-rHK\\values.xml",

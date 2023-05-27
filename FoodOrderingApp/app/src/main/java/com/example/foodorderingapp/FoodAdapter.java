@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.foodorderingapp.classes.Food;
 import com.google.firebase.firestore.auth.User;
 
@@ -71,11 +73,9 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHoder>
 
 
 //        bug: change img
-//        holder.imgAvatar.setImageResource(Integer.parseInt(food.getImgsrc()));
+//        fixed
+        Glide.with(holder.imgAvatar.getContext()).load(food.getImgsrc()).into(holder.imgAvatar);
           holder.tvName.setText(food.getName());
-//        holder.tvAddress.setText(food.getAddress());
-
-//
         holder.layoutItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
