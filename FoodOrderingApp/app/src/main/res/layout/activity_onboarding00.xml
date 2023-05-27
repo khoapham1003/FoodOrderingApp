@@ -61,4 +61,14 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/btn_addDB"
         android:text="remove" />
+
+    <TextView
+        android:id="@+id/txv_Skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="20dp"
+        android:text="Skip"
+        android:textColor="#DA7455"
+        android:textSize="20dp" />
 </RelativeLayout>

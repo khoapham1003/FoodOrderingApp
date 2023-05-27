@@ -32,6 +32,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.FoodOrderingApp" >
+        <receiver
+            android:name="com.example.foodorderingapp.ConnectionReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name="com.example.foodorderingapp.MainActivity"
             android:exported="false" />
@@ -64,9 +72,6 @@
             android:exported="false" />
         <activity
             android:name="com.example.foodorderingapp.OrderCompleteActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.foodorderingapp.InternetConnectionErrorActivity"
             android:exported="false" />
         <activity
             android:name="com.example.foodorderingapp.EditProfileActivity"

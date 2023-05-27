@@ -100,6 +100,7 @@ id btn_nextToSign
 id btn_readDB
 id btn_removeDB
 id btn_saveDB
+id btn_tryAgain
 id button
 id button2
 id constraintLayout
@@ -170,6 +171,7 @@ id linearLayout4
 id linearLayout412
 id linearLayout5
 id linearLayout6
+id no_internet_layout
 id passWord_SU
 id phone_CProfile
 id radioButtonPayByCash
@@ -233,6 +235,7 @@ id textview
 id textview1
 id textview2
 id textview3
+id txv_Skip
 id userName_CProfile
 id userName_SU
 id verification_code
@@ -242,7 +245,6 @@ layout activity_check_out
 layout activity_edit_profile
 layout activity_filled_profile
 layout activity_forgot_password
-layout activity_internet_connection_error
 layout activity_main
 layout activity_my_profile
 layout activity_onboarding00
@@ -254,6 +256,7 @@ layout activity_sign_in
 layout activity_sign_up
 layout activity_verification
 layout empty_cart
+layout no_internet_layout
 layout product_page
 layout search_page
 layout viewholder_cart
