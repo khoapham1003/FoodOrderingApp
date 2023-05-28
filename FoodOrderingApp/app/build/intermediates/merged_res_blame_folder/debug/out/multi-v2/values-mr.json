@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.foodorderingapp-mergeDebugResources-32:/values-mr/values-mr.xml",
+            "outputFile": "com.example.foodorderingapp-mergeDebugResources-36:/values-mr/values-mr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ABC\\.gradle\\caches\\transforms-3\\4a8fc8d4cffe1deef03672f2112cd6a4\\transformed\\appcompat-1.6.1\\res\\values-mr\\values-mr.xml",
