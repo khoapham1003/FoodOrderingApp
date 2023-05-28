@@ -85,8 +85,6 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHoder>
 //
     }
 
-
-
     private void onClickgotoDetail(Food food){
         Intent intent = new Intent(mContext,listViewFoodActivity.class);
         Bundle bundle = new Bundle();
