@@ -32,6 +32,7 @@
         android:src="@drawable/myprofile_avatar" />
 
     <TextView
+        android:id="@+id/Name_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -41,6 +42,7 @@
         android:textStyle="bold" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEditProfile_MP1"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -100,6 +102,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/btnChangePassword_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
@@ -124,6 +127,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/btnLogOut_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="600dp"

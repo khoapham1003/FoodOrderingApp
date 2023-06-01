@@ -281,12 +281,12 @@ ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\A
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:48:13-37
 	android:name
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:47:13-52
-activity#com.example.foodorderingapp.Change_ProfileActivity
+activity#com.example.foodorderingapp.Change_PasswordActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:49:9-51:40
 	android:exported
 		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
-		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:50:13-51
+		ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:50:13-52
 activity#com.example.foodorderingapp.MyProfileActivity
 ADDED from E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:52:9-54:40
 	android:exported

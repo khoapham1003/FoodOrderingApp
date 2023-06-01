@@ -5,7 +5,11 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.foodorderingapp.classes.Food;
@@ -14,25 +18,38 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     //    LinearLayout sushi_linear, pizza_linear, salad_linear, spaghetti_linear;
+    TextView btnProfile;
     RecyclerView rvcData;
     FoodAdapter foodAdapter;
     SearchView searchBar;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnProfile = (TextView) findViewById(R.id.btnProfile);
+
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MyProfileActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 //        data
         rvcData = findViewById(R.id.recyc_item);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         rvcData.setLayoutManager(gridLayoutManager);
-        foodAdapter = new FoodAdapter(this,getlistFood());
+        foodAdapter = new FoodAdapter(this, getlistFood());
         rvcData.setAdapter(foodAdapter);
 //      search
         searchBar = findViewById(R.id.tv_search);
@@ -52,15 +69,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private List<Food> getlistFood(){
+    private List<Food> getlistFood() {
         List<Food> list1 = new ArrayList<>();
         db.collection("Menu")
                 .get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                        List<DocumentSnapshot> list =queryDocumentSnapshots.getDocuments();
-                        for (DocumentSnapshot d:list){
+                        List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
+                        for (DocumentSnapshot d : list) {
                             Food obj = d.toObject(Food.class);
                             list1.add(obj);
                         }
@@ -85,13 +102,13 @@ public class MainActivity extends AppCompatActivity {
 //
 
 
-
         foodAdapter.setFilterList(text);
 
     }
-    protected void onDestroy(){
+
+    protected void onDestroy() {
         super.onDestroy();
-        if(foodAdapter!= null){
+        if (foodAdapter != null) {
             foodAdapter.release();
         }
 

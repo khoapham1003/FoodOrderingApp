@@ -27,7 +27,7 @@
         android:textSize="14dp" />
 
     <TextView
-        android:id="@+id/textview1"
+        android:id="@+id/SignIn_SU"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

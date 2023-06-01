@@ -47,7 +47,7 @@
             android:name=".Forgot_PasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".Change_ProfileActivity"
+            android:name=".Change_PasswordActivity"
             android:exported="false" />
         <activity
             android:name=".MyProfileActivity"

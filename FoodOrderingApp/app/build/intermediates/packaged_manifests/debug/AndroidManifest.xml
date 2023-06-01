@@ -67,7 +67,7 @@
             android:name="com.example.foodorderingapp.Forgot_PasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.foodorderingapp.Change_ProfileActivity"
+            android:name="com.example.foodorderingapp.Change_PasswordActivity"
             android:exported="false" />
         <activity
             android:name="com.example.foodorderingapp.MyProfileActivity"
