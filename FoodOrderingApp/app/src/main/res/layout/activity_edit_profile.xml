@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".EditProfileActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/myprofile_backarrow"
-        android:textSize="30dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,6 +25,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnChangeAva"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_alignParentTop="true"
@@ -43,6 +36,7 @@
 
 
     <EditText
+        android:id="@+id/edtUserName"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
@@ -50,41 +44,49 @@
         android:background="@drawable/edit_profile"
         android:hint="Nguyễn Văn A"
         android:inputType="textPersonName"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
         android:padding="15dp" />
 
     <EditText
+        android:id="@+id/edtUserDoB"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="270dp"
         android:background="@drawable/edit_profile"
-        android:drawableRight="@drawable/editprofile_icon_calendar"
         android:hint="12/27/2000"
         android:inputType="date"
+        android:imeOptions="actionNext"
         android:padding="15dp" />
 
     <EditText
+        android:id="@+id/edtUserEmail"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="340dp"
         android:background="@drawable/edit_profile"
-        android:drawableRight="@drawable/editprofile_icon_mall"
         android:hint="abvccc@gmail.com"
         android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
         android:padding="15dp" />
 
     <EditText
+        android:id="@+id/edtUserGender"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="410dp"
         android:background="@drawable/edit_profile"
-        android:drawableRight="@drawable/editprofile_icon_downarrow"
         android:hint="Male"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
         android:padding="15dp" />
 
     <EditText
+        android:id="@+id/edtUserPhone"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
@@ -94,18 +96,24 @@
         android:drawablePadding="10dp"
         android:hint="+84 914222333"
         android:inputType="textPhonetic"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
         android:padding="15dp" />
 
     <EditText
+        android:id="@+id/edtUserCountry"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:background="@drawable/edit_profile"
         android:hint="Việt Nam"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
         android:padding="15dp" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave_EP"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"

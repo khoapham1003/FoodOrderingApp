@@ -15,14 +15,17 @@
         app:srcCompat="@drawable/sign_in" />
 
     <EditText
-        android:id="@+id/UserName_SI"
+        android:id="@+id/Emal_SI"
         android:layout_width="400dp"
         android:layout_height="54dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="320dp"
         android:background="@drawable/edittext_background"
         android:gravity="center_vertical"
-        android:hint="    User Name"
+        android:hint="    Email"
+        android:paddingLeft="20dp"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
         android:textSize="16dp" />
 
     <EditText
@@ -32,9 +35,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="390dp"
         android:background="@drawable/edittext_background"
+        android:paddingLeft="20dp"
         android:ems="10"
+        android:imeOptions="actionDone"
         android:gravity="center_vertical"
         android:hint="    *******"
+        app:endIconMode="password_toggle"
         android:inputType="textPassword"
         android:textSize="16dp" />
 
@@ -51,34 +57,33 @@
         android:textColor="#FFFFFF"
         android:textSize="16dp" />
 
+
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="660dp"
+        android:layout_marginLeft="120dp"
         android:text="Don't have an account?"
         android:textSize="14dp" />
 
     <TextView
-        android:id="@+id/textview1"
-        android:layout_width="84dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="660dp"
-        android:layout_toEndOf="@+id/textview"
-        android:text="Sign Up"
-        android:textSize="16dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textview2"
+        android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="307dp"
-        android:text="Forgot?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="580dp"
+        android:text="Forgot password?"
         android:textSize="14dp" />
+    <TextView
+        android:id="@+id/SignUp_SI"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="655dp"
+        android:text="Sign Up"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:textStyle="bold" />
+
 </RelativeLayout>

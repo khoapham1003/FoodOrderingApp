@@ -126,8 +126,8 @@
 68-->E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:48:13-37
 69        <activity
 69-->E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:49:9-51:40
-70            android:name="com.example.foodorderingapp.Change_ProfileActivity"
-70-->E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:50:13-51
+70            android:name="com.example.foodorderingapp.Change_PasswordActivity"
+70-->E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:50:13-52
 71            android:exported="false" />
 71-->E:\hocky4\5_DD\Project\FoodOrderingApp\FoodOrderingApp\app\src\main\AndroidManifest.xml:51:13-37
 72        <activity
