@@ -1,5 +1,6 @@
 package com.example.foodorderingapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -13,7 +14,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.foodorderingapp.classes.Food;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -31,11 +36,30 @@ public class MainActivity extends AppCompatActivity {
     SearchView searchBar;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+    FirebaseFirestore database = FirebaseFirestore.getInstance();
+
+    FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnProfile = (TextView) findViewById(R.id.btnProfile);
+
+        database.collection("User")
+                .document(User.getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        database.collection("User")
+                                .document(User.getUid()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                        String Name = documentSnapshot.getString("Name");
+                                        btnProfile.setText(String.format("hi, %s", Name));
+                                    }
+                                });
+                    }
+                });
 
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override

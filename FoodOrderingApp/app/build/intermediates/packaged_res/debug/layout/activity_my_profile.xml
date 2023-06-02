@@ -54,58 +54,10 @@
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
-        android:drawableLeft="@drawable/myprofile_icon_bell"
-        android:drawablePadding="10dp"
-        android:gravity="center"
-        android:paddingStart="15dp"
-        android:text="Notifications"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="380dp"
-        android:drawableLeft="@drawable/myprofile_icon_cart"
-        android:drawablePadding="10dp"
-        android:gravity="center"
-        android:paddingStart="15dp"
-        android:text="My Orders"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="420dp"
-        android:drawableLeft="@drawable/myprofile_icon_home"
-        android:drawablePadding="10dp"
-        android:gravity="center"
-        android:paddingStart="15dp"
-        android:text="My Address"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
-        android:drawableLeft="@drawable/myprofile_icon_creditcard"
-        android:drawablePadding="10dp"
-        android:gravity="center"
-        android:paddingStart="15dp"
-        android:text="Payment Method"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
         android:id="@+id/btnChangePassword_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="400dp"
         android:drawableLeft="@drawable/myprofile_icon_lock"
         android:drawablePadding="10dp"
         android:gravity="center"
@@ -117,7 +69,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="560dp"
+        android:layout_marginTop="450dp"
         android:drawableLeft="@drawable/myprofile_icon_questionmark"
         android:drawablePadding="10dp"
         android:gravity="center"
@@ -130,7 +82,7 @@
         android:id="@+id/btnLogOut_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="500dp"
         android:drawableLeft="@drawable/myprofile_icon_logout"
         android:drawablePadding="10dp"
         android:gravity="center"

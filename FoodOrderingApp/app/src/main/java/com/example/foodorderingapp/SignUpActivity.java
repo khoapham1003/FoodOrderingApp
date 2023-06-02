@@ -105,12 +105,15 @@ public class SignUpActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if(task.isSuccessful())
                                     {
-                                        sendverificationEmail();
+                                        if(firebaseAuth.getCurrentUser() != null)
+                                        {
                                         Map<String, Object> user = new HashMap<>();
                                         user.put("Email", email);
                                         user.put("Password", password);
                                         user.put("Data", false);
-                                        database.collection("User").document(User.getUid()).set(user);
+                                        database.collection("User").document(firebaseAuth.getCurrentUser().getUid()).set(user);
+                                        sendverificationEmail();
+                                        }
                                     }
 
                                 }

@@ -94,11 +94,13 @@ public class SignInActivity extends AppCompatActivity {
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if(firebaseAuth.getCurrentUser() != null)
+                                    {
                                     if (task.isSuccessful()) {
                                         CheckData();
                                     } else {
                                         database.collection("User")
-                                                .document(User.getUid())
+                                                .document(firebaseAuth.getCurrentUser().getUid())
                                                 .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                                                     @Override
                                                     public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -113,7 +115,7 @@ public class SignInActivity extends AppCompatActivity {
                                                     }
                                                 });
                                     }
-                                }
+                                }}
                             });
                 }
 //
@@ -122,23 +124,24 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     void CheckData() {
+        if(firebaseAuth.getCurrentUser() != null)
+        {
         database.collection("User")
-                .document(User.getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                .document(firebaseAuth.getCurrentUser().getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         Boolean CheckData = documentSnapshot.getBoolean("Data");
-                        if (CheckData) {
-                            Intent intent = new Intent(SignInActivity.this, MainActivity.class);
-                            startActivity(intent);
-                            finish();
+                        Intent intent;
+                        if (!Boolean.FALSE.equals(CheckData)) {
+                            intent = new Intent(SignInActivity.this, EditProfileActivity.class);
                         } else {
-                            Intent intent = new Intent(SignInActivity.this, EditProfileActivity.class);
-                            startActivity(intent);
-                            finish();
+                            intent = new Intent(SignInActivity.this, MainActivity.class);
                         }
+                        startActivity(intent);
+                        finish();
                     }
                 });
-    }
+    }}
 
 
 //if(firebaseAuth.getCurrentUser().isEmailVerified())

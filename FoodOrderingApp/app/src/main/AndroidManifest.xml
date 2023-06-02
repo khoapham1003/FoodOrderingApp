@@ -32,16 +32,10 @@
             android:name=".CartActivity"
             android:exported="false" />
         <activity
-            android:name=".VerificationActivity"
-            android:exported="false" />
-        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".SignInActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FilledProfileActivity"
             android:exported="false" />
         <activity
             android:name=".Forgot_PasswordActivity"
