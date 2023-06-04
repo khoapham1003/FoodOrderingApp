@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +24,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.foodorderingapp.classes.Food;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -39,9 +43,18 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class listViewFoodActivity extends AppCompatActivity {
 
-    TextView titleGetFood, rvStart, rvCount, kcal, unit, cookTime, description, price;
+    TextView titleGetFood, rvStart, rvCount, kcal, unit, cookTime, description, price, quantity;
+    ImageView plus_btn, minus_btn;
+    int totalQuantity = 1;
+    int totalPrice = 0;
     CircleImageView imageSrc;
-    ImageButton btnBack;
+    ImageButton btnBack , btnCart;
+    Button btnCheckOut;
+    //FirebaseAuth auth;
+    FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+    FirebaseUser User = firebaseAuth.getCurrentUser();
+    //FirebaseUser User = auth.getCurrentUser();
+    FirebaseFirestore firestore = FirebaseFirestore.getInstance();
     @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +68,51 @@ public class listViewFoodActivity extends AppCompatActivity {
             }
         });
 
+        // add item to cart button
 
+        //auth = FirebaseAuth.getInstance();
 
+        btnCart = (ImageButton) findViewById(R.id.btnCart);
+        btnCheckOut = (Button) findViewById(R.id.btnCheckOut);
+        btnCheckOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(listViewFoodActivity.this, CartActivity.class);
+                startActivity(intent);
+            }
+        });
+        //add to cart
+        btnCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addToCart();
+            }
+        });
+        /* plus quantity
+        plus_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (totalQuantity < 10) {
+                    totalQuantity++;
+                    quantity.setText(String.valueOf(totalQuantity));
+                }
+            }
+        });
+        // minus quantity
+        minus_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (totalQuantity > 10) {
+                    totalQuantity--;
+                    quantity.setText(String.valueOf(totalQuantity));
+                }
+            }
+        });
+        
+        // add item go to cart button
+        */
+
+        quantity = (TextView) findViewById(R.id.quantity);
         titleGetFood = (TextView) findViewById(R.id.titleFood);
         rvStart = (TextView) findViewById(R.id.rvStart);
         rvCount = (TextView) findViewById(R.id.rvCount);
@@ -66,6 +122,8 @@ public class listViewFoodActivity extends AppCompatActivity {
         description = (TextView) findViewById(R.id.des);
         price = (TextView) findViewById(R.id.price);
         imageSrc = (CircleImageView) findViewById(R.id.imgSrc);
+        plus_btn = (ImageView) findViewById(R.id.imageViewadd_btn);
+        minus_btn = (ImageView) findViewById(R.id.imageViewMinus_btn);
 
 //        Intent receiverTitle = getIntent();
 //        String receiverValue = receiverTitle.getStringExtra("KEY_SENDER");
@@ -163,6 +221,28 @@ public class listViewFoodActivity extends AppCompatActivity {
 
         new DownloadImageFromInternet((ImageView) findViewById(R.id.imgSrc)).execute(food.getImgsrc());
     }
+
+    public void addToCart(){
+        totalPrice = Integer.parseInt(price.getText().toString()) * Integer.parseInt(quantity.getText().toString());
+        final HashMap<String,Object> cartMap = new HashMap<>();
+        cartMap.put("foodName", titleGetFood.getText().toString());
+        cartMap.put("quantity", quantity.getText().toString());
+        cartMap.put("price", price.getText().toString());
+        cartMap.put("totalPrice", totalPrice);
+        cartMap.put("rvStar", rvStart.getText().toString());
+        cartMap.put("rvCount", rvCount.getText().toString());
+        cartMap.put("foodImg", imageSrc);
+
+        firestore.collection("Cart").document(User.getUid())
+                .collection("User").add(cartMap).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentReference> task) {
+                        Toast.makeText(listViewFoodActivity.this, "Added to your cart", Toast.LENGTH_SHORT).show();
+                        finish();
+                    }
+                });
+    }
+
     static class DownloadImageFromInternet extends AsyncTask<String, Void, Bitmap> {
         ImageView imageView;
         public DownloadImageFromInternet(ImageView imageView) {
