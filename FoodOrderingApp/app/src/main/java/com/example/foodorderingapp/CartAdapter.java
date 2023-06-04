@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.foodorderingapp.classes.Cart;
 
 import java.util.List;
@@ -37,6 +38,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         holder.totalPrice.setText(String.valueOf(list.get(position).getTotalPrice()));
         int drawableRecourseID = holder.itemView.getContext().getResources().getIdentifier(list.get(position).getFoodImg()
                 ,"drawable",holder.itemView.getContext().getPackageName());
+        /*
+        Glide.with(holder.foodImg.getContext()).load(food.getFoodImg()).into(holder.foodImg);
+         */
     }
 
     @Override
