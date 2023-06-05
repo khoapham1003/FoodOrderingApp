@@ -132,7 +132,7 @@ public class SignInActivity extends AppCompatActivity {
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         Boolean CheckData = documentSnapshot.getBoolean("Data");
                         Intent intent;
-                        if (!Boolean.FALSE.equals(CheckData)) {
+                        if (Boolean.FALSE.equals(CheckData)) {
                             intent = new Intent(SignInActivity.this, EditProfileActivity.class);
                         } else {
                             intent = new Intent(SignInActivity.this, MainActivity.class);

@@ -3060,7 +3060,7 @@ id btnSave_EP
 id btnSend_FP
 id btnSignIn
 id btnSignUp
-id btnVerify_VC
+id btn_backMP
 id btn_backToHome
 id btn_nextTo01
 id btn_nextTo02
@@ -3075,6 +3075,7 @@ id callMeasure
 id cancel_button
 id card_item
 id carryVelocity
+id cart_rec
 id center
 id centerCrop
 id centerInside
@@ -3101,6 +3102,7 @@ id constraintLayout2
 id constraintLayout3
 id constraintLayout4
 id constraintLayout5
+id constraintLayout6
 id container
 id content
 id contentPanel
@@ -3211,15 +3213,12 @@ id horizontal_only
 id icon
 id icon_group
 id icon_only
-id id_txt_Discount
-id id_txt_PromoCode
-id id_txt_ShipCost
-id id_txt_SubTotal
+id id_rvCount
+id id_rvStar
 id id_txt_Total
 id id_txtview_foodname
 id id_txtview_numberOfItems
 id id_txtview_price
-id id_txtview_rateNumber
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3231,7 +3230,6 @@ id imageView02
 id imageView03
 id imageView2
 id imageView3
-id imageView4
 id imageView5
 id imageView554
 id imageView575
@@ -3241,7 +3239,9 @@ id imageView589
 id imageViewCashIcon
 id imageViewFood
 id imageViewMapBtn
+id imageViewMinus_btn
 id imageViewStar
+id imageViewadd_btn
 id imgSrc
 id img_item
 id immediateStop
@@ -3269,11 +3269,9 @@ id linearLayout
 id linearLayout01
 id linearLayout02
 id linearLayout03
-id linearLayout2
 id linearLayout3
 id linearLayout4
 id linearLayout5
-id linearLayout6
 id listMode
 id list_item
 id m3_side_sheet
@@ -3380,8 +3378,10 @@ id position
 id postLayout
 id pressed
 id price
+id profile_img
 id progress_circular
 id progress_horizontal
+id quantity
 id radio
 id radioButtonPayByCash
 id ratio
@@ -3516,14 +3516,10 @@ id textViewCheckOut
 id textViewChoosepaymentmethod
 id textViewDelivery
 id textViewDeliveryToHome
-id textViewDiscount
 id textViewMoney
 id textViewPayment
 id textViewPayment2
-id textViewPromoCode
-id textViewShipCost
 id textViewTotal
-id textView_SubTotal
 id textView_Total
 id text_input_end_icon
 id text_input_error_icon
@@ -3561,7 +3557,6 @@ id unit
 id unlabeled
 id up
 id useLogo
-id verification_code
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3692,7 +3687,6 @@ layout activity_cart
 layout activity_change_password
 layout activity_check_out
 layout activity_edit_profile
-layout activity_filled_profile
 layout activity_forgot_password
 layout activity_main
 layout activity_my_profile
@@ -3703,7 +3697,6 @@ layout activity_onboarding03
 layout activity_order_complete
 layout activity_sign_in
 layout activity_sign_up
-layout activity_verification
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog

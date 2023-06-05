@@ -15,7 +15,9 @@
         android:textSize="25dp"
         android:textStyle="bold" />
 
-    <ImageView
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true"
@@ -43,10 +45,10 @@
         android:layout_marginTop="200dp"
         android:background="@drawable/edit_profile"
         android:hint="Nguyễn Văn A"
-        android:inputType="textPersonName"
         android:imeOptions="actionNext"
-        android:singleLine="true"
-        android:padding="15dp" />
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/edtUserDoB"
@@ -56,8 +58,8 @@
         android:layout_marginTop="270dp"
         android:background="@drawable/edit_profile"
         android:hint="12/27/2000"
-        android:inputType="date"
         android:imeOptions="actionNext"
+        android:inputType="date"
         android:padding="15dp" />
 
     <EditText
@@ -68,10 +70,10 @@
         android:layout_marginTop="340dp"
         android:background="@drawable/edit_profile"
         android:hint="abvccc@gmail.com"
-        android:inputType="textEmailAddress"
-        android:singleLine="true"
         android:imeOptions="actionNext"
-        android:padding="15dp" />
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/edtUserGender"
@@ -82,8 +84,8 @@
         android:background="@drawable/edit_profile"
         android:hint="Male"
         android:imeOptions="actionNext"
-        android:singleLine="true"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/edtUserPhone"
@@ -95,10 +97,10 @@
         android:drawableLeft="@drawable/editprofile_icon_vietnam"
         android:drawablePadding="10dp"
         android:hint="+84 914222333"
-        android:inputType="textPhonetic"
-        android:singleLine="true"
         android:imeOptions="actionNext"
-        android:padding="15dp" />
+        android:inputType="textPhonetic"
+        android:padding="15dp"
+        android:singleLine="true" />
 
     <EditText
         android:id="@+id/edtUserCountry"
@@ -109,8 +111,8 @@
         android:background="@drawable/edit_profile"
         android:hint="Việt Nam"
         android:imeOptions="actionDone"
-        android:singleLine="true"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:singleLine="true" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSave_EP"

@@ -179,7 +179,7 @@
                     >
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/imageViewadd_btn"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_weight="1"
@@ -187,7 +187,7 @@
                         app:srcCompat="@drawable/thinadd" />
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/quantity"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="5dp"
@@ -198,7 +198,7 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/imageView2"
+                        android:id="@+id/imageViewMinus_btn"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
 

@@ -52,16 +52,10 @@
             android:name="com.example.foodorderingapp.CartActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.foodorderingapp.VerificationActivity"
-            android:exported="false" />
-        <activity
             android:name="com.example.foodorderingapp.SignUpActivity"
             android:exported="false" />
         <activity
             android:name="com.example.foodorderingapp.SignInActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.foodorderingapp.FilledProfileActivity"
             android:exported="false" />
         <activity
             android:name="com.example.foodorderingapp.Forgot_PasswordActivity"
@@ -141,7 +135,16 @@
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
@@ -152,11 +155,20 @@
         </service>
 
         <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.foodorderingapp.com.squareup.picasso"
+            android:exported="false" />
+        <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.example.foodorderingapp.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
@@ -173,11 +185,6 @@
             android:enabled="true"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <meta-data
             android:name="com.google.android.gms.version"

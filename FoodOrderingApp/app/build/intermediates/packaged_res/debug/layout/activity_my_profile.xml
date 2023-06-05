@@ -7,6 +7,7 @@
     tools:context=".MyProfileActivity">
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_backMP"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginStart="30dp"
@@ -57,7 +58,7 @@
         android:id="@+id/btnChangePassword_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="350dp"
         android:drawableLeft="@drawable/myprofile_icon_lock"
         android:drawablePadding="10dp"
         android:gravity="center"
@@ -69,7 +70,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="400dp"
         android:drawableLeft="@drawable/myprofile_icon_questionmark"
         android:drawablePadding="10dp"
         android:gravity="center"
@@ -82,7 +83,7 @@
         android:id="@+id/btnLogOut_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="450dp"
         android:drawableLeft="@drawable/myprofile_icon_logout"
         android:drawablePadding="10dp"
         android:gravity="center"
