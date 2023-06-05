@@ -178,13 +178,12 @@
 
                     >
 
-                    <ImageView
-                        android:id="@+id/imageViewadd_btn"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                    <ImageButton
+                        android:id="@+id/minus_btn_product"
+                        android:layout_width="13dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-
-                        app:srcCompat="@drawable/thinadd" />
+                        app:srcCompat="@drawable/img_2" />
 
                     <TextView
                         android:id="@+id/quantity"
@@ -197,13 +196,13 @@
                         android:textAlignment="center"
                         android:textStyle="bold" />
 
-                    <ImageView
-                        android:id="@+id/imageViewMinus_btn"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-
+                    <ImageButton
+                        android:id="@+id/add_btn_product"
+                        android:layout_width="23dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/remove" />
+                        app:srcCompat="@drawable/img_1" />
+
                 </LinearLayout>
             </LinearLayout>
 

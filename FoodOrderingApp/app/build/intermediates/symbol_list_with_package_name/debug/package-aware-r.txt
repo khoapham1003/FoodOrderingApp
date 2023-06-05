@@ -3012,6 +3012,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_btn_product
 id adjust_height
 id adjust_width
 id alertTitle
@@ -3031,6 +3032,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back_btn_cart
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3303,6 +3305,7 @@ id matrix
 id message
 id middle
 id mini
+id minus_btn_product
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
