@@ -27,7 +27,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SignUpActivity extends AppCompatActivity {
-
     EditText edtEmail, edtPassword, edtCfPassword;
     Button SignUp;
     TextView SignIn;
@@ -46,7 +45,6 @@ public class SignUpActivity extends AppCompatActivity {
         SignUp = (Button) findViewById(R.id.btnSignUp);
         SignIn = (TextView) findViewById(R.id.SignIn_SU);
 
-
         SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,32 +61,23 @@ public class SignUpActivity extends AppCompatActivity {
                 email = String.valueOf(edtEmail.getText());
                 password = String.valueOf(edtPassword.getText());
                 confirm_password = String.valueOf(edtCfPassword.getText());
-                if(email.isEmpty())
-                {
+                if (email.isEmpty()) {
                     edtEmail.setError("Enter Email");
                     edtEmail.requestFocus();
                     Toast.makeText(SignUpActivity.this, "Enter Email", Toast.LENGTH_SHORT).show();
-                }
-                else if(password.isEmpty())
-                {
+                } else if (password.isEmpty()) {
                     edtPassword.setError("Enter password");
                     edtPassword.requestFocus();
                     Toast.makeText(SignUpActivity.this, "Enter Password", Toast.LENGTH_SHORT).show();
-                }
-                else if(password.length()<6)
-                {
+                } else if (password.length() < 6) {
                     edtPassword.setError("Password should be greater than 6 character");
                     edtPassword.requestFocus();
                     Toast.makeText(SignUpActivity.this, "Password should be greater than 6 character", Toast.LENGTH_SHORT).show();
-                }
-                else if(confirm_password.isEmpty())
-                {
+                } else if (confirm_password.isEmpty()) {
                     edtCfPassword.setError("Enter confirm password");
                     edtCfPassword.requestFocus();
                     Toast.makeText(SignUpActivity.this, "Enter Confirm Password", Toast.LENGTH_SHORT).show();
-                }
-                else if(!confirm_password.equals(password))
-                {
+                } else if (!confirm_password.equals(password)) {
                     edtPassword.setError("Password not matched");
                     edtPassword.requestFocus();
                     edtCfPassword.setError("Password not matched");
@@ -96,23 +85,19 @@ public class SignUpActivity extends AppCompatActivity {
                     edtPassword.setText("");
                     edtCfPassword.setText("");
                     Toast.makeText(SignUpActivity.this, "Password not matched", Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                    firebaseAuth.createUserWithEmailAndPassword(email,password)
+                } else {
+                    firebaseAuth.createUserWithEmailAndPassword(email, password)
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if(task.isSuccessful())
-                                    {
-                                        if(firebaseAuth.getCurrentUser() != null)
-                                        {
-                                        Map<String, Object> user = new HashMap<>();
-                                        user.put("Email", email);
-                                        user.put("Password", password);
-                                        user.put("Data", false);
-                                        database.collection("User").document(firebaseAuth.getCurrentUser().getUid()).set(user);
-                                        sendverificationEmail();
+                                    if (task.isSuccessful()) {
+                                        if (firebaseAuth.getCurrentUser() != null) {
+                                            Map<String, Object> user = new HashMap<>();
+                                            user.put("Email", email);
+                                            user.put("Password", password);
+                                            user.put("Data", false);
+                                            database.collection("User").document(firebaseAuth.getCurrentUser().getUid()).set(user);
+                                            sendverificationEmail();
                                         }
                                     }
 
@@ -120,14 +105,11 @@ public class SignUpActivity extends AppCompatActivity {
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    if(e instanceof FirebaseAuthUserCollisionException)
-                                    {
+                                    if (e instanceof FirebaseAuthUserCollisionException) {
                                         edtEmail.setError("Email Already Registered");
                                         edtEmail.requestFocus();
-                                    }
-                                    else
-                                    {
-                                        Toast.makeText(SignUpActivity.this,"SignUp Fail!",Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        Toast.makeText(SignUpActivity.this, "SignUp Fail!", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
@@ -136,26 +118,22 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
     }
-    private void LoadData(View v)
-    {
 
+    private void LoadData(View v) {
     }
+
     private void sendverificationEmail() {
-        if(firebaseAuth.getCurrentUser() != null)
-        {
+        if (firebaseAuth.getCurrentUser() != null) {
             firebaseAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
-                    if(task.isSuccessful())
-                    {
+                    if (task.isSuccessful()) {
                         Toast.makeText(SignUpActivity.this, "Email has been sent to your email address. \nPlease check your trash email", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
                         startActivity(intent);
                         finish();
-                    }
-                    else
-                    {
-                        Toast.makeText(SignUpActivity.this,"Log Up fail!",Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(SignUpActivity.this, "Log Up fail!", Toast.LENGTH_SHORT).show();
                     }
                 }
             });

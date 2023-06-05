@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,15 +30,13 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    //    LinearLayout sushi_linear, pizza_linear, salad_linear, spaghetti_linear;
     TextView btnProfile;
+    ImageButton btnToCart;
     RecyclerView rvcData;
     FoodAdapter foodAdapter;
     SearchView searchBar;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-
     FirebaseFirestore database = FirebaseFirestore.getInstance();
-
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
 
     @Override
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnProfile = (TextView) findViewById(R.id.btnProfile);
-
+        btnToCart = (ImageButton) findViewById(R.id.btnToCart);
         database.collection("User")
                 .document(User.getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
@@ -60,7 +59,13 @@ public class MainActivity extends AppCompatActivity {
                                 });
                     }
                 });
-
+        btnToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CartActivity.class);
+                startActivity(intent);
+            }
+        });
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
 //        data
         rvcData = findViewById(R.id.recyc_item);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
@@ -90,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
     }
 
     private List<Food> getlistFood() {
@@ -118,16 +123,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void filterList(String text) {
-
-
+        foodAdapter.setFilterList(text);
 //        mlistFood.add(new Food(200, 20,"food for everyone", 005, "https://images.unsplash.com/photo-1682695794947-17061dc284dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60", 230, "banh mi truyen thong", "20 banh mi", 32000, 130, 3));
 //        mlistFood.add(new Food(200, 20,"food for everyone", 001, "https://images.unsplash.com/photo-1684749841085-f144067c42ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60", 210, "banh mi cha ca", "20 banh mi", 33000, 130, 4));
 //        mlistFood.add(new Food(200, 20,"food for everyone", 002, "https://images.unsplash.com/photo-1634129366530-61d3e56a84fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60", 240, "banh mi trung", "20 banh mi", 35000, 130, 5));
 //
-
-
-        foodAdapter.setFilterList(text);
-
     }
 
     protected void onDestroy() {
@@ -135,7 +135,6 @@ public class MainActivity extends AppCompatActivity {
         if (foodAdapter != null) {
             foodAdapter.release();
         }
-
     }
 }
 

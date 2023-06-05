@@ -34,12 +34,12 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class EditProfileActivity extends AppCompatActivity {
     CircleImageView profileImg;
-    EditText edtUserName,edtUserDoB,edtUserEmail,edtUserGender,edtUserPhone,edtUserCountry;
+    EditText edtUserName, edtUserDoB, edtUserEmail, edtUserGender, edtUserPhone, edtUserCountry;
     Button btnChangeAva, btnSave;
+
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
-
     StorageReference storageReference = FirebaseStorage.getInstance().getReference();
 
     @Override
@@ -56,7 +56,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
         btnSave = (Button) findViewById(R.id.btnSave_EP);
         btnChangeAva = (Button) findViewById(R.id.btnChangeAva);
-        StorageReference profileRef = storageReference.child("users/"+firebaseAuth.getCurrentUser().getUid()+"/profile.jpg");
+        StorageReference profileRef = storageReference.child("users/" + firebaseAuth.getCurrentUser().getUid() + "/profile.jpg");
         profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
@@ -101,62 +101,46 @@ public class EditProfileActivity extends AppCompatActivity {
                     }
                 });
 
-
-
         btnSave.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                String UserName, UserDoB, UserEmail, UserGender, UserPhone,UserCountry;
+                String UserName, UserDoB, UserEmail, UserGender, UserPhone, UserCountry;
                 UserName = String.valueOf(edtUserName.getText());
                 UserDoB = String.valueOf(edtUserDoB.getText());
                 UserEmail = String.valueOf(edtUserEmail.getText());
                 UserGender = String.valueOf(edtUserGender.getText());
                 UserPhone = String.valueOf(edtUserPhone.getText());
                 UserCountry = String.valueOf(edtUserCountry.getText());
-                if(UserName.isEmpty())
-                {
+                if (UserName.isEmpty()) {
                     edtUserName.setError("Enter Name");
                     edtUserName.requestFocus();
-                }
-                else if(UserDoB.isEmpty())
-                {
+                } else if (UserDoB.isEmpty()) {
                     edtUserDoB.setError("Enter Day of Birth");
                     edtUserDoB.requestFocus();
-                }
-                else if (UserEmail.isEmpty())
-                {
+                } else if (UserEmail.isEmpty()) {
                     edtUserEmail.setError("Enter Email");
                     edtUserEmail.requestFocus();
-                }
-                else if (UserGender.isEmpty())
-                {
+                } else if (UserGender.isEmpty()) {
                     edtUserGender.setError("Enter Gender");
                     edtUserGender.requestFocus();
-                }
-                else if (UserPhone.isEmpty())
-                {
+                } else if (UserPhone.isEmpty()) {
                     edtUserPhone.setError("Enter Phone");
                     edtUserPhone.requestFocus();
-                }
-                else if (UserCountry.isEmpty())
-                {
+                } else if (UserCountry.isEmpty()) {
                     edtUserCountry.setError("Enter Country");
                     edtUserCountry.requestFocus();
-                }
-                else
-                {
+                } else {
                     database.collection("User")
                             .document(User.getUid())
                             .get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                                 @Override
                                 public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                                    if(task.isSuccessful())
-                                    {
+                                    if (task.isSuccessful()) {
                                         Map<String, Object> user = new HashMap<>();
                                         user.put("Name", UserName);
                                         user.put("DoB", UserDoB);
-                                        user.put("Email",UserEmail);
+                                        user.put("Email", UserEmail);
                                         user.put("Phone", UserPhone);
                                         user.put("Gender", UserGender);
                                         user.put("Country", UserCountry);
@@ -173,6 +157,7 @@ public class EditProfileActivity extends AppCompatActivity {
                 }
             }
         });
+
         btnChangeAva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -181,13 +166,13 @@ public class EditProfileActivity extends AppCompatActivity {
                 startActivityForResult(openGalleryIntent, 1000);
             }
         });
-
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 1000){
-            if(resultCode == Activity.RESULT_OK){
+        if (requestCode == 1000) {
+            if (resultCode == Activity.RESULT_OK) {
                 Uri imageUri = data.getData();
                 // profileImg.setImageURI(imageUri);
                 uploadImageToFirebase(imageUri);
@@ -197,7 +182,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
     private void uploadImageToFirebase(Uri imageUri) {
         // upload image to firebase storage
-        StorageReference fileRef = storageReference.child("users/"+firebaseAuth.getCurrentUser().getUid()+"/profile.jpg");
+        StorageReference fileRef = storageReference.child("users/" + firebaseAuth.getCurrentUser().getUid() + "/profile.jpg");
         fileRef.putFile(imageUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {

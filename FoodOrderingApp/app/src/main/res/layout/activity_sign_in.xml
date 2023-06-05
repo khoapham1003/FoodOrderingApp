@@ -23,9 +23,9 @@
         android:background="@drawable/edittext_background"
         android:gravity="center_vertical"
         android:hint="    Email"
-        android:paddingLeft="20dp"
-        android:inputType="textEmailAddress"
         android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
         android:textSize="16dp" />
 
     <EditText
@@ -35,14 +35,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="390dp"
         android:background="@drawable/edittext_background"
-        android:paddingLeft="20dp"
         android:ems="10"
-        android:imeOptions="actionDone"
         android:gravity="center_vertical"
         android:hint="    *******"
-        app:endIconMode="password_toggle"
+        android:imeOptions="actionDone"
         android:inputType="textPassword"
-        android:textSize="16dp" />
+        android:paddingLeft="20dp"
+        android:textSize="16dp"
+        app:endIconMode="password_toggle" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignIn"
@@ -62,8 +62,8 @@
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="660dp"
         android:layout_marginLeft="120dp"
+        android:layout_marginTop="660dp"
         android:text="Don't have an account?"
         android:textSize="14dp" />
 
@@ -75,15 +75,16 @@
         android:layout_marginTop="580dp"
         android:text="Forgot password?"
         android:textSize="14dp" />
+
     <TextView
         android:id="@+id/SignUp_SI"
         android:layout_width="84dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="270dp"
         android:layout_marginTop="655dp"
+        android:padding="5dp"
         android:text="Sign Up"
         android:textSize="16dp"
-        android:padding="5dp"
         android:textStyle="bold" />
 
 </RelativeLayout>

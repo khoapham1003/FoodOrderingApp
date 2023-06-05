@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -41,19 +42,16 @@ import java.util.Map;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class listViewFoodActivity extends AppCompatActivity {
-
     TextView titleGetFood, rvStart, rvCount, kcal, unit, cookTime, description, price, quantity;
-    ImageView plus_btn, minus_btn;
     int totalQuantity = 1;
     int totalPrice = 0;
     CircleImageView imageSrc;
-    ImageButton btnBack , btnCart;
+    ImageButton btnBack, btnCart, plus_btn, minus_btn;
     Button btnCheckOut;
-    //FirebaseAuth auth;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseUser User = firebaseAuth.getCurrentUser();
-    //FirebaseUser User = auth.getCurrentUser();
     FirebaseFirestore firestore = FirebaseFirestore.getInstance();
+
     @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,13 +64,10 @@ public class listViewFoodActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-// add item to cart button
-
-        //auth = FirebaseAuth.getInstance();
-
+        // add item to cart button
         btnCart = (ImageButton) findViewById(R.id.btnCart);
+        plus_btn = (ImageButton) findViewById(R.id.add_btn_product);
+        minus_btn = (ImageButton) findViewById(R.id.minus_btn_product);
         btnCheckOut = (Button) findViewById(R.id.btnCheckOut);
         btnCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,7 +83,7 @@ public class listViewFoodActivity extends AppCompatActivity {
                 addToCart();
             }
         });
-        /* plus quantity
+        // plus quantity
         plus_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,16 +97,13 @@ public class listViewFoodActivity extends AppCompatActivity {
         minus_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (totalQuantity > 10) {
+                if (totalQuantity > 1) {
                     totalQuantity--;
                     quantity.setText(String.valueOf(totalQuantity));
                 }
             }
         });
-
         // add item go to cart button
-        */
-
         quantity = (TextView) findViewById(R.id.quantity);
         titleGetFood = (TextView) findViewById(R.id.titleFood);
         rvStart = (TextView) findViewById(R.id.rvStart);
@@ -122,8 +114,6 @@ public class listViewFoodActivity extends AppCompatActivity {
         description = (TextView) findViewById(R.id.des);
         price = (TextView) findViewById(R.id.price);
         imageSrc = (CircleImageView) findViewById(R.id.imgSrc);
-        plus_btn = (ImageView) findViewById(R.id.imageViewadd_btn);
-        minus_btn = (ImageView) findViewById(R.id.imageViewMinus_btn);
 //        Intent receiverTitle = getIntent();
 //        String receiverValue = receiverTitle.getStringExtra("KEY_SENDER");
 //        titleGetFood.setText(receiverValue);
@@ -205,10 +195,10 @@ public class listViewFoodActivity extends AppCompatActivity {
 //        end get data
 
         Bundle bundle = getIntent().getExtras();
-        if(bundle==null){
+        if (bundle == null) {
             return;
         }
-        Food food =(Food) bundle.get("object_food");
+        Food food = (Food) bundle.get("object_food");
         titleGetFood.setText(food.getName());
         description.setText(food.getDescription());
         rvStart.setText((String.valueOf(food.getSvstart())));
@@ -221,16 +211,21 @@ public class listViewFoodActivity extends AppCompatActivity {
         new DownloadImageFromInternet((ImageView) findViewById(R.id.imgSrc)).execute(food.getImgsrc());
     }
 
-    public void addToCart(){
-        totalPrice = Integer.parseInt(price.getText().toString()) * Integer.parseInt(quantity.getText().toString());
-        final HashMap<String,Object> cartMap = new HashMap<>();
+    public void addToCart() {
+        Bundle bundle = getIntent().getExtras();
+        if (bundle == null) {
+            return;
+        }
+        Food food = (Food) bundle.get("object_food");
+        totalPrice = Integer.parseInt(price.getText().toString()) * totalQuantity;
+        final HashMap<String, Object> cartMap = new HashMap<>();
         cartMap.put("foodName", titleGetFood.getText().toString());
         cartMap.put("quantity", quantity.getText().toString());
         cartMap.put("price", price.getText().toString());
         cartMap.put("totalPrice", totalPrice);
         cartMap.put("rvStar", rvStart.getText().toString());
         cartMap.put("rvCount", rvCount.getText().toString());
-        cartMap.put("foodImg", imageSrc);
+        cartMap.put("foodImg", food.getImgsrc());
 
         firestore.collection("Cart").document(User.getUid())
                 .collection("User").add(cartMap).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
@@ -241,24 +236,28 @@ public class listViewFoodActivity extends AppCompatActivity {
                     }
                 });
     }
+
     static class DownloadImageFromInternet extends AsyncTask<String, Void, Bitmap> {
         ImageView imageView;
+
         public DownloadImageFromInternet(ImageView imageView) {
-            this.imageView=imageView;
+            this.imageView = imageView;
 //            Toast.makeText(getApplicationContext(), "Please wait, it may take a few minute...",Toast.LENGTH_SHORT).show();
         }
+
         protected Bitmap doInBackground(String... urls) {
-            String imageURL=urls[0];
-            Bitmap bimage=null;
+            String imageURL = urls[0];
+            Bitmap bimage = null;
             try {
-                InputStream in=new java.net.URL(imageURL).openStream();
-                bimage= BitmapFactory.decodeStream(in);
+                InputStream in = new java.net.URL(imageURL).openStream();
+                bimage = BitmapFactory.decodeStream(in);
             } catch (Exception e) {
                 Log.e("Error Message", e.getMessage());
                 e.printStackTrace();
             }
             return bimage;
         }
+
         protected void onPostExecute(Bitmap result) {
             imageView.setImageBitmap(result);
         }

@@ -3012,6 +3012,7 @@ int id action_text 0x7f080049
 int id actions 0x7f08004a
 int id activity_chooser_view_content 0x7f08004b
 int id add 0x7f08004c
+int id add_btn_product 0x7f08028e
 int id adjust_height 0x7f08004d
 int id adjust_width 0x7f08004e
 int id alertTitle 0x7f08004f
@@ -3031,6 +3032,7 @@ int id auto 0x7f08005c
 int id autoComplete 0x7f08005d
 int id autoCompleteToEnd 0x7f08005e
 int id autoCompleteToStart 0x7f08005f
+int id back_btn_cart 0x7f08028f
 int id barrier 0x7f080060
 int id baseline 0x7f080061
 int id beginOnFirstDraw 0x7f080062
@@ -3060,6 +3062,7 @@ int id btnSave_EP 0x7f080079
 int id btnSend_FP 0x7f08007a
 int id btnSignIn 0x7f08007b
 int id btnSignUp 0x7f08007c
+int id btnToCart 0x7f080291
 int id btn_backMP 0x7f08007d
 int id btn_backToHome 0x7f08007e
 int id btn_nextTo01 0x7f08007f
@@ -3303,6 +3306,7 @@ int id matrix 0x7f08016e
 int id message 0x7f08016f
 int id middle 0x7f080170
 int id mini 0x7f080171
+int id minus_btn_product 0x7f080290
 int id month_grid 0x7f080172
 int id month_navigation_bar 0x7f080173
 int id month_navigation_fragment_toggle 0x7f080174

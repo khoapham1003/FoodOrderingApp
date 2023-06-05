@@ -30,6 +30,7 @@ public class Change_PasswordActivity extends AppCompatActivity {
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,28 +48,19 @@ public class Change_PasswordActivity extends AppCompatActivity {
                 OldPassword = String.valueOf(edtOldPassword.getText());
                 NewPassword = String.valueOf(edtNewPassword.getText());
                 ConfirmNewPassword = String.valueOf(edtConfirmPassword.getText());
-                if(OldPassword.isEmpty())
-                {
+                if (OldPassword.isEmpty()) {
                     edtOldPassword.setError("Enter Old Password");
                     edtOldPassword.requestFocus();
-                }
-                else if(NewPassword.isEmpty())
-                {
+                } else if (NewPassword.isEmpty()) {
                     edtNewPassword.setError("Enter New Password");
                     edtNewPassword.requestFocus();
-                }
-                else if(ConfirmNewPassword.isEmpty())
-                {
+                } else if (ConfirmNewPassword.isEmpty()) {
                     edtConfirmPassword.setError("Enter Confirm New Password");
                     edtConfirmPassword.requestFocus();
-                }
-                else if(NewPassword.length()<6)
-                {
+                } else if (NewPassword.length() < 6) {
                     edtNewPassword.setError("Password should be greater than 6 character");
                     edtNewPassword.requestFocus();
-                }
-                else if(!ConfirmNewPassword.equals(NewPassword))
-                {
+                } else if (!ConfirmNewPassword.equals(NewPassword)) {
                     edtNewPassword.setError("Password not matched");
                     edtNewPassword.requestFocus();
                     edtConfirmPassword.setError("Password not matched");
@@ -76,35 +68,27 @@ public class Change_PasswordActivity extends AppCompatActivity {
                     edtNewPassword.setText("");
                     edtConfirmPassword.setText("");
                     Toast.makeText(Change_PasswordActivity.this, "Password not matched", Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
+                } else {
                     database.collection("User")
                             .document(User.getUid()).get()
                             .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                                 @Override
                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                                     String Check_old_password = documentSnapshot.getString("Password");
-                                    if(!OldPassword.equals(Check_old_password))
-                                    {
+                                    if (!OldPassword.equals(Check_old_password)) {
                                         edtOldPassword.setError("Old Password wrong!");
                                         edtOldPassword.requestFocus();
-                                    }
-                                    else
-                                    {
+                                    } else {
                                         User.updatePassword(NewPassword)
                                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
-                                                        if(task.isSuccessful())
-                                                        {
+                                                        if (task.isSuccessful()) {
                                                             Map<String, Object> user = new HashMap<>();
                                                             user.put("Password", NewPassword);
                                                             database.collection("User").document(User.getUid()).update(user);
                                                             Toast.makeText(Change_PasswordActivity.this, "Password Updated Successfully!", Toast.LENGTH_SHORT).show();
-                                                        }
-                                                        else
-                                                        {
+                                                        } else {
                                                             Toast.makeText(Change_PasswordActivity.this, "Password Updated Failed! \nPlease LogOut and LogIn again.", Toast.LENGTH_SHORT).show();
                                                         }
                                                     }

@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class OrderCompleteActivity extends AppCompatActivity {
+    Button btn_back_to_home, btn_order_again;
 
-    Button btn_back_to_home,btn_order_again;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,14 +19,14 @@ public class OrderCompleteActivity extends AppCompatActivity {
         btn_back_to_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(OrderCompleteActivity.this,MainActivity.class);
+                Intent intent = new Intent(OrderCompleteActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
         btn_order_again.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(OrderCompleteActivity.this,CartActivity.class);
+                Intent intent = new Intent(OrderCompleteActivity.this, CartActivity.class);
                 startActivity(intent);
             }
         });

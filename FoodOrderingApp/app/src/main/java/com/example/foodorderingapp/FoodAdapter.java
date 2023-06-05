@@ -29,26 +29,26 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHoder>{
-
-
+public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHoder> {
     private List<Food> mListFood;
     private Context mContext;
-    public FoodAdapter(Context mContext,List<Food> mListFood){
-        this.mContext=mContext;
-        this.mListFood=mListFood;
+
+    public FoodAdapter(Context mContext, List<Food> mListFood) {
+        this.mContext = mContext;
+        this.mListFood = mListFood;
     }
-    public void setFilterList(String text){
+
+    public void setFilterList(String text) {
         List<Food> filterList = new ArrayList<>();
 
-        for (Food item : mListFood){
-            if(item.getName().toLowerCase().contains(text.toLowerCase())){
+        for (Food item : mListFood) {
+            if (item.getName().toLowerCase().contains(text.toLowerCase())) {
                 filterList.add(item);
             }
         }
-        if(filterList.isEmpty()){
+        if (filterList.isEmpty()) {
             this.mListFood = mListFood;
-        }else{
+        } else {
             this.mListFood = filterList;
         }
 //        this.mListFood = filterList;
@@ -58,19 +58,17 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHoder>
     @NonNull
     @Override
     public FoodViewHoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_food,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_food, parent, false);
 
         return new FoodViewHoder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull FoodViewHoder holder, int position) {
-        Food food= mListFood.get(position);
-        if(food == null){
+        Food food = mListFood.get(position);
+        if (food == null) {
             return;
         }
-
-
 
 //        bug: change img
 //        fixed
@@ -85,38 +83,39 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHoder>
 //
     }
 
-    private void onClickgotoDetail(Food food){
-        Intent intent = new Intent(mContext,listViewFoodActivity.class);
+    private void onClickgotoDetail(Food food) {
+        Intent intent = new Intent(mContext, listViewFoodActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("object_food",food);
+        bundle.putSerializable("object_food", food);
         intent.putExtras(bundle);
         mContext.startActivity(intent);
     }
-    public void release(){
+
+    public void release() {
         mContext = null;
     }
 
     @Override
     public int getItemCount() {
-        if(mListFood != null){
+        if (mListFood != null) {
             return mListFood.size();
         }
         return 0;
     }
 
-    public class FoodViewHoder extends RecyclerView.ViewHolder{
+    public class FoodViewHoder extends RecyclerView.ViewHolder {
         private ImageView imgAvatar;
         private TextView tvName;
         private TextView tvAddress;
 
         private CardView layoutItem;
+
         public FoodViewHoder(@NonNull View itemView) {
             super(itemView);
-            layoutItem= itemView.findViewById(R.id.card_item);
+            layoutItem = itemView.findViewById(R.id.card_item);
             imgAvatar = itemView.findViewById(R.id.img_item);
             tvName = itemView.findViewById(R.id.name_item);
 //            tvAddress = itemView.findViewById(R.id.tv_address);
-
         }
     }
 }

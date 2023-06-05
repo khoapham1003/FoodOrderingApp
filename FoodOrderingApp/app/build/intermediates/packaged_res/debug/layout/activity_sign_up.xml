@@ -13,14 +13,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="370dp"
         android:background="@drawable/edittext_background"
-        android:paddingLeft="20dp"
         android:ems="10"
         android:gravity="center_vertical"
-        android:imeOptions="actionNext"
         android:hint="Password"
-        app:passwordToggleEnabled="true"
+        android:imeOptions="actionNext"
         android:inputType="textPassword"
-        android:textSize="16dp" />
+        android:paddingLeft="20dp"
+        android:textSize="16dp"
+        app:passwordToggleEnabled="true" />
 
     <EditText
         android:id="@+id/email_SU"
@@ -29,11 +29,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="300dp"
         android:background="@drawable/edittext_background"
-        android:paddingLeft="20dp"
         android:gravity="center_vertical"
-        android:inputType="textEmailAddress"
-        android:imeOptions="actionNext"
         android:hint="Email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
         android:textSize="16dp" />
 
     <EditText
@@ -43,14 +43,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="440dp"
         android:background="@drawable/edittext_background"
-        android:paddingLeft="20dp"
         android:ems="10"
-        android:imeOptions="actionDone"
         android:gravity="center_vertical"
         android:hint="Confirm Password"
-        app:passwordToggleEnabled="true"
+        android:imeOptions="actionDone"
         android:inputType="textPassword"
-        android:textSize="16dp" />
+        android:paddingLeft="20dp"
+        android:textSize="16dp"
+        app:passwordToggleEnabled="true" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignUp"
@@ -77,8 +77,8 @@
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="660dp"
         android:layout_marginLeft="120dp"
+        android:layout_marginTop="660dp"
         android:text="Already have an account?"
         android:textSize="14dp" />
 
@@ -88,8 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="280dp"
         android:layout_marginTop="655dp"
+        android:padding="5dp"
         android:text="Sign In"
         android:textSize="16dp"
-        android:padding="5dp"
         android:textStyle="bold" />
 </RelativeLayout>

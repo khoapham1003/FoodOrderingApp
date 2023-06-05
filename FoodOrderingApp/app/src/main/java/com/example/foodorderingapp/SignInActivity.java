@@ -94,28 +94,28 @@ public class SignInActivity extends AppCompatActivity {
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if(firebaseAuth.getCurrentUser() != null)
-                                    {
-                                    if (task.isSuccessful()) {
-                                        CheckData();
-                                    } else {
-                                        database.collection("User")
-                                                .document(firebaseAuth.getCurrentUser().getUid())
-                                                .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                                                    @Override
-                                                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                                                        String email_check = documentSnapshot.getString("Email");
-                                                        if (!email.equals(email_check)) {
-                                                            edtEmail.requestFocus();
-                                                            Toast.makeText(SignInActivity.this, "Email Wrong!", Toast.LENGTH_SHORT).show();
-                                                        } else {
-                                                            edtPassword.requestFocus();
-                                                            Toast.makeText(SignInActivity.this, "Password Wrong!", Toast.LENGTH_SHORT).show();
+                                    if (firebaseAuth.getCurrentUser() != null) {
+                                        if (task.isSuccessful()) {
+                                            CheckData();
+                                        } else {
+                                            database.collection("User")
+                                                    .document(firebaseAuth.getCurrentUser().getUid())
+                                                    .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                                                        @Override
+                                                        public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                                            String email_check = documentSnapshot.getString("Email");
+                                                            if (!email.equals(email_check)) {
+                                                                edtEmail.requestFocus();
+                                                                Toast.makeText(SignInActivity.this, "Email Wrong!", Toast.LENGTH_SHORT).show();
+                                                            } else {
+                                                                edtPassword.requestFocus();
+                                                                Toast.makeText(SignInActivity.this, "Password Wrong!", Toast.LENGTH_SHORT).show();
+                                                            }
                                                         }
-                                                    }
-                                                });
+                                                    });
+                                        }
                                     }
-                                }}
+                                }
                             });
                 }
 //
@@ -124,25 +124,24 @@ public class SignInActivity extends AppCompatActivity {
     }
 
     void CheckData() {
-        if(firebaseAuth.getCurrentUser() != null)
-        {
-        database.collection("User")
-                .document(firebaseAuth.getCurrentUser().getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                    @Override
-                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                        Boolean CheckData = documentSnapshot.getBoolean("Data");
-                        Intent intent;
-                        if (Boolean.FALSE.equals(CheckData)) {
-                            intent = new Intent(SignInActivity.this, EditProfileActivity.class);
-                        } else {
-                            intent = new Intent(SignInActivity.this, MainActivity.class);
+        if (firebaseAuth.getCurrentUser() != null) {
+            database.collection("User")
+                    .document(firebaseAuth.getCurrentUser().getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                        @Override
+                        public void onSuccess(DocumentSnapshot documentSnapshot) {
+                            Boolean CheckData = documentSnapshot.getBoolean("Data");
+                            Intent intent;
+                            if (Boolean.FALSE.equals(CheckData)) {
+                                intent = new Intent(SignInActivity.this, EditProfileActivity.class);
+                            } else {
+                                intent = new Intent(SignInActivity.this, MainActivity.class);
+                            }
+                            startActivity(intent);
+                            finish();
                         }
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-    }}
-
+                    });
+        }
+    }
 
 //if(firebaseAuth.getCurrentUser().isEmailVerified())
 //        {
@@ -163,7 +162,6 @@ public class SignInActivity extends AppCompatActivity {
 //        edtEmail.requestFocus();
 //        Toast.makeText(SignInActivity.this, "Password Wrong!", Toast.LENGTH_SHORT).show();
 //        }
-
 
     //Code for internet connection. From here...
     protected void registerNetworkBroadcast() {

@@ -12,8 +12,6 @@ public class Onboarding02Activity extends AppCompatActivity {
     Button btn_next_to_03;
     TextView txv_skip;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

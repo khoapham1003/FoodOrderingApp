@@ -99,7 +99,9 @@ id Name_MP1
 id PassWord_SI
 id SignIn_SU
 id SignUp_SI
+id add_btn_product
 id app_bar
+id back_btn_cart
 id btnBack
 id btnCart
 id btnChangeAva
@@ -113,6 +115,7 @@ id btnSave_EP
 id btnSend_FP
 id btnSignIn
 id btnSignUp
+id btnToCart
 id btn_backMP
 id btn_backToHome
 id btn_nextTo01
@@ -183,6 +186,7 @@ id linearLayout03
 id linearLayout3
 id linearLayout4
 id linearLayout5
+id minus_btn_product
 id name_item
 id no_internet_layout
 id passWord_SU

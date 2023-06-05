@@ -16,19 +16,17 @@ import androidx.appcompat.app.AlertDialog;
 public class ConnectionReceiver extends BroadcastReceiver {
     Context mContext;
 
-
     @Override
     public void onReceive(Context context, Intent intent) {
-        mContext=context;
+        mContext = context;
         if (isConnected(context)) {
             Toast.makeText(context, "Internet Connected", Toast.LENGTH_SHORT).show();
         } else {
-showDialog();
+            showDialog();
         }
     }
 
     public boolean isConnected(Context context) {
-
         try {
             ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
             NetworkInfo networkInfo = cm.getActiveNetworkInfo();
@@ -37,7 +35,6 @@ showDialog();
             e.printStackTrace();
             return false;
         }
-
     }
 
     public void showDialog() {
@@ -51,11 +48,10 @@ showDialog();
         view.findViewById(R.id.btn_tryAgain).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!isConnected(mContext))
-                {
-                dialog.dismiss();
-                showDialog();}
-                else dialog.dismiss();
+                if (!isConnected(mContext)) {
+                    dialog.dismiss();
+                    showDialog();
+                } else dialog.dismiss();
             }
         });
         dialog.show();

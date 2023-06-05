@@ -2,10 +2,18 @@ package com.example.foodorderingapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.example.foodorderingapp.classes.Cart;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,9 +30,12 @@ public class CartActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     List<Cart> cartList;
     CartAdapter cartAdapter;
+    TextView totalAmount, payment_txv;
+    ImageButton back_btn;
     private FirebaseAuth auth;
     private FirebaseFirestore firestore;
 
+    //int overAllTotalAmount;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,12 +43,33 @@ public class CartActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         firestore = FirebaseFirestore.getInstance();
+//get data from CartAdapter
+        LocalBroadcastManager.getInstance(this)
+                .registerReceiver(mMessageReceiver, new IntentFilter("MyTotalAmount"));
 
         recyclerView = findViewById(R.id.cart_rec);
+        totalAmount = findViewById(R.id.id_txt_Total);
+        back_btn = findViewById(R.id.back_btn_cart);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         cartList = new ArrayList<>();
         cartAdapter = new CartAdapter(this, cartList);
         recyclerView.setAdapter(cartAdapter);
+        payment_txv = findViewById(R.id.textViewPayment);
+
+        payment_txv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CartActivity.this, OrderCompleteActivity.class);
+                startActivity(intent);
+            }
+        });
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CartActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         firestore.collection("Cart").document(auth.getCurrentUser().getUid())
                 .collection("User").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -54,4 +86,11 @@ public class CartActivity extends AppCompatActivity {
                 });
     }
 
+    public BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            int totalBill = intent.getIntExtra("totalAmount", 0);
+            totalAmount.setText(totalBill + "VND");
+        }
+    };
 }

@@ -16,12 +16,14 @@
         android:theme="@style/Theme.FoodOrderingApp"
         tools:targetApi="31">
         <activity android:name="com.example.foodorderingapp.listViewFoodActivity" />
-        <receiver android:name=".ConnectionReceiver"
+        <receiver
+            android:name=".ConnectionReceiver"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />

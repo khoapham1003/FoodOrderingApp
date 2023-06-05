@@ -24,16 +24,12 @@ import com.squareup.picasso.Picasso;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MyProfileActivity extends AppCompatActivity {
-
-    Button btnEditProfile,btnBack;
+    Button btnEditProfile, btnBack;
     TextView tvName, btnLogOut, btnChangePassword;
-
     CircleImageView AvatarImg;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
-
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
-
     StorageReference storageReference = FirebaseStorage.getInstance().getReference();
 
     @Override
@@ -47,7 +43,7 @@ public class MyProfileActivity extends AppCompatActivity {
         tvName = (TextView) findViewById(R.id.Name_MP1);
         btnLogOut = (TextView) findViewById(R.id.btnLogOut_MP1);
         btnChangePassword = (TextView) findViewById(R.id.btnChangePassword_MP1);
-        StorageReference profileRef = storageReference.child("users/"+firebaseAuth.getCurrentUser().getUid()+"/profile.jpg");
+        StorageReference profileRef = storageReference.child("users/" + firebaseAuth.getCurrentUser().getUid() + "/profile.jpg");
         profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
@@ -57,14 +53,16 @@ public class MyProfileActivity extends AppCompatActivity {
         });
         String imageUrl = getIntent().getStringExtra("image_url");
         Picasso.get().load(imageUrl).into(AvatarImg);
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MyProfileActivity.this,MainActivity.class);
+                Intent intent = new Intent(MyProfileActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
+
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,6 +87,7 @@ public class MyProfileActivity extends AppCompatActivity {
                                 });
                     }
                 });
+
         btnEditProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -97,13 +96,13 @@ public class MyProfileActivity extends AppCompatActivity {
                 finish();
             }
         });
+
         btnChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MyProfileActivity.this, Change_PasswordActivity.class);
                 startActivity(intent);
                 finish();
-
             }
         });
     }
