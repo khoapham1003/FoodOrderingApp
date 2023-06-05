@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,27 +17,46 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MyProfileActivity extends AppCompatActivity {
 
     Button btnEditProfile,btnBack;
     TextView tvName, btnLogOut, btnChangePassword;
+
+    CircleImageView AvatarImg;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
 
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
+
+    StorageReference storageReference = FirebaseStorage.getInstance().getReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
 
+        AvatarImg = (CircleImageView) findViewById(R.id.Avatar1_img1);
         btnEditProfile = (Button) findViewById(R.id.btnEditProfile_MP1);
         btnBack = (Button) findViewById(R.id.btn_backMP);
         tvName = (TextView) findViewById(R.id.Name_MP1);
         btnLogOut = (TextView) findViewById(R.id.btnLogOut_MP1);
         btnChangePassword = (TextView) findViewById(R.id.btnChangePassword_MP1);
+        StorageReference profileRef = storageReference.child("users/"+firebaseAuth.getCurrentUser().getUid()+"/profile.jpg");
+        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).into(AvatarImg);
 
+            }
+        });
+        String imageUrl = getIntent().getStringExtra("image_url");
+        Picasso.get().load(imageUrl).into(AvatarImg);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

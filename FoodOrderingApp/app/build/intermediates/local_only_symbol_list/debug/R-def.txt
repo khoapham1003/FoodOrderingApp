@@ -92,6 +92,7 @@ drawable sushi01
 drawable thinadd
 drawable time
 drawable tru_icon
+id Avatar1_img1
 id CFPassWord_SU
 id Emal_SI
 id Name_MP1

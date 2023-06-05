@@ -172,8 +172,6 @@ public class EditProfileActivity extends AppCompatActivity {
                     finish();
                 }
             }
-
-
         });
         btnChangeAva.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -185,7 +183,6 @@ public class EditProfileActivity extends AppCompatActivity {
         });
 
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
