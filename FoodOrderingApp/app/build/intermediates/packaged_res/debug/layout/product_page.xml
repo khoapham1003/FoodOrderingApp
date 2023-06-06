@@ -454,7 +454,7 @@
                     android:layout_marginRight="30dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_color"
-                    android:text="Checkout" />
+                    android:text="Add To Cart" />
 
             </LinearLayout>
         </LinearLayout>

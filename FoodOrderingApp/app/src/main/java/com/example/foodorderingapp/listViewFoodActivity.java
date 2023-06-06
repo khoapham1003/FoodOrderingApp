@@ -75,7 +75,7 @@ public class listViewFoodActivity extends AppCompatActivity {
         plus_btn = (ImageButton) findViewById(R.id.add_btn_product);
         minus_btn = (ImageButton) findViewById(R.id.minus_btn_product);
         btnCheckOut = (Button) findViewById(R.id.btnCheckOut);
-        btnCheckOut.setOnClickListener(new View.OnClickListener() {
+        btnCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(listViewFoodActivity.this, CartActivity.class);
@@ -83,7 +83,7 @@ public class listViewFoodActivity extends AppCompatActivity {
             }
         });
         //add to cart
-        btnCart.setOnClickListener(new View.OnClickListener() {
+        btnCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addToCart();

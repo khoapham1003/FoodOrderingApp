@@ -108,16 +108,12 @@
         "source": "C:\\Users\\NhatQuang\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\search.png"
     },
     {
-        "merged": "com.example.foodorderingapp-merged_res-38:/layout_activity_cart.xml.flat",
-        "source": "com.example.foodorderingapp-main-40:/layout/activity_cart.xml"
+        "merged": "C:\\Users\\NhatQuang\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_cong_icon.png.flat",
+        "source": "C:\\Users\\NhatQuang\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\cong_icon.png"
     },
     {
         "merged": "C:\\Users\\NhatQuang\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_edit_profile.xml.flat",
         "source": "C:\\Users\\NhatQuang\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_edit_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\NhatQuang\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_cong_icon.png.flat",
-        "source": "C:\\Users\\NhatQuang\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\cong_icon.png"
     },
     {
         "merged": "C:\\Users\\NhatQuang\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
