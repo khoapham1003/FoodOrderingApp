@@ -8,8 +8,8 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="310dp"
-        android:background="#FFDBD0"
+        android:layout_height="300dp"
+        android:background="@color/white"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -18,8 +18,9 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="276dp"
+            android:layout_height="300dp"
             android:orientation="horizontal">
+
 
             <LinearLayout
                 android:id="@+id/homeBtn1"
@@ -55,41 +56,57 @@
                     android:padding="5dp"
                     app:srcCompat="@drawable/cart" />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/homeBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/imgSrc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pizza01"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </LinearLayout>
+
+
         </RelativeLayout>
     </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="180dp"-->
+    <!--        android:layout_height="180dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/linearLayout">-->
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgSrc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/spagetti"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-        <!--        <ImageView-->
-        <!--            android:id="@+id/imgSrc"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintStart_toStartOf="parent"-->
-        <!--            app:layout_constraintTop_toTopOf="parent"-->
-        <!--            app:srcCompat="@drawable/pizza" />-->
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--            android:id="@+id/imgSrc"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:src="@drawable/spagetti"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+    <!--        &lt;!&ndash;        <ImageView&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:id="@+id/imgSrc"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+    <!--        &lt;!&ndash;            app:srcCompat="@drawable/pizza" />&ndash;&gt;-->
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="430dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -97,22 +114,25 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#DDC6C6"
+            android:backgroundTint="@color/white"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+            <!--            android:background="#DDC6C6"-->
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
-                android:orientation="horizontal">
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="20dp"
+                android:layout_marginTop="50dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="250dp"
                     android:layout_height="match_parent"
-                    android:layout_marginVertical="30dp"
+                    android:layout_marginVertical="0dp"
                     android:layout_marginLeft="30dp"
                     android:orientation="vertical">
 
@@ -146,7 +166,7 @@
                         <TextView
                             android:id="@+id/rvCount"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_marginRight="5dp"
                             android:text="120" />
 
@@ -160,7 +180,7 @@
                 <LinearLayout
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="35dp"
+                    android:layout_marginTop="15dp"
                     android:orientation="horizontal">
 
                     <ImageButton
@@ -192,24 +212,25 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginLeft="30dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/linearLayout01"
                     android:layout_width="100dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="100dp"
                     android:background="@drawable/category_background"
-                    android:backgroundTint="#EF8767"
+                    android:backgroundTint="#FFDBD0"
                     android:orientation="vertical"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
+                    <!--                    android:backgroundTint="#EF8767"-->
 
                     <ImageView
                         android:id="@+id/imageView01"
                         android:layout_width="match_parent"
-                        android:layout_height="65dp"
+                        android:layout_height="50dp"
                         android:layout_marginTop="20dp"
                         app:srcCompat="@drawable/fire" />
 
@@ -237,10 +258,11 @@
                 <LinearLayout
                     android:id="@+id/linearLayout02"
                     android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/category_background"
-                    android:backgroundTint="#EF8767"
+                    android:backgroundTint="#FFDBD0"
+
                     android:orientation="vertical"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
@@ -248,7 +270,7 @@
                     <ImageView
                         android:id="@+id/imageView02"
                         android:layout_width="match_parent"
-                        android:layout_height="65dp"
+                        android:layout_height="50dp"
                         android:layout_marginTop="20dp"
                         app:srcCompat="@drawable/restaurant" />
 
@@ -270,10 +292,10 @@
                 <LinearLayout
                     android:id="@+id/linearLayout03"
                     android:layout_width="100dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/category_background"
-                    android:backgroundTint="#EF8767"
+                    android:backgroundTint="#FFDBD0"
                     android:orientation="vertical"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
@@ -281,7 +303,7 @@
                     <ImageView
                         android:id="@+id/imageView03"
                         android:layout_width="match_parent"
-                        android:layout_height="65dp"
+                        android:layout_height="50dp"
                         android:layout_marginTop="20dp"
                         app:srcCompat="@drawable/time" />
 
@@ -318,35 +340,18 @@
                     tools:layout_editor_absoluteY="206dp">
 
                     <TextView
-                        android:id="@+id/textView10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:text="Reviews"
-                        android:textColor="@color/black"
-                        app:layout_constraintStart_toEndOf="@+id/textView9"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
                         android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
                         android:text="Description"
                         android:textColor="@color/black"
                         android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/textView8"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
-                        android:text="Ingredients"
-                        android:textColor="#000000"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
@@ -356,11 +361,10 @@
                     android:layout_marginHorizontal="30dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/button_top"
-                    android:backgroundTint="#EF8767"
+                    android:backgroundTint="#FFDBD0"
                     android:padding="10dp"
                     android:text="Short-grain white riceis usually used, although short grain brown rice, like olive oil on nori, is now becoming more widespread."
                     android:textColor="@color/black"
-                    app:layout_constraintStart_toEndOf="@+id/textView8"
                     app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
 

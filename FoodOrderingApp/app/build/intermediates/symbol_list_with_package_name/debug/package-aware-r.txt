@@ -2814,6 +2814,7 @@ drawable img_4
 drawable img_5
 drawable img_6
 drawable img_7
+drawable img_background
 drawable lightly_pink_color
 drawable lightpink_color
 drawable m3_appbar_background
@@ -3500,7 +3501,6 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-id textView10
 id textView12
 id textView13
 id textView14
@@ -3513,7 +3513,6 @@ id textView3
 id textView5
 id textView6
 id textView7
-id textView8
 id textView9
 id textViewAddress
 id textViewChangeBtn

@@ -46,7 +46,7 @@ public class listViewFoodActivity extends AppCompatActivity {
     TextView titleGetFood, rvStart, rvCount, kcal, unit, cookTime, description, price, quantity;
     int totalQuantity = 1;
     int totalPrice = 0;
-    CircleImageView imageSrc;
+    ImageView imageSrc;
     ImageButton btnBack, btnCart, plus_btn, minus_btn;
     Button btnCheckOut;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
@@ -114,7 +114,7 @@ public class listViewFoodActivity extends AppCompatActivity {
         cookTime = (TextView) findViewById(R.id.cookTime);
         description = (TextView) findViewById(R.id.des);
         price = (TextView) findViewById(R.id.price);
-        imageSrc = (CircleImageView) findViewById(R.id.imgSrc);
+        imageSrc = (ImageView) findViewById(R.id.imgSrc);
 //        Intent receiverTitle = getIntent();
 //        String receiverValue = receiverTitle.getStringExtra("KEY_SENDER");
 //        titleGetFood.setText(receiverValue);
