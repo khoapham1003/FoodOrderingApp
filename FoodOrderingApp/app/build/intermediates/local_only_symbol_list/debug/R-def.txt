@@ -22,6 +22,8 @@ drawable category_background
 drawable chat_bottom
 drawable circle_button_background
 drawable cong_icon
+drawable daucong
+drawable dautru
 drawable edit
 drawable edit_profile
 drawable editprofile_icon_calendar
@@ -93,6 +95,8 @@ drawable sushi01
 drawable thinadd
 drawable time
 drawable tru_icon
+drawable user
+drawable user1
 id Avatar1_img1
 id CFPassWord_SU
 id Emal_SI
@@ -117,6 +121,8 @@ id btnSend_FP
 id btnSignIn
 id btnSignUp
 id btnToCart
+id btnToHome
+id btnToUser
 id btn_backMP
 id btn_backToHome
 id btn_nextTo01
@@ -135,6 +141,7 @@ id constraintLayout4
 id constraintLayout5
 id constraintLayout6
 id cookTime
+id coordinatorLayout
 id des
 id editTextTextPersonName2
 id edtConfirmNewPassword
@@ -149,7 +156,6 @@ id edtUserPhone
 id email_FP
 id email_SU
 id forgot_password
-id homeBtn
 id homeBtn1
 id homeBtn2
 id id_rvCount
@@ -168,9 +174,7 @@ id imageView3
 id imageView5
 id imageView554
 id imageView575
-id imageView5775
 id imageView586
-id imageView589
 id imageViewCashIcon
 id imageViewFood
 id imageViewMapBtn
