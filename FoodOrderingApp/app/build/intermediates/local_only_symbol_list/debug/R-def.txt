@@ -46,6 +46,7 @@ drawable img_4
 drawable img_5
 drawable img_6
 drawable img_7
+drawable img_8
 drawable img_background
 drawable lightly_pink_color
 drawable lightpink_color
@@ -135,6 +136,7 @@ id constraintLayout4
 id constraintLayout5
 id constraintLayout6
 id cookTime
+id delete_item_btn
 id des
 id editTextTextPersonName2
 id edtConfirmNewPassword

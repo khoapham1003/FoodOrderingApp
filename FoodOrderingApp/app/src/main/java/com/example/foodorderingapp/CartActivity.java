@@ -59,6 +59,7 @@ public class CartActivity extends AppCompatActivity {
         payment_txv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(CartActivity.this, OrderCompleteActivity.class);
                 startActivity(intent);
             }
@@ -77,7 +78,11 @@ public class CartActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (DocumentSnapshot doc : task.getResult().getDocuments()) {
+
+                                String documentId = doc.getId();
+
                                 Cart cartModel = doc.toObject(Cart.class);
+                                cartModel.setDocumentId(documentId);
                                 cartList.add(cartModel);
                                 cartAdapter.notifyDataSetChanged();
                             }

@@ -2814,6 +2814,7 @@ drawable img_4
 drawable img_5
 drawable img_6
 drawable img_7
+drawable img_8
 drawable img_background
 drawable lightly_pink_color
 drawable lightpink_color
@@ -3128,6 +3129,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id delete_item_btn
 id deltaRelative
 id dependency_ordering
 id des
