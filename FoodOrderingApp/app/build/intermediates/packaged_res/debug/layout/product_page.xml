@@ -18,24 +18,24 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="245dp"
             android:orientation="horizontal">
 
 
             <LinearLayout
                 android:id="@+id/homeBtn1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
                 android:layout_alignParentLeft="true"
                 android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/btnBack"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/button_top"
-                    android:padding="5dp"
+                    android:padding="10dp"
                     app:srcCompat="@drawable/back" />
 
             </LinearLayout>
@@ -61,47 +61,20 @@
                 android:layout_below="@+id/homeBtn2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
-                    android:scaleType="fitXY"
                     android:id="@+id/imgSrc"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:scaleType="fitXY"
                     android:src="@drawable/pizza01"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
 
 
         </RelativeLayout>
     </LinearLayout>
-
-    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-    <!--        android:layout_width="180dp"-->
-    <!--        android:layout_height="180dp"-->
-    <!--        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="@+id/linearLayout">-->
-
-    <!--        <de.hdodenhof.circleimageview.CircleImageView-->
-    <!--            android:id="@+id/imgSrc"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:src="@drawable/spagetti"-->
-    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--            app:layout_constraintEnd_toEndOf="parent"-->
-    <!--            app:layout_constraintStart_toStartOf="parent"-->
-    <!--            app:layout_constraintTop_toTopOf="parent" />-->
-    <!--        &lt;!&ndash;        <ImageView&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:id="@+id/imgSrc"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
-    <!--        &lt;!&ndash;            app:srcCompat="@drawable/pizza" />&ndash;&gt;-->
-    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
@@ -185,10 +158,11 @@
 
                     <ImageButton
                         android:id="@+id/minus_btn_product"
-                        android:layout_width="13dp"
+                        android:layout_width="23dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/img_2" />
+
+                        app:srcCompat="@drawable/dautru"
+                        />
 
                     <TextView
                         android:id="@+id/quantity"
@@ -205,8 +179,7 @@
                         android:id="@+id/add_btn_product"
                         android:layout_width="23dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/img_1" />
+                        app:srcCompat="@drawable/daucong" />
                 </LinearLayout>
             </LinearLayout>
 

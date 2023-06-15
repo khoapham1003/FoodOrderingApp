@@ -2771,6 +2771,8 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable cong_icon
+drawable daucong
+drawable dautru
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2936,6 +2938,8 @@ drawable time
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable tru_icon
+drawable user
+drawable user1
 id ALT
 id Avatar1_img1
 id BOTTOM_END
@@ -3065,6 +3069,8 @@ id btnSend_FP
 id btnSignIn
 id btnSignUp
 id btnToCart
+id btnToHome
+id btnToUser
 id btn_backMP
 id btn_backToHome
 id btn_nextTo01
@@ -3115,6 +3121,7 @@ id contiguous
 id continuousVelocity
 id cookTime
 id coordinator
+id coordinatorLayout
 id cos
 id counterclockwise
 id cradle
@@ -3210,7 +3217,6 @@ id header_title
 id hideable
 id home
 id homeAsUp
-id homeBtn
 id homeBtn1
 id homeBtn2
 id honorRequest
@@ -3238,9 +3244,7 @@ id imageView3
 id imageView5
 id imageView554
 id imageView575
-id imageView5775
 id imageView586
-id imageView589
 id imageViewCashIcon
 id imageViewFood
 id imageViewMapBtn

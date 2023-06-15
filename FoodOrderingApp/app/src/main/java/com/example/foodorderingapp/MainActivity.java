@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,7 +32,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     TextView btnProfile;
-    ImageButton btnToCart;
+    LinearLayout btnToCart,btnToUser;
     RecyclerView rvcData;
     FoodAdapter foodAdapter;
     SearchView searchBar;
@@ -44,7 +45,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnProfile = (TextView) findViewById(R.id.btnProfile);
-        btnToCart = (ImageButton) findViewById(R.id.btnToCart);
+        btnToCart = (LinearLayout) findViewById(R.id.btnToCart);
+        btnToUser = (LinearLayout) findViewById(R.id.btnToUser);
+
+
         database.collection("User")
                 .document(User.getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
@@ -66,6 +70,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnToUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MyProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
