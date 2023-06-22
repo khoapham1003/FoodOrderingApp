@@ -1,12 +1,17 @@
 package com.example.foodorderingapp;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -27,6 +32,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,13 +40,18 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class EditProfileActivity extends AppCompatActivity {
     CircleImageView profileImg;
-    EditText edtUserName, edtUserDoB, edtUserEmail, edtUserGender, edtUserPhone, edtUserCountry;
-    Button btnChangeAva, btnSave;
+    EditText edtUserName, edtUserDoB, edtUserEmail, edtUserPhone, edtUserCountry;
+    Button btnChangeAva, btnSave, btnBack;
 
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
     StorageReference storageReference = FirebaseStorage.getInstance().getReference();
+    DatePickerDialog datePickerDialog;
+
+    String[] items = {"Male","Female"};
+    AutoCompleteTextView edtUserGender;
+    ArrayAdapter<String> adapterItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,12 +61,25 @@ public class EditProfileActivity extends AppCompatActivity {
         edtUserName = (EditText) findViewById(R.id.edtUserName);
         edtUserDoB = (EditText) findViewById(R.id.edtUserDoB);
         edtUserEmail = (EditText) findViewById(R.id.edtUserEmail);
-        edtUserGender = (EditText) findViewById(R.id.edtUserGender);
+        edtUserGender = (AutoCompleteTextView) findViewById(R.id.edtUserGender);
+
         edtUserPhone = (EditText) findViewById(R.id.edtUserPhone);
         edtUserCountry = (EditText) findViewById(R.id.edtUserCountry);
+        btnBack = (Button) findViewById(R.id.btnback_EP);
 
         btnSave = (Button) findViewById(R.id.btnSave_EP);
         btnChangeAva = (Button) findViewById(R.id.btnChangeAva);
+
+        adapterItems = new ArrayAdapter<String>(this, R.layout.list_gender, items);
+        edtUserGender.setAdapter(adapterItems);
+        edtUserGender.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = parent.getItemAtPosition(position).toString();
+                edtUserGender.setText(item);
+            }
+        });
+
         StorageReference profileRef = storageReference.child("users/" + firebaseAuth.getCurrentUser().getUid() + "/profile.jpg");
         profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
@@ -65,6 +89,33 @@ public class EditProfileActivity extends AppCompatActivity {
             }
         });
 
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EditProfileActivity.this, MyProfileActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        Calendar calendar = Calendar.getInstance();
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+        int month = calendar.get(Calendar.MONTH);
+        int year = calendar.get(Calendar.YEAR);
+        edtUserDoB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                datePickerDialog = new DatePickerDialog(EditProfileActivity.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        edtUserDoB.setText(dayOfMonth + "/" + (month + 1) + "/" + year);
+                    }
+                }, year, month, day);
+                datePickerDialog.show();
+            }
+        });
+
+        
         database.collection("User")
                 .document(User.getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                     @Override
@@ -112,24 +163,55 @@ public class EditProfileActivity extends AppCompatActivity {
                 UserGender = String.valueOf(edtUserGender.getText());
                 UserPhone = String.valueOf(edtUserPhone.getText());
                 UserCountry = String.valueOf(edtUserCountry.getText());
-                if (UserName.isEmpty()) {
+                if(UserName.isEmpty())
+                {
                     edtUserName.setError("Enter Name");
                     edtUserName.requestFocus();
-                } else if (UserDoB.isEmpty()) {
+                }
+                else if(UserDoB.isEmpty())
+                {
                     edtUserDoB.setError("Enter Day of Birth");
                     edtUserDoB.requestFocus();
-                } else if (UserEmail.isEmpty()) {
+                }
+                else if (UserEmail.isEmpty())
+                {
                     edtUserEmail.setError("Enter Email");
                     edtUserEmail.requestFocus();
-                } else if (UserGender.isEmpty()) {
+                }
+                else if (UserGender.isEmpty())
+                {
                     edtUserGender.setError("Enter Gender");
                     edtUserGender.requestFocus();
-                } else if (UserPhone.isEmpty()) {
+                }
+                else if (!UserGender.equals("Male") ||!UserGender.equals("Female"))
+                {
+                    edtUserGender.setError("Gender must be Male or Female");
+                    edtUserGender.requestFocus();
+                }
+                else if (UserPhone.isEmpty())
+                {
                     edtUserPhone.setError("Enter Phone");
                     edtUserPhone.requestFocus();
-                } else if (UserCountry.isEmpty()) {
+                }
+                else if (UserPhone.length() > 12 || UserPhone.length() < 9 )
+                {
+                    edtUserPhone.setError("Phone Number only have 10-11 number");
+                    edtUserPhone.requestFocus();
+                }
+                else if(checkNumber(UserPhone))
+                {
+                    edtUserPhone.setError("Phone Number must be number");
+                    edtUserPhone.requestFocus();
+                }
+                else if (UserCountry.isEmpty())
+                {
                     edtUserCountry.setError("Enter Country");
                     edtUserCountry.requestFocus();
+                }
+                else if (checkLetter(UserCountry))
+                {
+                    edtUserPhone.setError("Country must be the character");
+                    edtUserPhone.requestFocus();
                 } else {
                     database.collection("User")
                             .document(User.getUid())
@@ -203,5 +285,28 @@ public class EditProfileActivity extends AppCompatActivity {
                 Toast.makeText(EditProfileActivity.this, "Failed: " + exception.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+    public static boolean checkNumber(String str) {
+        if (str == null || str.isEmpty()) {
+            return false;
+        }
+        int sz = str.length();
+        for (int i = 0; i < sz; i++)
+            if (!Character.isDigit(str.charAt(i))) {
+                return false;
+            }
+        return true;
+    }
+
+    public static boolean checkLetter(String str) {
+        if (str == null || str.isEmpty()) {
+            return false;
+        }
+        int sz = str.length();
+        for (int i = 0; i < sz; i++)
+            if (!Character.isLetter(str.charAt(i))) {
+                return false;
+            }
+        return true;
     }
 }

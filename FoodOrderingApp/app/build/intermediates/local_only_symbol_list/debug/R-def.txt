@@ -131,6 +131,7 @@ id btn_nextTo03
 id btn_nextToSign
 id btn_orderAgain
 id btn_tryAgain
+id btnback_EP
 id button2
 id card_item
 id cart_rec
@@ -251,6 +252,7 @@ layout activity_sign_in
 layout activity_sign_up
 layout empty_cart
 layout item_food
+layout list_gender
 layout no_internet_layout
 layout product_page
 layout search_page
@@ -265,6 +267,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string project_id
+string select
 style Theme.FoodOrderingApp
 xml backup_rules
 xml data_extraction_rules

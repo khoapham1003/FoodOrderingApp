@@ -3079,6 +3079,7 @@ id btn_nextTo03
 id btn_nextToSign
 id btn_orderAgain
 id btn_tryAgain
+id btnback_EP
 id button2
 id buttonPanel
 id cache_measures
@@ -3725,6 +3726,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout empty_cart
 layout item_food
+layout list_gender
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3975,6 +3977,7 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string select
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow

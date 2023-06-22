@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".EditProfileActivity">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnback_EP"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/myprofile_backarrow"
+        android:textSize="30dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,17 +84,23 @@
         android:padding="15dp"
         android:singleLine="true" />
 
-    <EditText
-        android:id="@+id/edtUserGender"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="360dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="410dp"
-        android:background="@drawable/edit_profile"
-        android:hint="Male"
-        android:imeOptions="actionNext"
-        android:padding="15dp"
-        android:singleLine="true" />
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <AutoCompleteTextView
+            android:id="@+id/edtUserGender"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="410dp"
+            android:background="@drawable/edit_profile"
+            android:imeOptions="actionNext"
+            android:padding="15dp"
+            android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
         android:id="@+id/edtUserPhone"
