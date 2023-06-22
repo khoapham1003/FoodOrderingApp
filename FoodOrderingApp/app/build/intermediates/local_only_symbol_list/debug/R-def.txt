@@ -48,6 +48,7 @@ drawable img_4
 drawable img_5
 drawable img_6
 drawable img_7
+drawable img_8
 drawable img_background
 drawable lightly_pink_color
 drawable lightpink_color
@@ -131,6 +132,7 @@ id btn_nextTo03
 id btn_nextToSign
 id btn_orderAgain
 id btn_tryAgain
+id btnback_EP
 id button2
 id card_item
 id cart_rec
@@ -142,6 +144,7 @@ id constraintLayout5
 id constraintLayout6
 id cookTime
 id coordinatorLayout
+id delete_item_btn
 id des
 id editTextTextPersonName2
 id edtConfirmNewPassword
@@ -251,6 +254,7 @@ layout activity_sign_in
 layout activity_sign_up
 layout empty_cart
 layout item_food
+layout list_gender
 layout no_internet_layout
 layout product_page
 layout search_page
@@ -265,6 +269,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string project_id
+string select
 style Theme.FoodOrderingApp
 xml backup_rules
 xml data_extraction_rules

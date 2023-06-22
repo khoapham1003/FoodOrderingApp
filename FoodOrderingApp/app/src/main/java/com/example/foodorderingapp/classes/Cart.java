@@ -8,6 +8,7 @@ public class Cart {
     String rvCount;
     String foodImg;
     int totalPrice;
+    String documentId;
 
     public Cart() {
     }
@@ -76,5 +77,13 @@ public class Cart {
 
     public void setTotalPrice(int totalPrice) {
         this.totalPrice = totalPrice;
+    }
+
+    public String getDocumentId() {
+        return documentId;
+    }
+
+    public void setDocumentId(String documentId) {
+        this.documentId = documentId;
     }
 }

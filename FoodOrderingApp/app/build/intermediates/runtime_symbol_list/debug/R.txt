@@ -2815,6 +2815,7 @@ int drawable img_4 0x7f0700cc
 int drawable img_5 0x7f0700cd
 int drawable img_6 0x7f0700ce
 int drawable img_7 0x7f0700cf
+int drawable img_8 0x7f07014c
 int drawable img_background 0x7f0700d0
 int drawable lightly_pink_color 0x7f0700d1
 int drawable lightpink_color 0x7f0700d2
@@ -3078,6 +3079,7 @@ int id btn_nextTo03 0x7f080087
 int id btn_nextToSign 0x7f080088
 int id btn_orderAgain 0x7f080089
 int id btn_tryAgain 0x7f08008a
+int id btnback_EP 0x7f080285
 int id button2 0x7f08008b
 int id buttonPanel 0x7f08008c
 int id cache_measures 0x7f08008d
@@ -3134,6 +3136,7 @@ int id decelerate 0x7f0800bf
 int id decelerateAndComplete 0x7f0800c0
 int id decor_content_parent 0x7f0800c1
 int id default_activity_button 0x7f0800c2
+int id delete_item_btn 0x7f080284
 int id deltaRelative 0x7f0800c3
 int id dependency_ordering 0x7f0800c4
 int id des 0x7f0800c5
@@ -3724,6 +3727,7 @@ int layout design_text_input_end_icon 0x7f0b003a
 int layout design_text_input_start_icon 0x7f0b003b
 int layout empty_cart 0x7f0b003c
 int layout item_food 0x7f0b003d
+int layout list_gender 0x7f0b007f
 int layout m3_alert_dialog 0x7f0b003e
 int layout m3_alert_dialog_actions 0x7f0b003f
 int layout m3_alert_dialog_title 0x7f0b0040
@@ -3974,6 +3978,7 @@ int string search_menu_title 0x7f1000b1
 int string searchbar_scrolling_view_behavior 0x7f1000b2
 int string searchview_clear_text_content_description 0x7f1000b3
 int string searchview_navigation_content_description 0x7f1000b4
+int string select 0x7f1000b8
 int string side_sheet_accessibility_pane_title 0x7f1000b5
 int string side_sheet_behavior 0x7f1000b6
 int string status_bar_notification_info_overflow 0x7f1000b7
