@@ -23,12 +23,16 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreSettings;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class CartActivity extends AppCompatActivity {
     RecyclerView recyclerView;
@@ -39,14 +43,15 @@ public class CartActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private FirebaseFirestore firestore;
 
+
     //int overAllTotalAmount;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
-
         auth = FirebaseAuth.getInstance();
         firestore = FirebaseFirestore.getInstance();
+
 //get data from CartAdapter
         LocalBroadcastManager.getInstance(this)
                 .registerReceiver(mMessageReceiver, new IntentFilter("MyTotalAmount"));
@@ -63,12 +68,23 @@ public class CartActivity extends AppCompatActivity {
         payment_txv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 firestore.collection("Cart").document(auth.getCurrentUser().getUid())
-                        .delete().addOnCompleteListener(new OnCompleteListener<Void>() {
+                        .collection("User")
+                        .get()
+                        .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                             @Override
-                            public void onComplete(@NonNull Task<Void> task) {
+                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(CartActivity.this, "Payment successfully", Toast.LENGTH_SHORT).show();
+                                    // Delete each document in the sub-collection
+                                    for (QueryDocumentSnapshot document : task.getResult()) {
+                                        document.getReference().delete();
+                                    }
+                                    // Delete the sub-collection itself
+                                    firestore.collection("Cart").document(auth.getCurrentUser().getUid())
+                                            .collection("User")
+                                            .document().delete();
+                                    Toast.makeText(CartActivity.this,auth.getCurrentUser().getUid() , Toast.LENGTH_SHORT).show();
                                 } else {
                                     Toast.makeText(CartActivity.this, "Error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                                 }
