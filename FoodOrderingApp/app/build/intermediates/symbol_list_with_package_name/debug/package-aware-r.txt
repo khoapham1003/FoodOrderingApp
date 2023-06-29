@@ -3039,6 +3039,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id back_btn_cart
+id back_btn_forgot
 id barrier
 id baseline
 id beginOnFirstDraw

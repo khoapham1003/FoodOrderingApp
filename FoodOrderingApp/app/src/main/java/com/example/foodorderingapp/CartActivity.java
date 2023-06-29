@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -40,6 +41,7 @@ public class CartActivity extends AppCompatActivity {
     CartAdapter cartAdapter;
     TextView totalAmount, payment_txv;
     //ImageButton back_btn;
+    Button back_btn;
 
     private FirebaseAuth auth;
     private FirebaseFirestore firestore;

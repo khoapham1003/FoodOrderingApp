@@ -3038,6 +3038,7 @@ int id autoComplete 0x7f08005f
 int id autoCompleteToEnd 0x7f080060
 int id autoCompleteToStart 0x7f080061
 int id back_btn_cart 0x7f080062
+int id back_btn_forgot 0x7f080286
 int id barrier 0x7f080063
 int id baseline 0x7f080064
 int id beginOnFirstDraw 0x7f080065

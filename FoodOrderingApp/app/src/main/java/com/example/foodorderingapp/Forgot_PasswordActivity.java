@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Forgot_PasswordActivity extends AppCompatActivity {
 
     EditText email_FP;
-    Button SendEmail;
+    Button SendEmail,back_btn_forgot;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
     @Override
@@ -29,7 +29,15 @@ public class Forgot_PasswordActivity extends AppCompatActivity {
 
         email_FP = (EditText) findViewById(R.id.email_FP);
         SendEmail = (Button) findViewById(R.id.btnSend_FP);
+        back_btn_forgot= (Button)  findViewById(R.id.back_btn_forgot);
 
+        back_btn_forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Forgot_PasswordActivity.this, SignInActivity.class);
+                startActivity(intent);
+            }
+        });
         SendEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

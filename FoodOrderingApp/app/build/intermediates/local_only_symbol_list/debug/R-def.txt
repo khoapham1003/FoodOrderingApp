@@ -107,6 +107,7 @@ id SignUp_SI
 id add_btn_product
 id app_bar
 id back_btn_cart
+id back_btn_forgot
 id btnBack
 id btnCart
 id btnChangeAva
