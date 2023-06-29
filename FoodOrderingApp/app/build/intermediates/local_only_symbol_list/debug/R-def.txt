@@ -12,7 +12,6 @@ drawable back
 drawable back_arrow
 drawable border_background
 drawable btn1
-drawable btn2
 drawable btn3
 drawable button_background
 drawable button_top
@@ -133,7 +132,6 @@ id btn_nextToSign
 id btn_orderAgain
 id btn_tryAgain
 id btnback_EP
-id button2
 id card_item
 id cart_rec
 id constraintLayout
@@ -146,7 +144,6 @@ id cookTime
 id coordinatorLayout
 id delete_item_btn
 id des
-id editTextTextPersonName2
 id edtConfirmNewPassword
 id edtNewPassword
 id edtOldPassword
@@ -167,7 +164,6 @@ id id_txt_Total
 id id_txtview_foodname
 id id_txtview_numberOfItems
 id id_txtview_price
-id imageButton
 id imageView
 id imageView01
 id imageView02
@@ -191,9 +187,6 @@ id linearLayout
 id linearLayout01
 id linearLayout02
 id linearLayout03
-id linearLayout3
-id linearLayout4
-id linearLayout5
 id minus_btn_product
 id name_item
 id no_internet_layout
@@ -209,17 +202,9 @@ id scrollView2
 id scrollView3
 id textView
 id textView12
-id textView13
-id textView14
-id textView15
-id textView16
-id textView17
-id textView18
 id textView2
 id textView3
 id textView5
-id textView6
-id textView7
 id textView9
 id textViewAddress
 id textViewChangeBtn
@@ -257,7 +242,6 @@ layout item_food
 layout list_gender
 layout no_internet_layout
 layout product_page
-layout search_page
 layout viewholder_cart
 mipmap ic_launcher
 mipmap ic_launcher_round

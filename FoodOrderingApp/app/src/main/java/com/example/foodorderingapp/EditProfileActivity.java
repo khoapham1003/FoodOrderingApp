@@ -212,12 +212,12 @@ public class EditProfileActivity extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                                     if (task.isSuccessful()) {
                                         Map<String, Object> user = new HashMap<>();
-                                        user.put("Name", UserName);
+                                        user.put("Name", UserName.trim());
                                         user.put("DoB", UserDoB);
-                                        user.put("Email", UserEmail);
-                                        user.put("Phone", UserPhone);
+                                        user.put("Email", UserEmail.trim());
+                                        user.put("Phone", UserPhone.trim());
                                         user.put("Gender", UserGender);
-                                        user.put("Country", UserCountry);
+                                        user.put("Country", UserCountry.trim());
                                         database.collection("User").document(User.getUid()).update(user);
                                     }
                                 }
@@ -296,7 +296,7 @@ public class EditProfileActivity extends AppCompatActivity {
         }
         int sz = str.length();
         for (int i = 0; i < sz; i++)
-            if (!Character.isLetter(str.charAt(i))) {
+            if (!Character.isLetter(str.charAt(i)) && !(Character.compare(' ',str.charAt(i))==0)) {
                 return false;
             }
         return true;

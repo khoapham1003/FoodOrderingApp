@@ -39,7 +39,8 @@ public class CartActivity extends AppCompatActivity {
     List<Cart> cartList;
     CartAdapter cartAdapter;
     TextView totalAmount, payment_txv;
-    ImageButton back_btn;
+    //ImageButton back_btn;
+
     private FirebaseAuth auth;
     private FirebaseFirestore firestore;
 

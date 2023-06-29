@@ -8,12 +8,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnback_EP"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/myprofile_backarrow"
         android:textSize="30dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,29 +27,29 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/rounded_imageview"
         android:src="@drawable/myprofile_avatar" />
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnChangeAva"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="167dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="150dp"
         android:background="@drawable/editprofile_icon_camera" />
 
 
     <EditText
         android:id="@+id/edtUserName"
         android:layout_width="360dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         android:background="@drawable/edit_profile"
@@ -56,24 +57,26 @@
         android:imeOptions="actionNext"
         android:inputType="textPersonName"
         android:padding="15dp"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textSize="16dp" />
 
     <EditText
         android:id="@+id/edtUserDoB"
         android:layout_width="360dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="270dp"
         android:background="@drawable/edit_profile"
-        android:hint="12/27/2000"
+        android:hint="27/12/2000"
         android:imeOptions="actionNext"
         android:inputType="date"
-        android:padding="15dp" />
+        android:padding="15dp"
+        android:textSize="16dp" />
 
     <EditText
         android:id="@+id/edtUserEmail"
         android:layout_width="360dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="340dp"
         android:background="@drawable/edit_profile"
@@ -81,62 +84,67 @@
         android:imeOptions="actionNext"
         android:inputType="textEmailAddress"
         android:padding="15dp"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textSize="16dp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="360dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="410dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        android:layout_marginTop="405dp">
+
         <AutoCompleteTextView
             android:id="@+id/edtUserGender"
             android:layout_width="360dp"
-            android:layout_height="wrap_content"
+            android:layout_height="55dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="410dp"
             android:background="@drawable/edit_profile"
             android:imeOptions="actionNext"
             android:padding="15dp"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textSize="16dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
         android:id="@+id/edtUserPhone"
         android:layout_width="360dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="480dp"
         android:background="@drawable/edit_profile"
         android:drawableLeft="@drawable/editprofile_icon_vietnam"
         android:drawablePadding="10dp"
-        android:hint="+84 914222333"
+        android:hint="0914222333"
         android:imeOptions="actionNext"
         android:inputType="textPhonetic"
         android:padding="15dp"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textSize="16dp" />
 
     <EditText
         android:id="@+id/edtUserCountry"
         android:layout_width="360dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:background="@drawable/edit_profile"
         android:hint="Việt Nam"
         android:imeOptions="actionDone"
         android:padding="15dp"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textSize="16dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSave_EP"
         android:layout_width="360dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="640dp"
-        android:background="@drawable/btn2"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#FF897D"
         android:text="Save"
         android:textColor="@color/white"
-        android:textSize="15dp"
+        android:textSize="16dp"
         android:textStyle="bold" />
 </RelativeLayout>

@@ -2,9 +2,6 @@ package com.example.foodorderingapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,39 +16,36 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.foodorderingapp.classes.Food;
-import com.google.firebase.firestore.auth.User;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Serializable;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHoder> {
     private List<Food> mListFood;
+    private List<Food> mFoods;
     private Context mContext;
 
     public FoodAdapter(Context mContext, List<Food> mListFood) {
         this.mContext = mContext;
         this.mListFood = mListFood;
+        this.mFoods = mListFood;
     }
 
     public void setFilterList(String text) {
+        if (this.mListFood.isEmpty()) {
+            this.mListFood = mFoods;
+        }
         List<Food> filterList = new ArrayList<>();
-
-        for (Food item : mListFood) {
-            if (item.getName().toLowerCase().contains(text.toLowerCase())) {
+        for (Food item : mFoods) {
+            if (item.getName().toLowerCase().contains(text.toLowerCase().trim())) {
                 filterList.add(item);
             }
         }
         if (filterList.isEmpty()) {
-            this.mListFood = mListFood;
+            this.mListFood.clear();
         } else {
             this.mListFood = filterList;
         }
-//        this.mListFood = filterList;
         notifyDataSetChanged();
     }
 

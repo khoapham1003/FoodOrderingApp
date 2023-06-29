@@ -2734,7 +2734,6 @@ drawable back
 drawable back_arrow
 drawable border_background
 drawable btn1
-drawable btn2
 drawable btn3
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3081,7 +3080,6 @@ id btn_nextToSign
 id btn_orderAgain
 id btn_tryAgain
 id btnback_EP
-id button2
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3167,7 +3165,6 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editTextTextPersonName2
 id edit_query
 id edtConfirmNewPassword
 id edtNewPassword
@@ -3237,7 +3234,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton
 id imageView
 id imageView01
 id imageView02
@@ -3281,9 +3277,6 @@ id linearLayout
 id linearLayout01
 id linearLayout02
 id linearLayout03
-id linearLayout3
-id linearLayout4
-id linearLayout5
 id listMode
 id list_item
 id m3_side_sheet
@@ -3509,17 +3502,9 @@ id textStart
 id textTop
 id textView
 id textView12
-id textView13
-id textView14
-id textView15
-id textView16
-id textView17
-id textView18
 id textView2
 id textView3
 id textView5
-id textView6
-id textView7
 id textView9
 id textViewAddress
 id textViewChangeBtn
@@ -3788,7 +3773,6 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout product_page
-layout search_page
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
