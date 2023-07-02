@@ -2,8 +2,12 @@ package com.example.foodorderingapp;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -39,23 +43,29 @@ import java.util.Map;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class EditProfileActivity extends AppCompatActivity {
-    CircleImageView profileImg;
-    EditText edtUserName, edtUserDoB, edtUserEmail, edtUserPhone, edtUserCountry;
     Button btnChangeAva, btnSave,btnBack;
+    CircleImageView profileImg;
+    DatePickerDialog datePickerDialog;
+    EditText edtUserName, edtUserDoB, edtUserEmail, edtUserPhone, edtUserCountry;
+
+    String[] items = {"Male","Female"};
+    AutoCompleteTextView edtUserGender;
+    ArrayAdapter<String> adapterItems;
 
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
     StorageReference storageReference = FirebaseStorage.getInstance().getReference();
-    DatePickerDialog datePickerDialog;
 
-    String[] items = {"Male","Female"};
-    AutoCompleteTextView edtUserGender;
-    ArrayAdapter<String> adapterItems;
+    BroadcastReceiver broadcastReceiver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_profile);
+
+        broadcastReceiver = new ConnectionReceiver();
+        registerNetworkBroadcast();
+
         profileImg = (CircleImageView) findViewById(R.id.profile_img);
         edtUserName = (EditText) findViewById(R.id.edtUserName);
         edtUserDoB = (EditText) findViewById(R.id.edtUserDoB);
@@ -68,19 +78,12 @@ public class EditProfileActivity extends AppCompatActivity {
         btnChangeAva = (Button) findViewById(R.id.btnChangeAva);
         adapterItems = new ArrayAdapter<String>(this, R.layout.list_gender, items);
         edtUserGender.setAdapter(adapterItems);
+
         edtUserGender.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = parent.getItemAtPosition(position).toString();
                 edtUserGender.setText(item);
-            }
-        });
-        StorageReference profileRef = storageReference.child("users/" + firebaseAuth.getCurrentUser().getUid() + "/profile.jpg");
-        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-                Picasso.get().load(uri).into(profileImg);
-
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -108,44 +111,7 @@ public class EditProfileActivity extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
-        database.collection("User")
-                .document(User.getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-                    @Override
-                    public void onSuccess(DocumentSnapshot documentSnapshot) {
-                        Boolean CheckData = documentSnapshot.getBoolean("Data");
-                        if (Boolean.TRUE.equals(CheckData)) {
-                            database.collection("User")
-                                    .document(User.getUid()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                                            String Name = documentSnapshot.getString("Name");
-                                            edtUserName.setText(Name);
-                                            String DoB = documentSnapshot.getString("DoB");
-                                            edtUserDoB.setText(DoB);
-                                            String Email = documentSnapshot.getString("Email");
-                                            edtUserEmail.setText(Email);
-                                            String Gender = documentSnapshot.getString("Gender");
-                                            edtUserGender.setText(Gender);
-                                            String Phone = documentSnapshot.getString("Phone");
-                                            edtUserPhone.setText(Phone);
-                                            String Country = documentSnapshot.getString("Country");
-                                            edtUserCountry.setText(Country);
-                                        }
-                                    });
-                        } else {
-                            edtUserName.setText("");
-                            edtUserDoB.setText("");
-                            String Email = documentSnapshot.getString("Email");
-                            edtUserEmail.setText(Email);
-                            edtUserGender.setText("");
-                            edtUserPhone.setText("");
-                            edtUserCountry.setText("");
-                        }
-                    }
-                });
-
         btnSave.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 String UserName, UserDoB, UserEmail, UserGender, UserPhone, UserCountry;
@@ -231,7 +197,6 @@ public class EditProfileActivity extends AppCompatActivity {
                 }
             }
         });
-
         btnChangeAva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -240,8 +205,49 @@ public class EditProfileActivity extends AppCompatActivity {
                 startActivityForResult(openGalleryIntent, 1000);
             }
         });
+        StorageReference profileRef = storageReference.child("users/" + firebaseAuth.getCurrentUser().getUid() + "/profile.jpg");
+        profileRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                Picasso.get().load(uri).into(profileImg);
+            }
+        });
+        database.collection("User")
+                .document(User.getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        Boolean CheckData = documentSnapshot.getBoolean("Data");
+                        if (Boolean.TRUE.equals(CheckData)) {
+                            database.collection("User")
+                                    .document(User.getUid()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                            String Name = documentSnapshot.getString("Name");
+                                            edtUserName.setText(Name);
+                                            String DoB = documentSnapshot.getString("DoB");
+                                            edtUserDoB.setText(DoB);
+                                            String Email = documentSnapshot.getString("Email");
+                                            edtUserEmail.setText(Email);
+                                            String Gender = documentSnapshot.getString("Gender");
+                                            edtUserGender.setText(Gender);
+                                            String Phone = documentSnapshot.getString("Phone");
+                                            edtUserPhone.setText(Phone);
+                                            String Country = documentSnapshot.getString("Country");
+                                            edtUserCountry.setText(Country);
+                                        }
+                                    });
+                        } else {
+                            edtUserName.setText("");
+                            edtUserDoB.setText("");
+                            String Email = documentSnapshot.getString("Email");
+                            edtUserEmail.setText(Email);
+                            edtUserGender.setText("");
+                            edtUserPhone.setText("");
+                            edtUserCountry.setText("");
+                        }
+                    }
+                });
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -253,7 +259,6 @@ public class EditProfileActivity extends AppCompatActivity {
             }
         }
     }
-
     private void uploadImageToFirebase(Uri imageUri) {
         // upload image to firebase storage
         StorageReference fileRef = storageReference.child("users/" + firebaseAuth.getCurrentUser().getUid() + "/profile.jpg");
@@ -289,7 +294,6 @@ public class EditProfileActivity extends AppCompatActivity {
             }
         return true;
     }
-
     public static boolean checkLetter(String str) {
         if (str == null || str.isEmpty()) {
             return false;
@@ -300,5 +304,23 @@ public class EditProfileActivity extends AppCompatActivity {
                 return false;
             }
         return true;
+    }
+
+    protected void registerNetworkBroadcast() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            registerReceiver(broadcastReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+        }
+    }
+    protected void unregisterNetwork() {
+        try {
+            unregisterReceiver(broadcastReceiver);
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterNetwork();
     }
 }

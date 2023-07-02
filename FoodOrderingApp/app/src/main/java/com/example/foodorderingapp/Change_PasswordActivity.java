@@ -3,8 +3,13 @@ package com.example.foodorderingapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,23 +29,36 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Change_PasswordActivity extends AppCompatActivity {
-
+    Button btnChangePassword, back_btn;
     EditText edtOldPassword, edtNewPassword, edtConfirmPassword;
-    Button btnChangePassword;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
+    BroadcastReceiver broadcastReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
 
+        broadcastReceiver = new ConnectionReceiver();
+        registerNetworkBroadcast();
+
+        back_btn = (Button) findViewById(R.id.back_btn);
+        btnChangePassword = (Button) findViewById(R.id.btnChangePassword_CP);
         edtOldPassword = (EditText) findViewById(R.id.edtOldPassword);
         edtNewPassword = (EditText) findViewById(R.id.edtNewPassword);
         edtConfirmPassword = (EditText) findViewById(R.id.edtConfirmNewPassword);
-        btnChangePassword = (Button) findViewById(R.id.btnChangePassword_CP);
 
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("CartActivity", "Back button clicked");
+                Intent intent = new Intent(Change_PasswordActivity.this, MyProfileActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         btnChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,6 +120,23 @@ public class Change_PasswordActivity extends AppCompatActivity {
                 }
             }
         });
+    }
 
+    protected void registerNetworkBroadcast() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            registerReceiver(broadcastReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+        }
+    }
+    protected void unregisterNetwork() {
+        try {
+            unregisterReceiver(broadcastReceiver);
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterNetwork();
     }
 }

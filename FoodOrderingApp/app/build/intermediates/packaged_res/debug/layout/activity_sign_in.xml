@@ -8,19 +8,19 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="220dp"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/sign_in" />
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/img_signin" />
 
     <EditText
         android:id="@+id/Emal_SI"
         android:layout_width="360dp"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="270dp"
-        android:background="@drawable/edittext_background"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/background_edittext"
         android:gravity="center_vertical"
         android:hint="Email"
         android:imeOptions="actionNext"
@@ -33,8 +33,8 @@
         android:layout_width="360dp"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="340dp"
-        android:background="@drawable/edittext_background"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/background_edittext"
         android:ems="10"
         android:gravity="center_vertical"
         android:hint="Password"
@@ -49,8 +49,8 @@
         android:layout_width="360dp"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="470dp"
-        android:background="@drawable/button_background"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/background_15_pinkgray"
         android:backgroundTint="#FF897D"
         android:gravity="center"
         android:text="Sign In"
@@ -62,9 +62,8 @@
         android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="570dp"
-        android:layout_marginEnd="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
         android:text="Forgot password?"
         android:textSize="14dp"
         android:textStyle="italic" />
@@ -74,18 +73,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="500dp"
         android:text="Don't have an account?"
         android:textSize="14dp"
         android:textStyle="italic" />
-
 
     <TextView
         android:id="@+id/SignUp_SI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="240dp"
-        android:layout_marginTop="533dp"
+        android:layout_marginTop="493dp"
         android:padding="5dp"
         android:text="Sign Up"
         android:textSize="16dp"

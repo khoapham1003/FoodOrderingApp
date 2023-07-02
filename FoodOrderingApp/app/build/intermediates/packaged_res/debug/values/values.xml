@@ -17,7 +17,7 @@
     <string name="google_storage_bucket" translatable="false">foodorderingapp-ade39.appspot.com</string>
     <string name="project_id" translatable="false">foodorderingapp-ade39</string>
     <string name="select">Select Item</string>
-    <style name="Theme.FoodOrderingApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.FoodOrderingApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

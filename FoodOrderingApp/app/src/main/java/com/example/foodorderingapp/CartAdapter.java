@@ -27,9 +27,9 @@ import java.util.List;
 import io.grpc.LoadBalancer;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
+    int totalAmount = 0;
     Context context;
     List<Cart> list;
-    int totalAmount = 0;
     FirebaseFirestore firestore;
     FirebaseAuth auth;
 
@@ -38,9 +38,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         this.list = list;
         firestore = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance();
-
     }
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -50,12 +48,11 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_cart, parent, false));
     }
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final Cart data = list.get(position);
         holder.name.setText(data.getFoodName());
-        holder.price.setText(data.getPrice() + "VND");
+        holder.price.setText(Integer.parseInt(data.getPrice())*Integer.parseInt(data.getQuantity()) + " VND");
         holder.rvCount.setText("(" + data.getRvCount() + ")");
         holder.star.setText(data.getRvStar());
         holder.totalQuantity.setText(data.getQuantity());
@@ -88,12 +85,10 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
             }
         });
     }
-
     @Override
     public int getItemCount() {
         return list.size();
     }
-
     public int getTotalMoney() {
         int totalMoney = 0;
         for (int i = 0; i < list.size(); i++) {
@@ -101,11 +96,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         }
         return totalMoney;
     }
-
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView name, price, totalQuantity, totalPrice, rvCount, star;
         ImageView foodImg, delete;
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.id_txtview_foodname);

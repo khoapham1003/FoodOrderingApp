@@ -20,12 +20,11 @@ public class ConnectionReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         mContext = context;
         if (isConnected(context)) {
-            Toast.makeText(context, "Internet Connected", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "Internet Connected", Toast.LENGTH_SHORT).show();
         } else {
             showDialog();
         }
     }
-
     public boolean isConnected(Context context) {
         try {
             ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -36,7 +35,6 @@ public class ConnectionReceiver extends BroadcastReceiver {
             return false;
         }
     }
-
     public void showDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

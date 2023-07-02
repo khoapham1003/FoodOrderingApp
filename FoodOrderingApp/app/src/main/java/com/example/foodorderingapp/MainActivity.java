@@ -6,7 +6,11 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,23 +35,27 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView btnProfile;
     LinearLayout btnToCart, btnToUser;
+    TextView btnProfile;
     RecyclerView rvcData;
     FoodAdapter foodAdapter;
     SearchView searchBar;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
+    BroadcastReceiver broadcastReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        broadcastReceiver = new ConnectionReceiver();
+        registerNetworkBroadcast();
+
         btnProfile = (TextView) findViewById(R.id.btnProfile);
         btnToCart = (LinearLayout) findViewById(R.id.btnToCart);
         btnToUser = (LinearLayout) findViewById(R.id.btnToUser);
-
 
         database.collection("User")
                 .document(User.getUid()).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -58,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                                     @Override
                                     public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                                         String Name = documentSnapshot.getString("Name");
-                                        btnProfile.setText(String.format("hi, %s", Name));
+                                        btnProfile.setText(String.format("Hi, %s", Name));
                                     }
                                 });
                     }
@@ -77,7 +85,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,10 +108,8 @@ public class MainActivity extends AppCompatActivity {
             public boolean onQueryTextSubmit(String query) {
                 return false;
             }
-
             @Override
             public boolean onQueryTextChange(String newText) {
-
                 filterList(newText);
                 return true;
             }
@@ -126,26 +131,33 @@ public class MainActivity extends AppCompatActivity {
                         foodAdapter.notifyDataSetChanged();
                     }
                 });
-     return list1;
+        return list1;
     }
-
     private void filterList(String text) {
-
         foodAdapter.setFilterList(text);
-
-
-
         if (text == null || text == "" || text.isEmpty()) {
             foodAdapter = new FoodAdapter(this, getlistFood());
             rvcData.setAdapter(foodAdapter);
         }
     }
-
+    protected void registerNetworkBroadcast() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            registerReceiver(broadcastReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+        }
+    }
+    protected void unregisterNetwork() {
+        try {
+            unregisterReceiver(broadcastReceiver);
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
+    }
     protected void onDestroy() {
         super.onDestroy();
         if (foodAdapter != null) {
             foodAdapter.release();
         }
+        unregisterNetwork();
     }
 }
 

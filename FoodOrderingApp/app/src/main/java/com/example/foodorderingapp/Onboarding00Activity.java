@@ -30,11 +30,11 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 
 public class Onboarding00Activity extends AppCompatActivity {
+    Button btn_next_to_01;
+    TextView txv_skip;
     //Code for internet connection. From here...
     BroadcastReceiver broadcastReceiver;
     //To here
-    Button btn_next_to_01;
-    TextView txv_skip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,14 +64,12 @@ public class Onboarding00Activity extends AppCompatActivity {
         });
     }
 
-
     //Code for internet connection. From here...
     protected void registerNetworkBroadcast() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             registerReceiver(broadcastReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
         }
     }
-
     protected void unregisterNetwork() {
         try {
             unregisterReceiver(broadcastReceiver);
@@ -79,7 +77,6 @@ public class Onboarding00Activity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();

@@ -3,7 +3,11 @@ package com.example.foodorderingapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -27,17 +31,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SignUpActivity extends AppCompatActivity {
-    EditText edtEmail, edtPassword, edtCfPassword;
     Button SignUp;
+    EditText edtEmail, edtPassword, edtCfPassword;
     TextView SignIn;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
     FirebaseUser User = FirebaseAuth.getInstance().getCurrentUser();
+    BroadcastReceiver broadcastReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        broadcastReceiver = new ConnectionReceiver();
+        registerNetworkBroadcast();
 
         edtEmail = (EditText) findViewById(R.id.email_SU);
         edtPassword = (EditText) findViewById(R.id.passWord_SU);
@@ -53,7 +61,6 @@ public class SignUpActivity extends AppCompatActivity {
                 finish();
             }
         });
-
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +68,11 @@ public class SignUpActivity extends AppCompatActivity {
                 email = String.valueOf(edtEmail.getText());
                 password = String.valueOf(edtPassword.getText());
                 confirm_password = String.valueOf(edtCfPassword.getText());
+                if (password.isEmpty() && email.isEmpty() && confirm_password.isEmpty()) {
+                    edtEmail.setError("Enter Email");
+                    edtPassword.setError("Enter password");
+                    edtCfPassword.setError("Enter confirm password");
+                }
                 if (email.isEmpty()) {
                     edtEmail.setError("Enter Email");
                     edtEmail.requestFocus();
@@ -108,7 +120,11 @@ public class SignUpActivity extends AppCompatActivity {
                                     if (e instanceof FirebaseAuthUserCollisionException) {
                                         edtEmail.setError("Email Already Registered");
                                         edtEmail.requestFocus();
-                                    } else {
+                                    } else if (!edtEmail.getText().toString().contains("@"))
+                                    {
+                                        Toast.makeText(SignUpActivity.this, "Please include an @ in the email", Toast.LENGTH_SHORT).show();
+                                    }
+                                    else {
                                         Toast.makeText(SignUpActivity.this, "SignUp Fail!", Toast.LENGTH_SHORT).show();
                                     }
                                 }
@@ -117,9 +133,6 @@ public class SignUpActivity extends AppCompatActivity {
 
             }
         });
-    }
-
-    private void LoadData(View v) {
     }
 
     private void sendverificationEmail() {
@@ -138,5 +151,23 @@ public class SignUpActivity extends AppCompatActivity {
                 }
             });
         }
+    }
+
+    protected void registerNetworkBroadcast() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            registerReceiver(broadcastReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+        }
+    }
+    protected void unregisterNetwork() {
+        try {
+            unregisterReceiver(broadcastReceiver);
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterNetwork();
     }
 }

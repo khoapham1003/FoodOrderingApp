@@ -4,12 +4,20 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_editprofile_icon_downarrow.png.flat",
-        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\editprofile_icon_downarrow.png"
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_star.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_star.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_button_top.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\button_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_editprofile_icon_downarrow.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\editprofile_icon_downarrow.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_signin.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_signin.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -18,6 +26,10 @@
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_ob02.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_ob02.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_calendar.png.flat",
@@ -36,6 +48,10 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\dautru.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_ob01_load.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_ob01_load.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_item_food.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\item_food.xml"
     },
@@ -48,6 +64,10 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\user1.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_color_light_pink.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\color_light_pink.xml"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_onboarding02.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_onboarding02.xml"
     },
@@ -58,6 +78,10 @@
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_nointernet.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_nointernet.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_sign_in.xml.flat",
@@ -84,8 +108,16 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ob01_load.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_background_searchbar.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\background_searchbar.xml"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_editprofile_icon_vietnam.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\editprofile_icon_vietnam.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_ob03.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_ob03.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_onboarding03.xml.flat",
@@ -94,6 +126,10 @@
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_circle_button_background.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\circle_button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_ex_pizza1.jpg.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ex_pizza1.jpg"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\xml_data_extraction_rules.xml.flat",
@@ -108,20 +144,32 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\heart_bottom.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_signup.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_signup.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_search_edit_background.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\search_edit_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_calendar.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_calendar.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_start_icon.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\start_icon.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_myprofile_avatar.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\myprofile_avatar.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_time.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\time.png"
     },
     {
-        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_myprofile_avatar.png.flat",
-        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\myprofile_avatar.png"
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_color_lightly_pink.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\color_lightly_pink.xml"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_ordercomplete_image_main.png.flat",
@@ -134,6 +182,10 @@
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_border_background.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\border_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_ob02_load.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_ob02_load.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_myprofile_backarrow.png.flat",
@@ -156,12 +208,28 @@
         "source": "com.example.foodorderingapp-main-40:/layout/activity_cart.xml"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_vietnamflag.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_vietnamflag.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_questionmark.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_questionmark.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_edit.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\edit.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_onboarding00.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_onboarding00.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_restaurant.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_restaurant.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_camera.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_camera.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_back.png.flat",
@@ -176,12 +244,16 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ob02_load.png"
     },
     {
-        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_background_circle_whiteblack.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\background_circle_whiteblack.xml"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_product_page.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\product_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_forgot_password.xml.flat",
@@ -208,12 +280,20 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ob01_image_main.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_main_background.jpg.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\main_background.jpg"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_pasta.jpg.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\pasta.jpg"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_edittext_background.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\edittext_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_background_editprofile.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\background_editprofile.xml"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -252,8 +332,16 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_check_out.xml"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_background_15_whiteblack.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\background_15_whiteblack.xml"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_myprofile_icon_bell.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\myprofile_icon_bell.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_time.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_time.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_lightpink_color.xml.flat",
@@ -264,6 +352,10 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\back_arrow.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_background_5_whiteblack.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\background_5_whiteblack.xml"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_myprofile_icon_logout.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\myprofile_icon_logout.png"
     },
@@ -272,12 +364,20 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_4.png"
     },
     {
+        "merged": "com.example.foodorderingapp-merged_res-38:/layout_activity_order_complete.xml.flat",
+        "source": "com.example.foodorderingapp-main-40:/layout/activity_order_complete.xml"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_nointernet_image_main.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\nointernet_image_main.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_change_password.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_change_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_backarrow.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_backarrow.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_ob02_image_main.png.flat",
@@ -292,8 +392,16 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_my_profile.xml"
     },
     {
-        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_btn2.xml.flat",
-        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\btn2.xml"
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_google.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_google.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_sign_up.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\sign_up.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_logo.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_logo.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_fire.png.flat",
@@ -308,16 +416,16 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\menu_bottom.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_color_lightpink.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\color_lightpink.xml"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_ob03_image_main.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ob03_image_main.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_edit_profile.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\edit_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_search_page.xml.flat",
-        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\search_page.xml"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_payment_btn.xml.flat",
@@ -340,8 +448,8 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\myprofile_icon_lock.png"
     },
     {
-        "merged": "com.example.foodorderingapp-merged_res-38:/layout_activity_forgot_password.xml.flat",
-        "source": "com.example.foodorderingapp-main-40:/layout/activity_forgot_password.xml"
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_ob00.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_ob00.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_background.jpg.flat",
@@ -360,12 +468,24 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\rounded_imageview.xml"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_subtract.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_subtract.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_pick_icon.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\pick_icon.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_home.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_home.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_ex_pizza.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ex_pizza.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_user.png.flat",
@@ -396,6 +516,10 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\shopping_cart.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_user.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_user.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_frame_13935.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\frame_13935.png"
     },
@@ -404,8 +528,20 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\editprofile_icon_mall.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_background_info.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\background_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_ordercomplete.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_ordercomplete.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_order_complete.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_order_complete.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_background_edittext.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\background_edittext.xml"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_search.png.flat",
@@ -418,6 +554,14 @@
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_ob01.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_ob01.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_background_15_pinkgray.xml.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\background_15_pinkgray.xml"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-xxhdpi_ic_launcher.webp.flat",
@@ -440,6 +584,10 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\home_bottom.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_cart.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_cart.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_myprofile_icon_home.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\myprofile_icon_home.png"
     },
@@ -448,8 +596,16 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\cart.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_logout.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_logout.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_ex_avatar.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ex_avatar.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_pizza.png.flat",
@@ -460,8 +616,16 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\list_gender.xml"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_lock.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_lock.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_search.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_search.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_spagetti.jpg.flat",
@@ -484,6 +648,18 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ob03_load.png"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_ex_ham.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ex_ham.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_trashcan.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_trashcan.png"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_fire.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_fire.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_editprofile_icon_calendar.png.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\editprofile_icon_calendar.png"
     },
@@ -492,8 +668,16 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_cart.xml"
     },
     {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_img_ob03_load.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\img_ob03_load.png"
+    },
+    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_icon_add.png.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\icon_add.png"
     },
     {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_google_logo.png.flat",
@@ -504,11 +688,11 @@
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_pizza01.jpg.flat",
-        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\pizza01.jpg"
-    },
-    {
         "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\layout_activity_onboarding01.xml.flat",
         "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\layout\\activity_onboarding01.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\drawable_pizza01.jpg.flat",
+        "source": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-main-40:\\drawable\\pizza01.jpg"
     }
 ]

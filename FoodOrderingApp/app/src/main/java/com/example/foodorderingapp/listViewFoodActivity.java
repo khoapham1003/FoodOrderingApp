@@ -42,13 +42,12 @@ import java.util.Map;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class listViewFoodActivity extends AppCompatActivity {
-
-    TextView titleGetFood, rvStart, rvCount, kcal, unit, cookTime, description, price, quantity;
     int totalQuantity = 1;
     int totalPrice = 0;
+    Button btnCheckOut,btnBack;
     ImageView imageSrc;
-    ImageButton btnBack, btnCart, plus_btn, minus_btn;
-    Button btnCheckOut;
+    ImageButton btnCart, plus_btn, minus_btn;
+    TextView titleGetFood, rvStart, rvCount, kcal, unit, cookTime, description, price, quantity;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseUser User = firebaseAuth.getCurrentUser();
     FirebaseFirestore firestore = FirebaseFirestore.getInstance();
@@ -57,7 +56,8 @@ public class listViewFoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_page);
-        btnBack = (ImageButton) findViewById(R.id.btnBack);
+
+        btnBack = (Button) findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +65,6 @@ public class listViewFoodActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        // add item to cart button
         btnCart = (ImageButton) findViewById(R.id.btnCart);
         plus_btn = (ImageButton) findViewById(R.id.add_btn_product);
         minus_btn = (ImageButton) findViewById(R.id.minus_btn_product);
@@ -84,6 +83,7 @@ public class listViewFoodActivity extends AppCompatActivity {
                 addToCart();
             }
         });
+
         // plus quantity
         plus_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,6 +104,7 @@ public class listViewFoodActivity extends AppCompatActivity {
                 }
             }
         });
+
         // add item go to cart button
         quantity = (TextView) findViewById(R.id.quantity);
         titleGetFood = (TextView) findViewById(R.id.titleFood);
@@ -115,7 +116,8 @@ public class listViewFoodActivity extends AppCompatActivity {
         description = (TextView) findViewById(R.id.des);
         price = (TextView) findViewById(R.id.price);
         imageSrc = (ImageView) findViewById(R.id.imgSrc);
-//        Intent receiverTitle = getIntent();
+        //test
+        //        Intent receiverTitle = getIntent();
 //        String receiverValue = receiverTitle.getStringExtra("KEY_SENDER");
 //        titleGetFood.setText(receiverValue);
 
@@ -211,7 +213,6 @@ public class listViewFoodActivity extends AppCompatActivity {
 
         new DownloadImageFromInternet((ImageView) findViewById(R.id.imgSrc)).execute(food.getImgsrc());
     }
-
     public void addToCart() {
         Bundle bundle = getIntent().getExtras();
         if (bundle == null) {
@@ -237,15 +238,11 @@ public class listViewFoodActivity extends AppCompatActivity {
                     }
                 });
     }
-
     static class DownloadImageFromInternet extends AsyncTask<String, Void, Bitmap> {
         ImageView imageView;
-
         public DownloadImageFromInternet(ImageView imageView) {
             this.imageView = imageView;
-//            Toast.makeText(getApplicationContext(), "Please wait, it may take a few minute...",Toast.LENGTH_SHORT).show();
         }
-
         protected Bitmap doInBackground(String... urls) {
             String imageURL = urls[0];
             Bitmap bimage = null;
@@ -258,7 +255,6 @@ public class listViewFoodActivity extends AppCompatActivity {
             }
             return bimage;
         }
-
         protected void onPostExecute(Bitmap result) {
             imageView.setImageBitmap(result);
         }

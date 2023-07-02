@@ -3295,7 +3295,7 @@
                     }
                 },
                 {
-                    "source": "E:\\hocky4\\5_DD\\Merge\\test\\FoodOrderingApp\\FoodOrderingApp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "E:\\hocky4\\5_DD\\Final\\FoodOrderingApp\\FoodOrderingApp\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -8249,23 +8249,6 @@
             "outputFile": "C:\\Users\\ABC\\.gradle\\daemon\\7.5\\com.example.foodorderingapp-merged_res-38:\\values_values.arsc.flat",
             "map": [
                 {
-                    "source": "E:\\hocky4\\5_DD\\Merge\\test\\FoodOrderingApp\\FoodOrderingApp\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "7,9,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "293,379,57,105,153,201,247,336",
-                        "endColumns": "41,46,46,46,46,44,44,41",
-                        "endOffsets": "330,421,99,147,195,241,287,373"
-                    },
-                    "to": {
-                        "startLines": "619,630,884,885,886,897,898,901",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "31578,32395,50798,50845,50892,51636,51681,51847",
-                        "endColumns": "41,46,46,46,46,44,44,41",
-                        "endOffsets": "31615,32437,50840,50887,50934,51676,51721,51884"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ABC\\.gradle\\caches\\transforms-3\\61e4e4f44756b54e286d90cc9c968a18\\transformed\\circleimageview-3.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -8301,6 +8284,42 @@
                         "endLines": "13103",
                         "endColumns": "24",
                         "endOffsets": "760513"
+                    }
+                },
+                {
+                    "source": "E:\\hocky4\\5_DD\\Final\\FoodOrderingApp\\FoodOrderingApp\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,719",
+                        "endColumns": "143,81,103,108,119,104,81",
+                        "endOffsets": "194,276,380,489,609,714,796"
+                    },
+                    "to": {
+                        "startLines": "1848,1859,1860,1861,1862,1863,1973",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "120939,121926,122008,122112,122221,122341,138632",
+                        "endColumns": "143,81,103,108,119,104,81",
+                        "endOffsets": "121078,122003,122107,122216,122336,122441,138709"
+                    }
+                },
+                {
+                    "source": "E:\\hocky4\\5_DD\\Final\\FoodOrderingApp\\FoodOrderingApp\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "818"
+                    },
+                    "to": {
+                        "startLines": "6122",
+                        "startColumns": "4",
+                        "startOffsets": "423645",
+                        "endLines": "6134",
+                        "endColumns": "12",
+                        "endOffsets": "424228"
                     }
                 },
                 {
@@ -8452,6 +8471,23 @@
                     }
                 },
                 {
+                    "source": "E:\\hocky4\\5_DD\\Final\\FoodOrderingApp\\FoodOrderingApp\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,9,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "293,379,57,105,153,201,247,336",
+                        "endColumns": "41,46,46,46,46,44,44,41",
+                        "endOffsets": "330,421,99,147,195,241,287,373"
+                    },
+                    "to": {
+                        "startLines": "619,630,884,885,886,897,898,901",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "31578,32395,50798,50845,50892,51636,51681,51847",
+                        "endColumns": "41,46,46,46,46,44,44,41",
+                        "endOffsets": "31615,32437,50840,50887,50934,51676,51721,51884"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ABC\\.gradle\\caches\\transforms-3\\8cbf4bd2f84b4cebaf2ebd915b141d2e\\transformed\\transition-1.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -8466,23 +8502,6 @@
                         "startOffsets": "106818,106858,108102,108351,108406,109902,109956,110008,110057,110118",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "106853,106900,108140,108401,108448,109951,110003,110052,110113,110163"
-                    }
-                },
-                {
-                    "source": "E:\\hocky4\\5_DD\\Merge\\test\\FoodOrderingApp\\FoodOrderingApp\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,719",
-                        "endColumns": "143,81,103,108,119,104,81",
-                        "endOffsets": "194,276,380,489,609,714,796"
-                    },
-                    "to": {
-                        "startLines": "1848,1859,1860,1861,1862,1863,1973",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "120939,121926,122008,122112,122221,122341,138632",
-                        "endColumns": "143,81,103,108,119,104,81",
-                        "endOffsets": "121078,122003,122107,122216,122336,122441,138709"
                     }
                 },
                 {
@@ -8628,6 +8647,23 @@
                     }
                 },
                 {
+                    "source": "E:\\hocky4\\5_DD\\Final\\FoodOrderingApp\\FoodOrderingApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "17,71",
+                        "endColumns": "52,46",
+                        "endOffsets": "65,113"
+                    },
+                    "to": {
+                        "startLines": "1817,1980",
+                        "startColumns": "4,4",
+                        "startOffsets": "116869,139275",
+                        "endColumns": "52,46",
+                        "endOffsets": "116917,139317"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ABC\\.gradle\\caches\\transforms-3\\3c5b10a250a9624a2a74fcd464886aa8\\transformed\\lifecycle-viewmodel-2.5.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -8659,25 +8695,6 @@
                         "startOffsets": "111070,119578",
                         "endColumns": "67,166",
                         "endOffsets": "111133,119740"
-                    }
-                },
-                {
-                    "source": "E:\\hocky4\\5_DD\\Merge\\test\\FoodOrderingApp\\FoodOrderingApp\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "102",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "818"
-                    },
-                    "to": {
-                        "startLines": "6122",
-                        "startColumns": "4",
-                        "startOffsets": "423645",
-                        "endLines": "6134",
-                        "endColumns": "12",
-                        "endOffsets": "424228"
                     }
                 },
                 {
@@ -8716,23 +8733,6 @@
                         "endLines": "1651,1686,1723,10961,10965",
                         "endColumns": "56,64,63,24,24",
                         "endOffsets": "106813,108645,110559,681659,681808"
-                    }
-                },
-                {
-                    "source": "E:\\hocky4\\5_DD\\Merge\\test\\FoodOrderingApp\\FoodOrderingApp\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "17,71",
-                        "endColumns": "52,46",
-                        "endOffsets": "65,113"
-                    },
-                    "to": {
-                        "startLines": "1817,1980",
-                        "startColumns": "4,4",
-                        "startOffsets": "116869,139275",
-                        "endColumns": "52,46",
-                        "endOffsets": "116917,139317"
                     }
                 }
             ]

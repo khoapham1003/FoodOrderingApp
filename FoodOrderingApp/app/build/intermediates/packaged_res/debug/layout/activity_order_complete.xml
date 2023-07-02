@@ -7,64 +7,50 @@
     tools:context=".OrderCompleteActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/ordercomplete_image_main" />
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/img_ordercomplete" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="500dp"
         android:text="Order"
         android:textColor="@color/black"
-        android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textSize="40dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="500dp"
         android:text="Complete"
         android:textColor="#FF897D"
-        android:textSize="30dp"
+        android:textSize="40dp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="550dp"
         android:text="Thanks for trust on us"
-        android:textAlignment="center"
-        android:textSize="15dp" />
+        android:textSize="20dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_backToHome"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="640dp"
-        android:background="@drawable/button_background"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/background_15_pinkgray"
         android:backgroundTint="#FF897D"
         android:text="Back to Home"
         android:textColor="@color/white"
-        android:textSize="15dp"
-        android:textStyle="bold" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_orderAgain"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="640dp"
-        android:background="@drawable/btn3"
-        android:text="Order Again"
-        android:textColor="@color/black"
-        android:textSize="15dp"
+        android:textSize="16dp"
         android:textStyle="bold" />
 
 </RelativeLayout>

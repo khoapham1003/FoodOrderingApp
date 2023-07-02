@@ -37,27 +37,28 @@ import android.view.View;
 import android.widget.Button;
 
 public class SignInActivity extends AppCompatActivity {
-    BroadcastReceiver broadcastReceiver;
-    EditText edtEmail, edtPassword;
     Button SignIn;
+    EditText edtEmail, edtPassword;
     TextView SignUp, Forgot_Password;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     FirebaseFirestore database = FirebaseFirestore.getInstance();
     FirebaseUser User = firebaseAuth.getCurrentUser();
+    BroadcastReceiver broadcastReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-        //Code for internet connection. From here...
+
         broadcastReceiver = new ConnectionReceiver();
         registerNetworkBroadcast();
-        //To Here
+
         edtEmail = (EditText) findViewById(R.id.Emal_SI);
         edtPassword = (EditText) findViewById(R.id.PassWord_SI);
         SignIn = (Button) findViewById(R.id.btnSignIn);
         SignUp = (TextView) findViewById(R.id.SignUp_SI);
         Forgot_Password = (TextView) findViewById(R.id.forgot_password);
+
         Forgot_Password.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -143,33 +144,11 @@ public class SignInActivity extends AppCompatActivity {
         }
     }
 
-//if(firebaseAuth.getCurrentUser().isEmailVerified())
-//        {
-//        database.collection("User")
-//        .document(firebaseAuth.getCurrentUser().getUid())
-//        .get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
-//@Override
-//public void onSuccess(DocumentSnapshot documentSnapshot) {
-//        String email_check = documentSnapshot.getString("Email");
-//        String password_check = documentSnapshot.getString("Password");
-//        if(!email.equals(email_check))
-//        {
-//        edtEmail.requestFocus();
-//        Toast.makeText(SignInActivity.this, "Email Wrong!", Toast.LENGTH_SHORT).show();
-//        }
-//        else if(!password.equals(password_check))
-//        {
-//        edtEmail.requestFocus();
-//        Toast.makeText(SignInActivity.this, "Password Wrong!", Toast.LENGTH_SHORT).show();
-//        }
-
-    //Code for internet connection. From here...
     protected void registerNetworkBroadcast() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             registerReceiver(broadcastReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
         }
     }
-
     protected void unregisterNetwork() {
         try {
             unregisterReceiver(broadcastReceiver);
@@ -177,11 +156,9 @@ public class SignInActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
         unregisterNetwork();
     }
-    //To here
 }

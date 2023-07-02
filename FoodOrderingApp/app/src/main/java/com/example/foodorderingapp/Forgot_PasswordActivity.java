@@ -4,7 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,19 +21,22 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Forgot_PasswordActivity extends AppCompatActivity {
-
-    EditText email_FP;
     Button SendEmail,back_btn_forgot;
+    EditText email_FP;
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+    BroadcastReceiver broadcastReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
 
-        email_FP = (EditText) findViewById(R.id.email_FP);
+        broadcastReceiver = new ConnectionReceiver();
+        registerNetworkBroadcast();
+
         SendEmail = (Button) findViewById(R.id.btnSend_FP);
         back_btn_forgot= (Button)  findViewById(R.id.back_btn_forgot);
+        email_FP = (EditText) findViewById(R.id.email_FP);
 
         back_btn_forgot.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +49,6 @@ public class Forgot_PasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String userEmail = email_FP.getText().toString();
-
                 if (userEmail.isEmpty()) {
                     email_FP.setError("Enter Email");
                     email_FP.requestFocus();
@@ -65,5 +71,22 @@ public class Forgot_PasswordActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    protected void registerNetworkBroadcast() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            registerReceiver(broadcastReceiver, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+        }
+    }
+    protected void unregisterNetwork() {
+        try {
+            unregisterReceiver(broadcastReceiver);
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterNetwork();
     }
 }

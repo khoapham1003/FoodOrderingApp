@@ -9,11 +9,10 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_backMP"
         android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
-        android:background="@drawable/myprofile_backarrow"
-        android:textSize="30dp" />
+        android:background="@drawable/icon_backarrow" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,42 +25,42 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/Avatar1_img1"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/rounded_imageview"
-        android:src="@drawable/myprofile_avatar" />
+        android:src="@drawable/ex_avatar" />
 
     <TextView
         android:id="@+id/Name_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="230dp"
         android:text="Nguyễn Văn A"
         android:textSize="25dp"
         android:textStyle="bold" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnEditProfile_MP1"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"
-        android:background="@drawable/button_background"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/background_15_pinkgray"
         android:backgroundTint="#FF897D"
         android:text="Edit Profile"
         android:textColor="@color/white"
-        android:textSize="15dp"
+        android:textSize="16dp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/btnChangePassword_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:drawableLeft="@drawable/myprofile_icon_lock"
+        android:layout_marginTop="360dp"
+        android:drawableLeft="@drawable/icon_lock"
         android:drawablePadding="10dp"
         android:gravity="center"
         android:paddingStart="15dp"
@@ -70,27 +69,94 @@
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        android:drawableLeft="@drawable/myprofile_icon_questionmark"
-        android:drawablePadding="10dp"
-        android:gravity="center"
-        android:paddingStart="15dp"
-        android:text="Help and Support"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
         android:id="@+id/btnLogOut_MP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
-        android:drawableLeft="@drawable/myprofile_icon_logout"
+        android:layout_marginTop="400dp"
+        android:drawableLeft="@drawable/icon_logout"
         android:drawablePadding="10dp"
         android:gravity="center"
         android:paddingStart="15dp"
         android:text="Logout"
         android:textSize="18dp"
         android:textStyle="bold" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#fab1a0"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabCradleVerticalOffset="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btnToUser"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/background_15_pinkgray"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView575"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_user" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnToHome"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView586"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/icon_home" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnToCart"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView554"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/icon_cart" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </RelativeLayout>

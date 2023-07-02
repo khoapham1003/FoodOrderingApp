@@ -10,18 +10,20 @@
         android:id="@+id/txv_Skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="350dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
-        android:text="Skip"
+        android:text="Skip>>"
+        android:textStyle="italic"
         android:textColor="#DA7455"
-        android:textSize="20dp" />
+        android:textSize="22dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:src="@drawable/ob02_image_main" />
+        android:src="@drawable/img_ob02" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,24 +42,24 @@
         android:layout_marginTop="450dp"
         android:text="When you order eat street, we'll hook you up \nwith exclusive coupons, specials reward."
         android:textAlignment="center"
-        android:textSize="15dp" />
+        android:textSize="18dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="530dp"
-        android:src="@drawable/ob02_load" />
+        android:layout_marginTop="550dp"
+        android:src="@drawable/img_ob02_load" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_nextTo03"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="630dp"
-        android:background="@drawable/btn1"
+        android:layout_marginTop="640dp"
+        android:background="@drawable/background_circle_whiteblack"
         android:text=">"
         android:textColor="@color/black"
-        android:textSize="30dp" />
+        android:textSize="35dp" />
 
 </RelativeLayout>

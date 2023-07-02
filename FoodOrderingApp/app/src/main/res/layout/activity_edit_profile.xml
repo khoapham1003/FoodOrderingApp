@@ -9,11 +9,10 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnback_EP"
         android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
-        android:background="@drawable/myprofile_backarrow"
-        android:textSize="30dp" />
+        android:background="@drawable/icon_backarrow" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,7 +23,6 @@
         android:textSize="25dp"
         android:textStyle="bold" />
 
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_img"
         android:layout_width="110dp"
@@ -32,8 +30,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
         android:background="@drawable/rounded_imageview"
-        android:src="@drawable/myprofile_avatar" />
-
+        android:src="@drawable/ex_avatar" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnChangeAva"
@@ -43,8 +40,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="145dp"
         android:layout_marginEnd="150dp"
-        android:background="@drawable/editprofile_icon_camera" />
-
+        android:background="@drawable/icon_camera" />
 
     <EditText
         android:id="@+id/edtUserName"
@@ -52,7 +48,7 @@
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
-        android:background="@drawable/edit_profile"
+        android:background="@drawable/background_editprofile"
         android:hint="Nguyễn Văn A"
         android:imeOptions="actionNext"
         android:inputType="textPersonName"
@@ -66,7 +62,8 @@
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="270dp"
-        android:background="@drawable/edit_profile"
+        android:background="@drawable/background_editprofile"
+        android:drawableRight="@drawable/icon_calendar"
         android:hint="27/12/2000"
         android:imeOptions="actionNext"
         android:inputType="date"
@@ -79,10 +76,9 @@
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="340dp"
-        android:background="@drawable/edit_profile"
-        android:hint="abvccc@gmail.com"
+        android:background="@drawable/background_editprofile"
+        android:editable="false"
         android:imeOptions="actionNext"
-        android:inputType="textEmailAddress"
         android:padding="15dp"
         android:singleLine="true"
         android:textSize="16dp" />
@@ -99,7 +95,7 @@
             android:layout_width="360dp"
             android:layout_height="55dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/edit_profile"
+            android:background="@drawable/background_editprofile"
             android:imeOptions="actionNext"
             android:padding="15dp"
             android:singleLine="true"
@@ -112,8 +108,8 @@
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="480dp"
-        android:background="@drawable/edit_profile"
-        android:drawableLeft="@drawable/editprofile_icon_vietnam"
+        android:background="@drawable/background_editprofile"
+        android:drawableLeft="@drawable/icon_vietnamflag"
         android:drawablePadding="10dp"
         android:hint="0914222333"
         android:imeOptions="actionNext"
@@ -128,7 +124,7 @@
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
-        android:background="@drawable/edit_profile"
+        android:background="@drawable/background_editprofile"
         android:hint="Việt Nam"
         android:imeOptions="actionDone"
         android:padding="15dp"
@@ -141,7 +137,7 @@
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="640dp"
-        android:background="@drawable/button_background"
+        android:background="@drawable/background_15_pinkgray"
         android:backgroundTint="#FF897D"
         android:text="Save"
         android:textColor="@color/white"
