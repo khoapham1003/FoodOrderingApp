@@ -79,6 +79,14 @@ public class EditProfileActivity extends AppCompatActivity {
         adapterItems = new ArrayAdapter<String>(this, R.layout.list_gender, items);
         edtUserGender.setAdapter(adapterItems);
 
+        if (firebaseAuth.getCurrentUser() != null) {
+            if (!User.isEmailVerified()) {
+                Toast.makeText(EditProfileActivity.this, "Email is not verify. \n Please verify it.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EditProfileActivity.this, SignInActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }
         edtUserGender.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

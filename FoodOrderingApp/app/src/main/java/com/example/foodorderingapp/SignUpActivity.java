@@ -108,6 +108,7 @@ public class SignUpActivity extends AppCompatActivity {
                                             user.put("Email", email);
                                             user.put("Password", password);
                                             user.put("Data", false);
+                                            user.put("Name", "New User");
                                             database.collection("User").document(firebaseAuth.getCurrentUser().getUid()).set(user);
                                             sendverificationEmail();
                                         }
