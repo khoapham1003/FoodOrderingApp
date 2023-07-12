@@ -94,14 +94,6 @@ public class EditProfileActivity extends AppCompatActivity {
                 edtUserGender.setText(item);
             }
         });
-        btnBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(EditProfileActivity.this, MyProfileActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         Calendar calendar = Calendar.getInstance();
         int day = calendar.get(Calendar.DAY_OF_MONTH);
@@ -193,6 +185,14 @@ public class EditProfileActivity extends AppCompatActivity {
                                         user.put("Gender", UserGender);
                                         user.put("Country", UserCountry.trim());
                                         database.collection("User").document(User.getUid()).update(user);
+                                        btnBack.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+                                                Intent intent = new Intent(EditProfileActivity.this, MyProfileActivity.class);
+                                                startActivity(intent);
+                                                finish();
+                                            }
+                                        });
                                     }
                                 }
                             });

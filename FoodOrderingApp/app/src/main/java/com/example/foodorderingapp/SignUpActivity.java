@@ -113,7 +113,6 @@ public class SignUpActivity extends AppCompatActivity {
                                             sendverificationEmail();
                                         }
                                     }
-
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
